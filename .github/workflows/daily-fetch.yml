@@ -1,0 +1,49 @@
+name: Daily story fetch
+
+on:
+  schedule:
+    # 11:00 UTC daily = 6:00am America/Chicago (5:00am during standard time).
+    # Adjust to taste — this just needs to land before your morning read.
+    - cron: "0 11 * * *"
+  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run curation pipeline
+        env:
+          # Optional: add this repo secret to upgrade filtering/categorizing/
+          # summarizing from the keyword heuristic to the Anthropic API. The
+          # script works fine with no key set — see scripts/fetch-stories.mjs.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/fetch-stories.mjs
+
+      - name: Commit updated stories if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- stories.json data/stories-db.json; then
+            echo "No story changes today."
+            exit 0
+          fi
+          git add stories.json data/stories-db.json
+          git commit -m "Daily story update: $(date -u +'%Y-%m-%d')"
+          git push

@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Be Better Bulletin</title>
+<meta name="description" content="Good news from the world, every day — real reporting, no politics, and curated for a positive start to your day.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style>
+  :root {
+    --ink: #163a53;
+    --paper: #fbf8f0;
+    --paper-raised: #ffffff;
+    --line: #dde8ef;
+    --line-soft: #eaf1f5;
+    --muted: #5c7286;
+    --amber: #f2a91e;
+    --amber-ink: #8c5c08;
+    --amber-tint: #fbe9ae;
+    --coral: #3f8fbf;
+    --coral-tint: #bfe2f2;
+    --accent-grad-1: #163a53;
+    --accent-grad-2: #f2a91e;
+    --focus: #3f8fbf;
+    --shadow: 0 1px 2px rgba(22, 58, 83, 0.08);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eef4f8;
+      --paper: #0c2136;
+      --paper-raised: #14314a;
+      --line: #234258;
+      --line-soft: #1a3346;
+      --muted: #8fa9bd;
+      --amber: #f4b93a;
+      --amber-ink: #f8d685;
+      --amber-tint: #3a2c10;
+      --coral: #5fb0dd;
+      --coral-tint: #163449;
+      --accent-grad-1: #0c2136;
+      --accent-grad-2: #f4b93a;
+      --focus: #6fc1ea;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ink: #eef4f8;
+    --paper: #0c2136;
+    --paper-raised: #14314a;
+    --line: #234258;
+    --line-soft: #1a3346;
+    --muted: #8fa9bd;
+    --amber: #f4b93a;
+    --amber-ink: #f8d685;
+    --amber-tint: #3a2c10;
+    --coral: #5fb0dd;
+    --coral-tint: #163449;
+    --accent-grad-1: #0c2136;
+    --accent-grad-2: #f4b93a;
+    --focus: #6fc1ea;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px 96px;
+  }
+
+  /* ---------- Masthead ---------- */
+  .masthead {
+    padding: 28px 0 16px;
+    border-bottom: 3px solid var(--ink);
+    position: relative;
+  }
+  .masthead::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-grad-1), var(--accent-grad-2) 60%, var(--coral));
+  }
+  .masthead-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .wordmark {
+    font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 2.3rem;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0;
+  }
+  .wordmark strong {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+  }
+  .wordmark em {
+    font-style: normal;
+    color: var(--amber);
+  }
+  .masthead-meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: right;
+    line-height: 1.5;
+  }
+  .tagline {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    max-width: 46ch;
+  }
+
+  .controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+
+  .notify-toggle {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--muted);
+    cursor: pointer;
+    user-select: none;
+  }
+  .switch {
+    width: 30px; height: 17px;
+    border-radius: 999px;
+    background: var(--line);
+    position: relative;
+    flex: none;
+    transition: background 0.15s ease;
+  }
+  .switch::after {
+    content: "";
+    position: absolute;
+    top: 2px; left: 2px;
+    width: 13px; height: 13px;
+    border-radius: 50%;
+    background: var(--paper-raised);
+    transition: transform 0.15s ease;
+    box-shadow: var(--shadow);
+  }
+  .notify-toggle[data-on="true"] .switch { background: var(--amber); }
+  .notify-toggle[data-on="true"] .switch::after { transform: translateX(13px); }
+
+  /* ---------- Daily practices (Stoic / Parenting) ---------- */
+  .practice-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+  .practice-btn {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.76rem;
+    letter-spacing: 0.03em;
+    border: 1px solid var(--line);
+    background: var(--paper-raised);
+    color: var(--ink);
+    padding: 9px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .practice-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .practice-btn[data-practice="stoic"].active {
+    background: var(--amber-tint);
+    border-color: var(--amber);
+    color: var(--amber-ink);
+  }
+  .practice-btn[data-practice="parenting"].active {
+    background: var(--coral-tint);
+    border-color: var(--coral);
+    color: var(--ink);
+  }
+
+  .practice-panel {
+    margin-top: 12px;
+    padding: 20px 20px 18px;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .practice-panel::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--amber), var(--coral));
+  }
+  .practice-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .practice-eyebrow-label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--amber-ink);
+    font-weight: 500;
+  }
+  .practice-eyebrow-day {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    color: var(--muted);
+  }
+  .practice-quote {
+    font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.14rem;
+    line-height: 1.42;
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .practice-attribution {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin: 0 0 16px;
+  }
+  .practice-divider {
+    border: none;
+    border-top: 1px solid var(--line-soft);
+    margin: 0 0 14px;
+  }
+  .practice-label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 5px;
+  }
+  .practice-title {
+    font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 1.02rem;
+    margin: 0 0 6px;
+  }
+  .practice-body {
+    margin: 0 0 12px;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    opacity: 0.85;
+  }
+  .practice-prompt {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    background: var(--amber-tint);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+  .practice-prompt .mark { color: var(--amber-ink); flex: none; font-weight: 600; }
+
+  /* ---------- Category rail ---------- */
+  .rail {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 16px 0 4px;
+    scrollbar-width: none;
+  }
+  .rail::-webkit-scrollbar { display: none; }
+  .chip {
+    flex: none;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    border: 1px solid var(--line);
+    background: var(--paper-raised);
+    color: var(--muted);
+    padding: 6px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .chip.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper);
+  }
+  .chip:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+  /* ---------- Feed ---------- */
+  .feed {
+    margin-top: 8px;
+  }
+  .story {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .story:first-child { padding-top: 18px; }
+
+  .story-main { min-width: 0; }
+
+  .story-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .cat-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    flex: none;
+  }
+  .cat-label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .story-title {
+    font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 1.22rem;
+    line-height: 1.32;
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .story-title a { text-decoration: none; }
+  .story-title a:hover { text-decoration: underline; text-decoration-color: var(--amber); text-decoration-thickness: 2px; }
+  .story-title a:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+
+  .story-summary {
+    margin: 0 0 10px;
+    color: var(--ink);
+    opacity: 0.82;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    max-width: 58ch;
+  }
+
+  .story-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+  .story-footer .dot { opacity: 0.5; }
+  .story-footer a { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; }
+
+  /* ---------- States ---------- */
+  .state-msg {
+    padding: 56px 12px;
+    text-align: center;
+    color: var(--muted);
+  }
+  .state-msg .big {
+    font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    font-size: 1.3rem;
+    color: var(--ink);
+    margin: 0 0 6px;
+  }
+  .state-msg p { margin: 0; font-size: 0.9rem; }
+
+  .skeleton {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .skel-line {
+    height: 12px;
+    border-radius: 4px;
+    background: var(--line-soft);
+    margin-bottom: 8px;
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(12px);
+    background: var(--ink);
+    color: var(--paper);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+    padding: 10px 18px;
+    border-radius: 999px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 20;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  @media (max-width: 420px) {
+    .wordmark { font-size: 2rem; }
+    .masthead-meta { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-top">
+      <h1 class="wordmark"><strong>Be Better</strong> <em>Bulletin</em></h1>
+      <div class="masthead-meta">
+        <div id="today-date">—</div>
+        <div id="story-count">loading stories</div>
+      </div>
+    </div>
+    <p class="tagline">Good news from the world, every day — real reporting, no politics, and curated for a positive start to your day.</p>
+
+    <div class="controls-row">
+      <label class="notify-toggle" id="notify-toggle" data-on="false">
+        <span class="switch"></span>
+        <span id="notify-label">Notify me daily</span>
+      </label>
+    </div>
+
+    <div class="practice-row">
+      <button class="practice-btn" id="btn-stoic" data-practice="stoic" aria-expanded="false">🏛️ Daily Stoic</button>
+      <button class="practice-btn" id="btn-parenting" data-practice="parenting" aria-expanded="false">👪 Daily Parenting</button>
+    </div>
+    <section class="practice-panel" id="practice-panel" aria-label="Daily practice" hidden>
+      <div class="practice-eyebrow">
+        <span class="practice-eyebrow-label" id="practice-eyebrow-label">—</span>
+        <span class="practice-eyebrow-day" id="practice-day">—</span>
+      </div>
+      <blockquote class="practice-quote" id="practice-quote">—</blockquote>
+      <p class="practice-attribution" id="practice-attribution"></p>
+      <hr class="practice-divider">
+      <p class="practice-label" id="practice-label"></p>
+      <h3 class="practice-title" id="practice-title"></h3>
+      <p class="practice-body" id="practice-body"></p>
+      <div class="practice-prompt"><span class="mark">→</span><span id="practice-prompt"></span></div>
+    </section>
+
+    <div class="rail" id="rail"></div>
+  </header>
+
+  <main class="feed" id="feed">
+    <div class="skeleton"><div class="skel-line" style="width:30%"></div><div class="skel-line" style="width:80%;height:18px"></div><div class="skel-line" style="width:95%"></div></div>
+    <div class="skeleton"><div class="skel-line" style="width:24%"></div><div class="skel-line" style="width:70%;height:18px"></div><div class="skel-line" style="width:88%"></div></div>
+    <div class="skeleton"><div class="skel-line" style="width:28%"></div><div class="skel-line" style="width:75%;height:18px"></div><div class="skel-line" style="width:60%"></div></div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var CATEGORIES = [
+    { id: "environment", label: "Environment & Nature", color: "#3f7d4a" },
+    { id: "science", label: "Science & Health", color: "#2f6f8f" },
+    { id: "community", label: "Community & Kindness", color: "#c3502f" },
+    { id: "animals", label: "Animals", color: "#8a6d3b" },
+    { id: "technology", label: "Technology & Innovation", color: "#5b5bd6" },
+    { id: "society", label: "World & Society", color: "#7a4c14" },
+    { id: "culture", label: "Culture & Good Vibes", color: "#b1479a" }
+  ];
+  var catById = {};
+  CATEGORIES.forEach(function (c) { catById[c.id] = c; });
+
+  // ---------- Daily Stoic: curated quote + mind-exercise pairs, rotated by day-of-year ----------
+  var STOIC_PRACTICES = [
+    { quote: "Some things are up to us, and some things are not up to us.", author: "Epictetus", work: "Enchiridion", title: "Sort your list", body: "Before you start your day, split what's on your mind into two columns: what you actually control (your effort, your words, your attitude) and what you don't (other people, outcomes, the weather). Cross the second column off your worry list.", prompt: "What's one thing on your plate today that you've been treating as yours to control, but isn't?" },
+    { quote: "He who suffers before it is necessary, suffers more than is necessary.", author: "Seneca", work: "Letters to Lucilius", title: "Rehearse the setback", body: "Spend two quiet minutes imagining a small thing going wrong today — a delayed reply, a canceled plan, sharp feedback. Picture yourself meeting it calmly instead of being ambushed by it.", prompt: "What minor misfortune are you quietly dreading, and what would a calm response to it actually look like?" },
+    { quote: "Look well into thyself; there is a source of strength which will always spring up if thou wilt always look there.", author: "Marcus Aurelius", work: "Meditations", title: "Find the inner citadel", body: "Take one minute of stillness and notice that your peace of mind doesn't actually depend on what's happening around you right now — it's a place you can return to on purpose.", prompt: "Where in your body or mind do you feel that steady place when you go looking for it?" },
+    { quote: "Nothing, to my way of thinking, is a better proof of a well-ordered mind than a man's ability to stop just where he is and pass some time in his own company.", author: "Seneca", work: "Letters to Lucilius", title: "Practice voluntary discomfort", body: "Choose one small, safe hardship today on purpose — a cold shower, a walk without your phone, skipping a snack you'd normally reach for. Notice that you're fine.", prompt: "What's one comfort you lean on automatically, and what happens if you go without it for an hour?" },
+    { quote: "The soul which is devoid of passion is a citadel, for man has nothing more secure to which he can fly for refuge.", author: "Marcus Aurelius", work: "Meditations", title: "Evening review", body: "Tonight, before bed, ask yourself three questions in order: What did I do well today? What did I do poorly? What will I do differently tomorrow?", prompt: "Answer honestly, right now, as if tonight had already happened: what's one thing you'd want to have done better today?" },
+    { quote: "When you arise in the morning, think of what a precious privilege it is to be alive.", author: "Marcus Aurelius", work: "Meditations", title: "Morning preparation", body: "Before you check your phone, name three difficult people or situations you might face today, and decide in advance how you want to show up for each one.", prompt: "Who or what is most likely to test your patience today, and what's the version of you that handles it well?" },
+    { quote: "The impediment to action advances action. What stands in the way becomes the way.", author: "Marcus Aurelius", work: "Meditations", title: "Flip the obstacle", body: "Pick the most annoying obstacle currently in front of you. Instead of asking how to avoid it, ask what it's forcing you to practice — patience, creativity, humility.", prompt: "What is today's biggest obstacle actually training you to get better at?" },
+    { quote: "If it is not right, do not do it; if it is not true, do not say it.", author: "Marcus Aurelius", work: "Meditations", title: "The reserve clause", body: "For every plan you make today, silently add 'fate permitting.' Commit fully to the effort, but hold the outcome loosely, since it was never fully yours to guarantee.", prompt: "What are you overcommitted to controlling the outcome of, rather than just the effort?" },
+    { quote: "You could leave life right now. Let that determine what you do and say and think.", author: "Marcus Aurelius", work: "Meditations", title: "Memento mori", body: "Take thirty seconds to genuinely consider that your time is finite and unscheduled. Let that inform one choice you make in the next hour.", prompt: "If today were unexpectedly one of your last, what would you stop postponing?" },
+    { quote: "We are more often frightened than hurt; and we suffer more in imagination than in reality.", author: "Seneca", work: "Letters to Lucilius", title: "Test the fear against reality", body: "Name one thing you're anxious about right now. Write down what you're actually afraid will happen, then rate honestly how likely that is and how survivable it would be.", prompt: "Is the fear you're carrying today bigger than the thing it's actually about?" },
+    { quote: "Man is disturbed not by things, but by the views he takes of them.", author: "Epictetus", work: "Enchiridion", title: "Separate the event from the story", body: "Pick something bothering you today. Write the bare facts of what happened in one neutral sentence, then separately write the interpretation you added on top. Notice which one is actually causing the distress.", prompt: "What judgment have you added to a neutral fact today that's doing all the damage?" },
+    { quote: "How much time he gains who does not look to see what his neighbor says or does.", author: "Marcus Aurelius", work: "Meditations", title: "Redirect attention inward", body: "For the next hour, catch yourself each time your attention drifts to comparing yourself with someone else, and gently redirect it to your own next right action.", prompt: "Where has comparison quietly been setting your agenda today instead of your own values?" },
+    { quote: "First say to yourself what you would be; and then do what you have to do.", author: "Epictetus", work: "Enchiridion", title: "Play your part well", body: "Think of one role you occupy today — parent, colleague, friend. Define in one sentence what a person who plays that role with excellence would do, then do that one thing.", prompt: "What would the best version of you, in your most important role today, actually do differently?" },
+    { quote: "Silence is safer than speech.", author: "Epictetus", work: "Enchiridion", title: "Practice deliberate silence", body: "In your next conversation, let there be one full pause before you respond. Ask yourself whether what you're about to say is necessary and kind before you say it.", prompt: "What's one thing you almost said today that was better left unsaid?" },
+    { quote: "Begin each day by telling yourself: today I shall meet with meddling, ungrateful, violent, treacherous, envious, and unsociable people.", author: "Marcus Aurelius", work: "Meditations", title: "Expect difficult people, then forgive them", body: "Name one person you expect friction with today. Remind yourself they're acting from their own confusion about what's good, not malice, and decide to meet them without losing your own footing.", prompt: "Who is easiest for you to resent today, and what might they be getting wrong about what's actually good for them?" },
+    { quote: "It is not the man who has too little, but the man who craves more, that is poor.", author: "Seneca", work: "Letters to Lucilius", title: "Take inventory of enough", body: "List three things you already have that you'd miss badly if they were gone. Notice how much of today you spent wanting things beyond that list instead.", prompt: "What do you already have today that you'd have begged for a year ago?" },
+    { quote: "Everything that happens is as familiar and well-known as the rose in spring and the crop in summer.", author: "Marcus Aurelius", work: "Meditations", title: "Zoom out to the pattern", body: "Take whatever feels uniquely unfair about your day and remember that some version of it has happened to nearly everyone, in every era. You're not being singled out — you're just living.", prompt: "How does today's frustration look different once you remember it's a common part of being human, not a personal punishment?" },
+    { quote: "He suffers more than necessary, who suffers before it is necessary.", author: "Seneca", work: "Letters to Lucilius", title: "Don't borrow tomorrow's trouble", body: "Notice any worry today that's actually about something that hasn't happened yet. Set it down deliberately and return your attention to the one task directly in front of you.", prompt: "What future problem have you been suffering through today that hasn't actually arrived yet?" },
+    { quote: "Wealth consists not in having great possessions, but in having few wants.", author: "Epictetus", work: "Discourses", title: "Audit one want", body: "Pick one thing you've been wanting to buy or acquire. Sit with the want for five minutes without acting on it, and notice whether it's still as urgent afterward.", prompt: "Which of today's wants would still feel important a week from now?" },
+    { quote: "No man is free who is not master of himself.", author: "Epictetus", work: "Discourses", title: "Catch the automatic reaction", body: "The next time something mildly irritating happens today, deliberately insert a three-second pause between the event and your reaction. Choose your response instead of firing it off.", prompt: "Where today did you react on autopilot, and what would choosing your response instead have looked like?" },
+    { quote: "Difficulty shows what men are.", author: "Epictetus", work: "Discourses", title: "Welcome the training", body: "Treat one difficult task today as a workout for your character rather than an inconvenience. Notice how the reframe changes your willingness to do it.", prompt: "What hard thing on today's list is actually an opportunity to build a strength you want more of?" },
+    { quote: "Associate with people who are likely to improve you.", author: "Seneca", work: "Letters to Lucilius", title: "Choose your influences on purpose", body: "Notice who or what you're letting shape your mood today — a person, a feed, a habit. Spend at least a few minutes today with something that makes you steadier, not more agitated.", prompt: "What's one input in your day today that leaves you worse than it found you?" },
+    { quote: "The best revenge is to be unlike him who performed the injury.", author: "Marcus Aurelius", work: "Meditations", title: "Respond in kind to yourself, not to them", body: "If someone wrongs or annoys you today, resist matching their behavior. Choose instead to act like the person you actually want to be, regardless of what they did.", prompt: "If someone treats you poorly today, what would responding as your best self — not in kind — actually look like?" },
+    { quote: "You have power over your mind — not outside events. Realize this, and you will find strength.", author: "Marcus Aurelius", work: "Meditations", title: "Locate the one lever you have", body: "Pick the situation today that feels most out of your hands. Identify the one thing inside it you actually do control — your response — and put your full effort there instead.", prompt: "In your most out-of-control situation today, what's the one lever that's still entirely yours?" },
+    { quote: "It is in the power of the soul to maintain its own tranquility and peace.", author: "Marcus Aurelius", work: "Meditations", title: "Guard the citadel", body: "Before checking news or messages today, set an intention: I decide what disturbs my peace, not what I read. Notice one moment today where you get to test that on purpose.", prompt: "What's one piece of information today that you can let pass through without letting it take your calm?" },
+    { quote: "Waste no more time arguing about what a good man should be. Be one.", author: "Marcus Aurelius", work: "Meditations", title: "Act instead of theorize", body: "Pick one value you talk about a lot — patience, honesty, generosity — and do one small, concrete act of it today instead of just thinking about it.", prompt: "Which value have you been discussing more than practicing lately?" },
+    { quote: "How does it help to make troubles heavier by bemoaning them?", author: "Seneca", work: "Letters to Lucilius", title: "Notice the complaint tax", body: "Track how many times today you complain about something you can't change. Each time, try replacing the complaint with one small action you can actually take instead.", prompt: "What's one thing you've been complaining about today that you could simply act on instead?" },
+    { quote: "The whole future lies in uncertainty: live immediately.", author: "Seneca", work: "Letters to Lucilius", title: "Return to the present task", body: "Whenever your mind drifts to next week's worries today, gently bring it back to the single task in front of you and give that your full attention.", prompt: "What's the one task in front of you right now that deserves your full attention instead of tomorrow's worry?" },
+    { quote: "Not to be diverted from any laudable purpose by any counsel of friends.", author: "Marcus Aurelius", work: "Meditations", title: "Hold the line on a good intention", body: "Name one good intention you set recently that you've let slide under social pressure. Recommit to it once, visibly, today.", prompt: "What good habit have you quietly abandoned because it was easier to go along with everyone else?" },
+    { quote: "He is a wise man who does not grieve for the things which he has not, but rejoices for those which he has.", author: "Epictetus", work: "Fragments", title: "Take a gratitude count", body: "Before bed tonight, name three ordinary things from today you didn't consciously appreciate while they were happening — a meal, a conversation, a moment of quiet.", prompt: "What ordinary part of today would you miss most if it were suddenly gone?" },
+    { quote: "Confine yourself to the present.", author: "Marcus Aurelius", work: "Meditations", title: "Shrink the timeframe", body: "When today feels overwhelming, deliberately shrink your focus to the next hour only. Ask only what needs doing right now, not this week or this year.", prompt: "If you only had to get through the next hour well, what would that actually require?" },
+    { quote: "First learn the meaning of what you say, and then speak.", author: "Epictetus", work: "Discourses", title: "Slow down your speech", body: "In one conversation today, pause and make sure you actually mean what you're about to say before you say it — especially if it's criticism or praise.", prompt: "Where today might you be speaking faster than you're actually thinking?" },
+    { quote: "What disturbs men's minds is not events but their judgments on events.", author: "Epictetus", work: "Enchiridion", title: "Rewrite the judgment", body: "Take an event from today that upset you and write it two ways: once with your usual harsh interpretation, once as a neutral observer would describe it. Compare how each version feels.", prompt: "Written neutrally, without your usual story attached, how big is today's problem really?" },
+    { quote: "Men are disturbed not by the things which happen, but by the opinions about the things.", author: "Epictetus", work: "Enchiridion", title: "Question the automatic opinion", body: "Notice the next strong opinion that pops into your head today — about a person, a headline, a delay. Ask where it came from and whether it's actually yours or just a reflex.", prompt: "What opinion did you form today on autopilot that you haven't actually examined?" },
+    { quote: "Whatever anyone does or says, I must be emerald and keep my color.", author: "Marcus Aurelius", work: "Meditations", title: "Keep your color", body: "Decide this morning on one quality you want to keep steady no matter what today throws at you — patience, warmth, honesty. When something tests it, notice the test and hold the color anyway.", prompt: "What quality do you want to still be true of you at the end of today, regardless of how it goes?" },
+    { quote: "No great thing is created suddenly.", author: "Epictetus", work: "Discourses", title: "Take the small next step", body: "Pick one goal you've been putting off because it feels too big. Do the smallest possible piece of it today — five minutes is enough.", prompt: "What's the smallest honest step you could take today toward something you've been avoiding?" },
+    { quote: "It is impossible for a man to learn what he thinks he already knows.", author: "Epictetus", work: "Discourses", title: "Stay a beginner on purpose", body: "Pick a topic or a person you're sure you already understand. Ask one genuine question about it today as if you didn't.", prompt: "Where has certainty been closing you off from actually learning something today?" },
+    { quote: "Throw away your books; stop distracting yourself.", author: "Marcus Aurelius", work: "Meditations", title: "Act on what you already know", body: "Pick one piece of advice you've read or heard many times but never actually applied. Apply it once, today, in a small concrete way.", prompt: "What good advice have you understood for a long time but never actually practiced?" },
+    { quote: "Every habit and capability is confirmed and grows in its corresponding actions.", author: "Epictetus", work: "Discourses", title: "Vote with one action", body: "Think of the kind of person you want to become. Do one small action today that only that kind of person would do.", prompt: "What one action today would be a vote for the person you're trying to become?" },
+    { quote: "He who is not satisfied with a little, is satisfied with nothing.", author: "Epictetus", work: "Fragments", title: "Find the floor of enough", body: "Identify the bare minimum that would make today genuinely fine — not ideal, just fine. Notice how much of what you have already clears that bar.", prompt: "What's the actual floor of 'enough' for today, and how far above it are you already?" },
+    { quote: "Nature has given men one tongue but two ears, that we may hear from others twice as much as we speak.", author: "Epictetus", work: "Fragments", title: "Listen twice as long", body: "In your next real conversation today, deliberately let the other person speak roughly twice as long as you do.", prompt: "In your next conversation, can you let yourself be the one who's mostly listening?" }
+  ];
+
+  // ---------- Daily Parenting: curated principle + practice pairs, rotated by day-of-year ----------
+  var PARENTING_PRACTICES = [
+    { quote: "Kids do well when they can, and connection comes before correction.", author: "Positive parenting research", title: "Connect first", body: "Before addressing misbehavior, get down to your child's eye level and connect for a moment — a hand on the shoulder, a calm voice — before you address what happened.", prompt: "What's one moment today where you could connect before you correct?" },
+    { quote: "Naming an emotion helps a child's brain calm down enough to handle it.", author: "Child development research", title: "Name it to tame it", body: "When your child is upset, try naming what they might be feeling out loud — 'you're really frustrated that we have to leave' — before jumping to fixing or redirecting.", prompt: "What feeling could you help your child name today instead of rushing past it?" },
+    { quote: "Praising effort builds resilience; praising fixed traits builds fragility.", author: "Developmental psychology", title: "Praise the effort", body: "Instead of 'you're so smart,' try 'you worked really hard on that' — praise tied to effort and strategy holds up better when things get hard.", prompt: "What effort did your child put in today that's worth naming specifically?" },
+    { quote: "It's not the conflict that harms a relationship, it's the absence of repair.", author: "Attachment research", title: "Repair, don't just move on", body: "If you lost your temper or snapped today, circle back later and say so plainly: 'I got too loud earlier, that wasn't fair to you, I'm sorry.'", prompt: "Is there a moment from today that's worth a short, honest repair?" },
+    { quote: "Ten minutes of full attention does more than an hour of divided attention.", author: "Family therapy research", title: "Give ten uninterrupted minutes", body: "Set aside ten minutes today with no phone, no multitasking — just following your child's lead in whatever they want to do.", prompt: "When today could you carve out ten fully present minutes?" },
+    { quote: "A small choice can turn a power struggle into cooperation.", author: "Positive parenting practice", title: "Offer two good options", body: "Instead of a flat command, offer two acceptable choices — 'brush teeth first or pajamas first?' — so your child gets some control within your boundary.", prompt: "Where's a power struggle today that a small choice could soften?" },
+    { quote: "A regulated adult is the fastest way to help a dysregulated child.", author: "Co-regulation research", title: "Borrow your own calm", body: "In the heat of a meltdown, your steady breathing and low, slow voice does more than any words — kids borrow your nervous system before they can manage their own.", prompt: "What's your go-to way to find your own calm before you respond?" },
+    { quote: "A child is never the label we put on their worst moment.", author: "Child development research", title: "Describe the act, not the child", body: "Instead of 'you're so careless,' try 'that was a careless choice' — it keeps the door open for them to be different next time.", prompt: "Is there a label you've been reaching for that describes a moment, not who your child actually is?" },
+    { quote: "Play is often the fastest route through a child's resistance.", author: "Play therapy research", title: "Turn the task into a game", body: "Struggling to get shoes on or leave the park? Try a silly race, a countdown, or a funny voice — playfulness can dissolve resistance that logic can't.", prompt: "What routine today could use ten seconds of silliness instead of another reminder?" },
+    { quote: "Modeling a real apology teaches accountability better than any lecture on it.", author: "Positive parenting practice", title: "Let them see you repair", body: "When you make a mistake with your child, apologize plainly and specifically — it shows them what taking responsibility actually looks like.", prompt: "Is there something today you got wrong that's worth naming out loud to your child?" },
+    { quote: "Boundaries land better when they come wrapped in connection.", author: "Family therapy research", title: "Warn before the transition", body: "Give a heads-up before a screen-time ending — 'two more minutes, then we're done' — so the limit doesn't feel like it came out of nowhere.", prompt: "What transition today could use a heads-up instead of a sudden stop?" },
+    { quote: "Most sibling conflict needs a referee, not a judge.", author: "Family therapy research", title: "Describe, don't decide", body: "Instead of ruling on who's right, narrate what you see — 'you both want the same toy' — and let them problem-solve with your help holding the space.", prompt: "Next sibling squabble — can you narrate before you referee?" },
+    { quote: "The last few minutes of the day shape how a child remembers it.", author: "Attachment research", title: "End the day gently", body: "Whatever the day held, try closing it with something warm — a specific compliment, a shared laugh, a moment of quiet closeness.", prompt: "What's one warm note you could end today's bedtime on?" },
+    { quote: "Children learn gratitude by watching it, not by being told to have it.", author: "Positive psychology", title: "Say your gratitude out loud", body: "Mention one specific thing you're grateful for today, out loud, where your child can hear it — modeling beats instructing.", prompt: "What's one genuine thing you're grateful for today that you could say out loud?" },
+    { quote: "How a mistake is met teaches a child more than the mistake itself.", author: "Growth mindset research", title: "Normalize the mistake", body: "When your child messes up, try 'that's how we learn' before anything else — it keeps the door open for trying again instead of hiding next time.", prompt: "What mistake today is a chance to model that mistakes are survivable?" },
+    { quote: "Love that doesn't depend on behavior is what makes discipline safe to receive.", author: "Attachment research", title: "Separate love from approval", body: "After a hard consequence or correction, make sure your child also feels that your love for them didn't move — a hug, an 'I still love you even when I'm frustrated.'", prompt: "After today's hardest moment with your child, did they get to feel the love underneath it?" },
+    { quote: "A parent who never rests teaches a child that rest isn't allowed.", author: "Family therapy research", title: "Let them see you rest", body: "Take five visible minutes for yourself today — tea, a walk, sitting down — and let your child see that taking care of yourself is normal, not selfish.", prompt: "What's one small act of visible self-care you could model today?" },
+    { quote: "Comparison between siblings tends to cost both children something.", author: "Family therapy research", title: "Praise this child, not against that one", body: "Try to catch comparisons before they leave your mouth — 'your sister never did this' — and instead speak to this child's own effort and growth.", prompt: "Is there a comparison you've been making that's worth dropping?" },
+    { quote: "A wider feelings vocabulary gives a child more ways to cope than a tantrum.", author: "Child development research", title: "Add one new feeling word", body: "Introduce a feeling word beyond mad/sad/happy today — frustrated, disappointed, nervous, proud — and use it in context.", prompt: "What's one nuanced feeling word you could use with your child today?" },
+    { quote: "Isolation rarely teaches a skill a child hasn't learned yet.", author: "Co-regulation research", title: "Stay close during the storm", body: "Instead of sending your child away to calm down alone, try staying nearby — quiet, steady — until the storm passes, then talk about it.", prompt: "Next big feeling — can you stay close instead of stepping back?" },
+    { quote: "A boundary held with warmth lands very differently than one held with anger.", author: "Positive parenting practice", title: "Hold the line kindly", body: "Try pairing the boundary with empathy — 'I know you really want another episode, and the answer is still no' — both things can be true at once.", prompt: "What boundary today could use a little more warmth alongside the firmness?" },
+    { quote: "Kids invest more in solutions they helped create.", author: "Positive parenting practice", title: "Ask, don't just decide", body: "For a recurring issue — messy room, morning rush — ask your child what they think might help, and actually use part of their idea.", prompt: "What recurring friction point could your child help solve if you asked?" },
+    { quote: "A problem solved too quickly for a child is a skill they don't get to build.", author: "Developmental psychology", title: "Pause before rescuing", body: "When your child hits a small frustration — a stuck zipper, a hard puzzle piece — wait a beat before stepping in, and let them try first.", prompt: "Where today could you wait one extra beat before helping?" },
+    { quote: "A regular check-in turns problems into shared projects instead of parent-versus-child battles.", author: "Family therapy research", title: "Hold a short family check-in", body: "Even five minutes at dinner asking 'what went well this week, what's been hard' turns issues into something the whole family solves together.", prompt: "What would come up if you asked your family tonight what's been hard this week?" },
+    { quote: "Child-led play with no goal is where a lot of real development happens.", author: "Child development research", title: "Follow, don't direct", body: "Give ten minutes where you follow your child's play completely — no teaching, no correcting, just joining wherever their imagination goes.", prompt: "Could you follow your child's lead in play for ten minutes today, with no agenda?" },
+    { quote: "A steady stream of small affection does more than the occasional big gesture.", author: "Attachment research", title: "Add one more touch point", body: "A hug at pickup, a hand on the back passing by, a squeeze before bed — small physical connection adds up over a day.", prompt: "What's one extra moment of physical affection you could add today?" },
+    { quote: "Vague praise fades fast; specific praise sticks.", author: "Positive parenting practice", title: "Praise the specific thing", body: "Instead of 'good job,' try naming exactly what you noticed — 'you shared your snack without being asked, that was kind.'", prompt: "What specific, true thing could you praise today instead of a generic 'good job'?" },
+    { quote: "A consequence connected to the choice teaches more than one that's just imposed.", author: "Positive parenting practice", title: "Let the consequence fit", body: "Where it's safe to, let natural consequences do the teaching — a forgotten jacket means being cold, not an unrelated punishment.", prompt: "Is there a natural consequence today that could teach better than a lecture?" },
+    { quote: "Sometimes a child needs to be heard, not helped.", author: "Family therapy research", title: "Listen before you problem-solve", body: "When your child brings you a problem, try just reflecting it back first — 'that sounds really frustrating' — before jumping to fix it.", prompt: "What could you just listen to fully today before offering a solution?" },
+    { quote: "A public meltdown is about the child's state, not an audience to manage.", author: "Co-regulation research", title: "Tune out the onlookers", body: "In a public meltdown, resist performing for onlookers — stay low-key, get close, and focus only on your child until it passes.", prompt: "If a hard moment happens in public today, can you focus only on your child, not who's watching?" },
+    { quote: "A little humor can defuse a standoff that logic only escalates.", author: "Positive parenting practice", title: "Try silly before serious", body: "When a request keeps getting refused, try a playful, silly approach before an escalating one — sometimes it breaks the standoff entirely.", prompt: "Where's a standoff today that might soften with a little silliness instead of more firmness?" },
+    { quote: "A child who gets consistent attention needs less of it through misbehavior.", author: "Attachment research", title: "Fill the connection cup first", body: "Front-load attention before you need to ask for cooperation — a few warm minutes first often means less pushback later.", prompt: "Could you fill the connection cup before asking for something today, instead of after?" },
+    { quote: "A little supervised risk builds more confidence than constant protection.", author: "Developmental psychology", title: "Let them try the harder thing", body: "Where it's genuinely safe, let your child attempt something a little beyond their comfort — climbing a bit higher, trying the harder puzzle — and resist the urge to intervene early.", prompt: "What safe, slightly harder thing could your child try today with you nearby but not stepping in?" },
+    { quote: "A label repeated enough becomes a story a child starts living out.", author: "Developmental psychology", title: "Watch the labels you repeat", body: "Notice if you've been repeating a fixed label — 'shy,' 'the difficult one,' 'my wild child' — and try describing a specific moment instead.", prompt: "Is there a label you've been repeating that might be worth retiring?" },
+    { quote: "Shared reading is one of the most reliable connection points available every day.", author: "Early childhood research", title: "Protect the reading moment", body: "If today only has room for one deliberate connection ritual, make it a few minutes of reading together, phone away.", prompt: "Can reading together happen today, even if everything else gets cut short?" }
+  ];
+
+  var PRACTICE_POOLS = {
+    stoic: { pool: STOIC_PRACTICES, eyebrow: "The Daily Stoic", label: "Today's mind exercise" },
+    parenting: { pool: PARENTING_PRACTICES, eyebrow: "Daily Parenting", label: "Today's parenting practice" }
+  };
+
+  function dayOfYear(d) {
+    var start = new Date(d.getFullYear(), 0, 0);
+    var diff = d - start;
+    return Math.floor(diff / 86400000);
+  }
+
+  var practiceState = { open: false, kind: null };
+
+  function renderPractice(kind) {
+    var cfg = PRACTICE_POOLS[kind];
+    var now = new Date();
+    var idx = dayOfYear(now) % cfg.pool.length;
+    var p = cfg.pool[idx];
+    document.getElementById("practice-eyebrow-label").textContent = cfg.eyebrow;
+    document.getElementById("practice-label").textContent = cfg.label;
+    document.getElementById("practice-day").textContent = now.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+    document.getElementById("practice-quote").textContent = "“" + p.quote + "”";
+    document.getElementById("practice-attribution").textContent = "— " + p.author + (p.work ? ", " + p.work : "");
+    document.getElementById("practice-title").textContent = p.title;
+    document.getElementById("practice-body").textContent = p.body;
+    document.getElementById("practice-prompt").textContent = p.prompt;
+  }
+
+  function setupPracticeButtons() {
+    var panel = document.getElementById("practice-panel");
+    var buttons = document.querySelectorAll(".practice-btn");
+    Array.prototype.forEach.call(buttons, function (btn) {
+      btn.addEventListener("click", function () {
+        var kind = btn.getAttribute("data-practice");
+        if (practiceState.open && practiceState.kind === kind) {
+          // toggle closed
+          panel.hidden = true;
+          practiceState.open = false;
+          practiceState.kind = null;
+          btn.classList.remove("active");
+          btn.setAttribute("aria-expanded", "false");
+          return;
+        }
+        Array.prototype.forEach.call(buttons, function (b) {
+          b.classList.remove("active");
+          b.setAttribute("aria-expanded", "false");
+        });
+        renderPractice(kind);
+        panel.hidden = false;
+        practiceState.open = true;
+        practiceState.kind = kind;
+        btn.classList.add("active");
+        btn.setAttribute("aria-expanded", "true");
+      });
+    });
+  }
+
+
+  var state = {
+    activeCategory: "all",
+    stories: [],
+    storiesLoaded: false,
+    storiesError: false
+  };
+
+  var els = {
+    feed: document.getElementById("feed"),
+    rail: document.getElementById("rail"),
+    dateEl: document.getElementById("today-date"),
+    countEl: document.getElementById("story-count"),
+    notifyToggle: document.getElementById("notify-toggle"),
+    notifyLabel: document.getElementById("notify-label"),
+    toast: document.getElementById("toast")
+  };
+
+  els.dateEl.textContent = new Date().toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+  setupPracticeButtons();
+
+  function escapeHtml(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function relativeTime(iso) {
+    if (!iso) return "";
+    var d = new Date(iso);
+    if (isNaN(d.getTime())) return "";
+    var diffMs = Date.now() - d.getTime();
+    var mins = Math.round(diffMs / 60000);
+    if (mins < 60) return mins <= 1 ? "just now" : mins + "m ago";
+    var hrs = Math.round(mins / 60);
+    if (hrs < 24) return hrs + "h ago";
+    var days = Math.round(hrs / 24);
+    if (days < 7) return days + "d ago";
+    return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+  }
+
+  function showToast(msg) {
+    els.toast.textContent = msg;
+    els.toast.classList.add("show");
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(function () { els.toast.classList.remove("show"); }, 2200);
+  }
+
+  function renderRail() {
+    var counts = {};
+    state.stories.forEach(function (s) {
+      counts[s.category] = (counts[s.category] || 0) + 1;
+    });
+    var html = '<button class="chip' + (state.activeCategory === "all" ? " active" : "") + '" data-cat="all">All</button>';
+    CATEGORIES.forEach(function (c) {
+      if (!counts[c.id]) return;
+      html += '<button class="chip' + (state.activeCategory === c.id ? " active" : "") + '" data-cat="' + c.id + '">' + escapeHtml(c.label) + "</button>";
+    });
+    els.rail.innerHTML = html;
+    Array.prototype.forEach.call(els.rail.querySelectorAll(".chip"), function (btn) {
+      btn.addEventListener("click", function () {
+        state.activeCategory = btn.getAttribute("data-cat");
+        render();
+      });
+    });
+  }
+
+  function storyCard(s) {
+    var cat = catById[s.category] || { label: s.category || "News", color: "#8a8a72" };
+    return (
+      '<article class="story" data-id="' + escapeHtml(s.id) + '">' +
+        '<div class="story-main">' +
+          '<div class="story-eyebrow"><span class="cat-dot" style="background:' + cat.color + '"></span><span class="cat-label">' + escapeHtml(cat.label) + "</span></div>" +
+          '<h2 class="story-title"><a href="' + escapeHtml(s.url) + '" target="_blank" rel="noopener">' + escapeHtml(s.title) + "</a></h2>" +
+          '<p class="story-summary">' + escapeHtml(s.summary) + "</p>" +
+          '<div class="story-footer"><span>' + escapeHtml(s.source || "") + '</span><span class="dot">·</span><span>' + relativeTime(s.publishedAt) + '</span><span class="dot">·</span><a href="' + escapeHtml(s.url) + '" target="_blank" rel="noopener">Read full story</a></div>' +
+        "</div>" +
+      "</article>"
+    );
+  }
+
+  function render() {
+    renderRail();
+    if (state.storiesError) {
+      els.countEl.textContent = "couldn't load stories";
+      els.feed.innerHTML = '<div class="state-msg"><p class="big">No stories here yet</p><p>We couldn\'t load today\'s stories. Check your connection and try refreshing.</p></div>';
+      return;
+    }
+    if (!state.storiesLoaded) return; // skeleton already showing
+    var list = state.stories.filter(function (s) {
+      return state.activeCategory === "all" || s.category === state.activeCategory;
+    });
+    els.countEl.textContent = state.stories.length + (state.stories.length === 1 ? " story today" : " stories today");
+    if (list.length === 0) {
+      els.feed.innerHTML = '<div class="state-msg"><p class="big">No stories here yet</p><p>Check back soon, or pick a different category.</p></div>';
+      return;
+    }
+    els.feed.innerHTML = list.map(storyCard).join("");
+  }
+
+  // ---------- Notifications (local, per-browser — see note) ----------
+  function todayKey() {
+    var d = new Date();
+    return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+  }
+  function readNotifyPref() {
+    try { return localStorage.getItem("bbb_notify") === "1"; } catch (e) { return false; }
+  }
+  function writeNotifyPref(on) {
+    try { localStorage.setItem("bbb_notify", on ? "1" : "0"); } catch (e) {}
+  }
+  function maybeNotify() {
+    if (!readNotifyPref()) return;
+    if (typeof Notification === "undefined" || Notification.permission !== "granted") return;
+    var last;
+    try { last = localStorage.getItem("bbb_last_notified"); } catch (e) { last = null; }
+    if (last === todayKey()) return;
+    if (!state.stories.length) return;
+    var top = state.stories[0];
+    try {
+      new Notification("Be Better Bulletin — today's good news", {
+        body: top.title,
+        tag: "bbb-daily"
+      });
+      localStorage.setItem("bbb_last_notified", todayKey());
+    } catch (e) {}
+  }
+  function updateNotifyUI() {
+    var on = readNotifyPref();
+    els.notifyToggle.setAttribute("data-on", on ? "true" : "false");
+    els.notifyLabel.textContent = on ? "Notifying daily" : "Notify me daily";
+  }
+  els.notifyToggle.addEventListener("click", function () {
+    var on = readNotifyPref();
+    if (!on) {
+      if (typeof Notification === "undefined") {
+        showToast("Notifications aren't supported in this browser");
+        return;
+      }
+      Notification.requestPermission().then(function (perm) {
+        if (perm === "granted") {
+          writeNotifyPref(true);
+          updateNotifyUI();
+          showToast("You'll be notified when you open Be Better Bulletin each day");
+          maybeNotify();
+        } else {
+          showToast("Notifications blocked — allow them in your browser settings to turn this on");
+        }
+      });
+    } else {
+      writeNotifyPref(false);
+      updateNotifyUI();
+      showToast("Daily notifications turned off");
+    }
+  });
+  updateNotifyUI();
+
+  function normalizeStory(id, data) {
+    return {
+      id: id,
+      title: data.title || "Untitled",
+      url: data.url || "#",
+      source: data.source || "",
+      category: data.category || "society",
+      summary: data.summary || "",
+      publishedAt: data.publishedAt || data.addedAt || ""
+    };
+  }
+
+  // Stories are fetched at runtime from stories.json, which the daily GitHub
+  // Actions workflow regenerates and commits — no sign-in or backend required.
+  function boot() {
+    fetch("./stories.json", { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        var list = Array.isArray(data) ? data : [];
+        state.stories = list.map(function (s) { return normalizeStory(s.id, s); });
+        state.storiesLoaded = true;
+        state.storiesError = false;
+        render();
+        maybeNotify();
+      })
+      .catch(function (err) {
+        console.error("Failed to load stories.json", err);
+        state.storiesLoaded = true;
+        state.storiesError = true;
+        render();
+      });
+  }
+
+  render();
+  boot();
+})();
+</script>
+
+</body></html>
