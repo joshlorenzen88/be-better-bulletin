@@ -462,6 +462,12 @@ async function classifyCandidates(candidates) {
 // ---------------------------------------------------------------------------
 
 async function main() {
+  log(
+    ANTHROPIC_API_KEY
+      ? `ANTHROPIC_API_KEY detected — will use the Anthropic API (model ${ANTHROPIC_MODEL}) for any new stories this run.`
+      : "No ANTHROPIC_API_KEY set — will use heuristic classification for any new stories this run."
+  );
+
   const db = await loadJson(DB_PATH, []);
   const existingUrls = new Set(db.map((s) => canonicalUrl(s.url)));
   const existingIds = new Set(db.map((s) => s.id));
