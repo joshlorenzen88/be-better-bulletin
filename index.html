@@ -20,6 +20,8 @@
     --amber-tint: #fbe9ae;
     --coral: #3f8fbf;
     --coral-tint: #bfe2f2;
+    --joke: #7c5cd6;
+    --joke-tint: #e6ddfb;
     --accent-grad-1: #163a53;
     --accent-grad-2: #f2a91e;
     --focus: #3f8fbf;
@@ -39,6 +41,8 @@
       --amber-tint: #3a2c10;
       --coral: #5fb0dd;
       --coral-tint: #163449;
+      --joke: #b9a1f2;
+      --joke-tint: #2a2140;
       --accent-grad-1: #0c2136;
       --accent-grad-2: #f4b93a;
       --focus: #6fc1ea;
@@ -58,6 +62,8 @@
     --amber-tint: #3a2c10;
     --coral: #5fb0dd;
     --coral-tint: #163449;
+    --joke: #b9a1f2;
+    --joke-tint: #2a2140;
     --accent-grad-1: #0c2136;
     --accent-grad-2: #f4b93a;
     --focus: #6fc1ea;
@@ -207,6 +213,11 @@
   .practice-btn[data-practice="parenting"].active {
     background: var(--coral-tint);
     border-color: var(--coral);
+    color: var(--ink);
+  }
+  .practice-btn[data-practice="dadjoke"].active {
+    background: var(--joke-tint);
+    border-color: var(--joke);
     color: var(--ink);
   }
 
@@ -469,6 +480,7 @@
     <div class="practice-row">
       <button class="practice-btn" id="btn-stoic" data-practice="stoic" aria-expanded="false">🏛️ Daily Stoic</button>
       <button class="practice-btn" id="btn-parenting" data-practice="parenting" aria-expanded="false">👪 Daily Parenting</button>
+      <button class="practice-btn" id="btn-dadjoke" data-practice="dadjoke" aria-expanded="false">😂 Daily Dad Joke</button>
     </div>
     <section class="practice-panel" id="practice-panel" aria-label="Daily practice" hidden>
       <div class="practice-eyebrow">
@@ -596,9 +608,54 @@
     { quote: "Shared reading is one of the most reliable connection points available every day.", author: "Early childhood research", title: "Protect the reading moment", body: "If today only has room for one deliberate connection ritual, make it a few minutes of reading together, phone away.", prompt: "Can reading together happen today, even if everything else gets cut short?" }
   ];
 
+  // ---------- Daily Dad Joke: setup + punchline pairs, rotated by day-of-year ----------
+  var DAD_JOKES = [
+    { quote: "Why don't scientists trust atoms?", title: "Because they make up everything.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call fake spaghetti?", title: "An impasta.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the scarecrow win an award?", title: "Because he was outstanding in his field.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a bear with no teeth?", title: "A gummy bear.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why don't eggs tell jokes?", title: "They'd crack each other up.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a fish with no eyes?", title: "A fsh.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "How does a penguin build its house?", title: "Igloos it together.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the bicycle fall over?", title: "Because it was two-tired.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call cheese that isn't yours?", title: "Nacho cheese.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why can't you give Elsa a balloon?", title: "She'll let it go.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What did the ocean say to the beach?", title: "Nothing, it just waved.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the coffee file a police report?", title: "It got mugged.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a can opener that doesn't work?", title: "A can't opener.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why don't skeletons fight each other?", title: "They don't have the guts.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a dinosaur that crashes his car?", title: "Tyrannosaurus wrecks.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the golfer bring two pairs of pants?", title: "In case he got a hole in one.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a boomerang that doesn't come back?", title: "A stick.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the math book look sad?", title: "It had too many problems.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a sleeping bull?", title: "A bulldozer.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why couldn't the leopard play hide and seek?", title: "He was always spotted.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a pig that does karate?", title: "A pork chop.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the tomato turn red?", title: "It saw the salad dressing.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What's orange and sounds like a parrot?", title: "A carrot.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why don't oysters share?", title: "Because they're shellfish.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What did one wall say to the other wall?", title: "I'll meet you at the corner.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the stadium get hot after the game?", title: "All the fans left.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "How do you organize a space party?", title: "You planet.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a factory that makes just-okay products?", title: "A satisfactory.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the cookie go to the doctor?", title: "It felt crummy.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What's the best time to go to the dentist?", title: "Tooth-hurty.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why don't scientists trust stairs?", title: "They're always up to something.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call an alligator in a vest?", title: "An investigator.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the picture go to jail?", title: "It was framed.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a group of musical whales?", title: "An orca-stra.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why was the belt arrested?", title: "For holding up a pair of pants.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a snowman with a six-pack?", title: "An abdominal snowman.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the computer go to the doctor?", title: "It had a virus.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call a fish that wears a crown?", title: "A king fish.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "Why did the chicken join a band?", title: "Because it had drumsticks.", body: "😄", prompt: "→ Save it for the right moment." },
+    { quote: "What do you call two birds in love?", title: "Tweethearts.", body: "😄", prompt: "→ Save it for the right moment." }
+  ];
+
   var PRACTICE_POOLS = {
     stoic: { pool: STOIC_PRACTICES, eyebrow: "The Daily Stoic", label: "Today's mind exercise" },
-    parenting: { pool: PARENTING_PRACTICES, eyebrow: "Daily Parenting", label: "Today's parenting practice" }
+    parenting: { pool: PARENTING_PRACTICES, eyebrow: "Daily Parenting", label: "Today's parenting practice" },
+    dadjoke: { pool: DAD_JOKES, eyebrow: "Daily Dad Joke", label: "Punchline" }
   };
 
   function dayOfYear(d) {
@@ -618,7 +675,7 @@
     document.getElementById("practice-label").textContent = cfg.label;
     document.getElementById("practice-day").textContent = now.toLocaleDateString(undefined, { month: "short", day: "numeric" });
     document.getElementById("practice-quote").textContent = "“" + p.quote + "”";
-    document.getElementById("practice-attribution").textContent = "— " + p.author + (p.work ? ", " + p.work : "");
+    document.getElementById("practice-attribution").textContent = p.author ? "— " + p.author + (p.work ? ", " + p.work : "") : "";
     document.getElementById("practice-title").textContent = p.title;
     document.getElementById("practice-body").textContent = p.body;
     document.getElementById("practice-prompt").textContent = p.prompt;
