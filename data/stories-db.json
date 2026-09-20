@@ -1,5 +1,35 @@
 [
   {
+    "id": "new-york-city-is-putting-the-park-back-in-park-avenue-and-ad",
+    "title": "New York City is Putting ‘The Park’ Back in Park Avenue – And Adding a Protected Bike Lane (LOOK)",
+    "url": "https://www.goodnewsnetwork.org/new-york-city-is-putting-the-park-back-in-park-avenue/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "New York City is restoring green space and adding a protected bike lane to Park Avenue, reclaiming its historical landscape.",
+    "publishedAt": "2026-09-19T21:56:51.000Z",
+    "addedAt": "2026-09-20T14:35:58.519Z"
+  },
+  {
+    "id": "fox-left-for-dead-after-being-run-over-is-now-recovering-tha",
+    "title": "Fox Left For Dead After Being Run Over is Now Recovering Thanks to Swimming Lessons",
+    "url": "https://www.goodnewsnetwork.org/fox-left-for-dead-on-road-is-recovering-thanks-to-swim-lessons/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "A fox cub hit by a car is recovering after receiving hydrotherapy swimming sessions at a rescue facility.",
+    "publishedAt": "2026-09-19T20:13:56.000Z",
+    "addedAt": "2026-09-20T14:35:58.519Z"
+  },
+  {
+    "id": "chesapeake-bay-blue-crab-numbers-see-encouraging-bounceback",
+    "title": "Chesapeake Bay Blue Crab Numbers See Encouraging Bounceback in New Survey",
+    "url": "https://www.goodnewsnetwork.org/chesapeake-bay-blue-crab-numbers-see-encouraging-bounceback-in-new-survey/",
+    "source": "Good News Network",
+    "category": "environment",
+    "summary": "Blue crab populations in the Chesapeake Bay are showing signs of recovery according to recent conservation surveys.",
+    "publishedAt": "2026-09-19T18:55:20.000Z",
+    "addedAt": "2026-09-20T14:35:58.519Z"
+  },
+  {
     "id": "company-s-textile-dyes-work-through-magnetism-cutting-fashio",
     "title": "Company’s Textile Dyes Work Through Magnetism, Cutting Fashion’s Water-Use, Energy, and Pollution",
     "url": "https://www.goodnewsnetwork.org/companys-textile-dyes-work-through-magnetism-cutting-fashions-water-use-energy-and-pollution/",
@@ -360,12 +390,12 @@
     "addedAt": "2026-09-16T22:20:26.620Z"
   },
   {
-    "id": "kenyan-robotic-hands-deaf-students",
-    "title": "Kenyan Startup Makes Robotic Hands That Translate a Teacher's Voice Into Sign Language for Deaf Students",
-    "url": "https://www.goodnewsnetwork.org/kenyan-startup-makes-robotic-hands-that-translate-teachers-voice-into-signs-for-deaf-students/",
+    "id": "hotel-staff-lost-plushie-vip",
+    "title": "Hotel Staff Give Girl's Lost Plushie VIP Treatment Before Sending Her Home With a Note",
+    "url": "https://www.goodnewsnetwork.org/hotel-staff-give-girls-lost-plushie-the-vip-treatment-before-sending-her-home-with-a-note-look/",
     "source": "Good News Network",
-    "category": "technology",
-    "summary": "A Kenyan startup built robotic hands that convert a teacher's spoken words into sign language in real time, helping deaf students follow along in class.",
+    "category": "community",
+    "summary": "Hotel staff who found a young guest's lost stuffed toy staged a photo \"vacation\" for it around the hotel before mailing it back to her with a note.",
     "publishedAt": "2026-09-11T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -380,12 +410,12 @@
     "addedAt": "2026-09-14T12:45:36Z"
   },
   {
-    "id": "hotel-staff-lost-plushie-vip",
-    "title": "Hotel Staff Give Girl's Lost Plushie VIP Treatment Before Sending Her Home With a Note",
-    "url": "https://www.goodnewsnetwork.org/hotel-staff-give-girls-lost-plushie-the-vip-treatment-before-sending-her-home-with-a-note-look/",
+    "id": "kenyan-robotic-hands-deaf-students",
+    "title": "Kenyan Startup Makes Robotic Hands That Translate a Teacher's Voice Into Sign Language for Deaf Students",
+    "url": "https://www.goodnewsnetwork.org/kenyan-startup-makes-robotic-hands-that-translate-teachers-voice-into-signs-for-deaf-students/",
     "source": "Good News Network",
-    "category": "community",
-    "summary": "Hotel staff who found a young guest's lost stuffed toy staged a photo \"vacation\" for it around the hotel before mailing it back to her with a note.",
+    "category": "technology",
+    "summary": "A Kenyan startup built robotic hands that convert a teacher's spoken words into sign language in real time, helping deaf students follow along in class.",
     "publishedAt": "2026-09-11T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -420,22 +450,12 @@
     "addedAt": "2026-09-16T22:20:26.620Z"
   },
   {
-    "id": "un-equal-earth-map-replaces-mercator",
-    "title": "UN Adopts Equal Earth Map, Ending Africa's Mercator-Map Shrinkage",
-    "url": "https://news.un.org/en/story/2026/09/1168284",
-    "source": "UN News",
-    "category": "society",
-    "summary": "The United Nations voted to adopt the Equal Earth projection in place of the Mercator map, correcting a centuries-old distortion that shrank Africa's true size on world maps.",
-    "publishedAt": "2026-09-10T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "91yo-oldest-appalachian-trail-hiker",
-    "title": "91-Year-Old 'Greybeard' Becomes Oldest Person to Hike the Appalachian Trail After 359 Days and 71 Falls",
-    "url": "https://www.goodnewsnetwork.org/91-yo-greybeard-becomes-oldest-person-to-hike-the-appalachian-trial-after-359-days-and-71-falls/",
+    "id": "bepicolombo-mercury-arrival",
+    "title": "Humanity's 3rd Visit to Mercury Kicks Off With the Successful Arrival of the BepiColombo Mission",
+    "url": "https://www.goodnewsnetwork.org/humanitys-3rd-visit-to-mercury-kicks-off-with-the-successful-arrival-of-bepicolombo-mission/",
     "source": "Good News Network",
-    "category": "community",
-    "summary": "A 91-year-old hiker became the oldest person on record to complete the Appalachian Trail, finishing the 2,197-mile trek after 359 days despite 71 falls along the way.",
+    "category": "science",
+    "summary": "The joint European-Japanese BepiColombo spacecraft successfully arrived at Mercury, becoming only the third mission ever to reach the planet.",
     "publishedAt": "2026-09-10T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -450,12 +470,22 @@
     "addedAt": "2026-09-14T12:45:36Z"
   },
   {
-    "id": "bepicolombo-mercury-arrival",
-    "title": "Humanity's 3rd Visit to Mercury Kicks Off With the Successful Arrival of the BepiColombo Mission",
-    "url": "https://www.goodnewsnetwork.org/humanitys-3rd-visit-to-mercury-kicks-off-with-the-successful-arrival-of-bepicolombo-mission/",
+    "id": "91yo-oldest-appalachian-trail-hiker",
+    "title": "91-Year-Old 'Greybeard' Becomes Oldest Person to Hike the Appalachian Trail After 359 Days and 71 Falls",
+    "url": "https://www.goodnewsnetwork.org/91-yo-greybeard-becomes-oldest-person-to-hike-the-appalachian-trial-after-359-days-and-71-falls/",
     "source": "Good News Network",
-    "category": "science",
-    "summary": "The joint European-Japanese BepiColombo spacecraft successfully arrived at Mercury, becoming only the third mission ever to reach the planet.",
+    "category": "community",
+    "summary": "A 91-year-old hiker became the oldest person on record to complete the Appalachian Trail, finishing the 2,197-mile trek after 359 days despite 71 falls along the way.",
+    "publishedAt": "2026-09-10T12:00:00Z",
+    "addedAt": "2026-09-14T12:45:36Z"
+  },
+  {
+    "id": "un-equal-earth-map-replaces-mercator",
+    "title": "UN Adopts Equal Earth Map, Ending Africa's Mercator-Map Shrinkage",
+    "url": "https://news.un.org/en/story/2026/09/1168284",
+    "source": "UN News",
+    "category": "society",
+    "summary": "The United Nations voted to adopt the Equal Earth projection in place of the Mercator map, correcting a centuries-old distortion that shrank Africa's true size on world maps.",
     "publishedAt": "2026-09-10T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -490,12 +520,12 @@
     "addedAt": "2026-09-16T22:20:26.620Z"
   },
   {
-    "id": "viking-silver-hoard-denmark",
-    "title": "Yard Work Reveals Largest Trove of Viking Silver Ever Discovered in Denmark",
-    "url": "https://www.goodnewsnetwork.org/yard-work-reveals-largest-trove-of-viking-silver-ever-discovered-in-denmark/",
+    "id": "ford-living-roof-factory",
+    "title": "A 'Living Roof' Is Growing Atop Ford's Largest Factory, Saving Energy and Boosting Birds",
+    "url": "https://www.goodnewsnetwork.org/living-roof-grows-atop-fords-largest-factory-saving-energy-and-boosting-biodiversity/",
     "source": "Good News Network",
-    "category": "culture",
-    "summary": "A homeowner doing routine yard work in Denmark uncovered the largest hoard of Viking-era silver ever found in the country.",
+    "category": "environment",
+    "summary": "Ford has planted a living green roof atop its largest factory, cutting the building's energy use while creating new habitat for birds and pollinators.",
     "publishedAt": "2026-09-09T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -510,12 +540,12 @@
     "addedAt": "2026-09-14T12:45:36Z"
   },
   {
-    "id": "ford-living-roof-factory",
-    "title": "A 'Living Roof' Is Growing Atop Ford's Largest Factory, Saving Energy and Boosting Birds",
-    "url": "https://www.goodnewsnetwork.org/living-roof-grows-atop-fords-largest-factory-saving-energy-and-boosting-biodiversity/",
+    "id": "viking-silver-hoard-denmark",
+    "title": "Yard Work Reveals Largest Trove of Viking Silver Ever Discovered in Denmark",
+    "url": "https://www.goodnewsnetwork.org/yard-work-reveals-largest-trove-of-viking-silver-ever-discovered-in-denmark/",
     "source": "Good News Network",
-    "category": "environment",
-    "summary": "Ford has planted a living green roof atop its largest factory, cutting the building's energy use while creating new habitat for birds and pollinators.",
+    "category": "culture",
+    "summary": "A homeowner doing routine yard work in Denmark uncovered the largest hoard of Viking-era silver ever found in the country.",
     "publishedAt": "2026-09-09T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -860,22 +890,22 @@
     "addedAt": "2026-09-05T00:00:00Z"
   },
   {
-    "id": "china-solar-surpasses-coal-capacity",
-    "title": "Solar Surpasses Coal as China's Top Power Source for the First Time",
-    "url": "https://www.euronews.com/2026/09/01/solar-outpaces-coal-for-the-first-time-in-china-how-does-europe-compare",
-    "source": "Euronews",
-    "category": "environment",
-    "summary": "China's installed solar power capacity overtook coal-fired capacity for the first time on record, a milestone in the country's shift toward renewable energy.",
-    "publishedAt": "2026-09-01T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
     "id": "kakapo-population-325-record",
     "title": "Kākāpō Population Soars to 325 After Record Breeding Season",
     "url": "https://www.rnz.co.nz/news/environment/1204957/kakapo-population-soars-to-325",
     "source": "RNZ",
     "category": "animals",
     "summary": "New Zealand's critically endangered kākāpō parrot reached a record population of 325 birds after a breeding season that produced 90 new chicks, its highest count in 75 years.",
+    "publishedAt": "2026-09-01T12:00:00Z",
+    "addedAt": "2026-09-14T12:45:36Z"
+  },
+  {
+    "id": "china-solar-surpasses-coal-capacity",
+    "title": "Solar Surpasses Coal as China's Top Power Source for the First Time",
+    "url": "https://www.euronews.com/2026/09/01/solar-outpaces-coal-for-the-first-time-in-china-how-does-europe-compare",
+    "source": "Euronews",
+    "category": "environment",
+    "summary": "China's installed solar power capacity overtook coal-fired capacity for the first time on record, a milestone in the country's shift toward renewable energy.",
     "publishedAt": "2026-09-01T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
