@@ -690,12 +690,12 @@
     "addedAt": "2026-09-16T22:20:26.620Z"
   },
   {
-    "id": "kenyan-robotic-hands-deaf-students",
-    "title": "Kenyan Startup Makes Robotic Hands That Translate a Teacher's Voice Into Sign Language for Deaf Students",
-    "url": "https://www.goodnewsnetwork.org/kenyan-startup-makes-robotic-hands-that-translate-teachers-voice-into-signs-for-deaf-students/",
+    "id": "hotel-staff-lost-plushie-vip",
+    "title": "Hotel Staff Give Girl's Lost Plushie VIP Treatment Before Sending Her Home With a Note",
+    "url": "https://www.goodnewsnetwork.org/hotel-staff-give-girls-lost-plushie-the-vip-treatment-before-sending-her-home-with-a-note-look/",
     "source": "Good News Network",
-    "category": "technology",
-    "summary": "A Kenyan startup built robotic hands that convert a teacher's spoken words into sign language in real time, helping deaf students follow along in class.",
+    "category": "community",
+    "summary": "Hotel staff who found a young guest's lost stuffed toy staged a photo \"vacation\" for it around the hotel before mailing it back to her with a note.",
     "publishedAt": "2026-09-11T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -710,12 +710,12 @@
     "addedAt": "2026-09-14T12:45:36Z"
   },
   {
-    "id": "hotel-staff-lost-plushie-vip",
-    "title": "Hotel Staff Give Girl's Lost Plushie VIP Treatment Before Sending Her Home With a Note",
-    "url": "https://www.goodnewsnetwork.org/hotel-staff-give-girls-lost-plushie-the-vip-treatment-before-sending-her-home-with-a-note-look/",
+    "id": "kenyan-robotic-hands-deaf-students",
+    "title": "Kenyan Startup Makes Robotic Hands That Translate a Teacher's Voice Into Sign Language for Deaf Students",
+    "url": "https://www.goodnewsnetwork.org/kenyan-startup-makes-robotic-hands-that-translate-teachers-voice-into-signs-for-deaf-students/",
     "source": "Good News Network",
-    "category": "community",
-    "summary": "Hotel staff who found a young guest's lost stuffed toy staged a photo \"vacation\" for it around the hotel before mailing it back to her with a note.",
+    "category": "technology",
+    "summary": "A Kenyan startup built robotic hands that convert a teacher's spoken words into sign language in real time, helping deaf students follow along in class.",
     "publishedAt": "2026-09-11T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -750,22 +750,12 @@
     "addedAt": "2026-09-16T22:20:26.620Z"
   },
   {
-    "id": "un-equal-earth-map-replaces-mercator",
-    "title": "UN Adopts Equal Earth Map, Ending Africa's Mercator-Map Shrinkage",
-    "url": "https://news.un.org/en/story/2026/09/1168284",
-    "source": "UN News",
-    "category": "society",
-    "summary": "The United Nations voted to adopt the Equal Earth projection in place of the Mercator map, correcting a centuries-old distortion that shrank Africa's true size on world maps.",
-    "publishedAt": "2026-09-10T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "91yo-oldest-appalachian-trail-hiker",
-    "title": "91-Year-Old 'Greybeard' Becomes Oldest Person to Hike the Appalachian Trail After 359 Days and 71 Falls",
-    "url": "https://www.goodnewsnetwork.org/91-yo-greybeard-becomes-oldest-person-to-hike-the-appalachian-trial-after-359-days-and-71-falls/",
+    "id": "bepicolombo-mercury-arrival",
+    "title": "Humanity's 3rd Visit to Mercury Kicks Off With the Successful Arrival of the BepiColombo Mission",
+    "url": "https://www.goodnewsnetwork.org/humanitys-3rd-visit-to-mercury-kicks-off-with-the-successful-arrival-of-bepicolombo-mission/",
     "source": "Good News Network",
-    "category": "community",
-    "summary": "A 91-year-old hiker became the oldest person on record to complete the Appalachian Trail, finishing the 2,197-mile trek after 359 days despite 71 falls along the way.",
+    "category": "science",
+    "summary": "The joint European-Japanese BepiColombo spacecraft successfully arrived at Mercury, becoming only the third mission ever to reach the planet.",
     "publishedAt": "2026-09-10T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -780,12 +770,22 @@
     "addedAt": "2026-09-14T12:45:36Z"
   },
   {
-    "id": "bepicolombo-mercury-arrival",
-    "title": "Humanity's 3rd Visit to Mercury Kicks Off With the Successful Arrival of the BepiColombo Mission",
-    "url": "https://www.goodnewsnetwork.org/humanitys-3rd-visit-to-mercury-kicks-off-with-the-successful-arrival-of-bepicolombo-mission/",
+    "id": "91yo-oldest-appalachian-trail-hiker",
+    "title": "91-Year-Old 'Greybeard' Becomes Oldest Person to Hike the Appalachian Trail After 359 Days and 71 Falls",
+    "url": "https://www.goodnewsnetwork.org/91-yo-greybeard-becomes-oldest-person-to-hike-the-appalachian-trial-after-359-days-and-71-falls/",
     "source": "Good News Network",
-    "category": "science",
-    "summary": "The joint European-Japanese BepiColombo spacecraft successfully arrived at Mercury, becoming only the third mission ever to reach the planet.",
+    "category": "community",
+    "summary": "A 91-year-old hiker became the oldest person on record to complete the Appalachian Trail, finishing the 2,197-mile trek after 359 days despite 71 falls along the way.",
+    "publishedAt": "2026-09-10T12:00:00Z",
+    "addedAt": "2026-09-14T12:45:36Z"
+  },
+  {
+    "id": "un-equal-earth-map-replaces-mercator",
+    "title": "UN Adopts Equal Earth Map, Ending Africa's Mercator-Map Shrinkage",
+    "url": "https://news.un.org/en/story/2026/09/1168284",
+    "source": "UN News",
+    "category": "society",
+    "summary": "The United Nations voted to adopt the Equal Earth projection in place of the Mercator map, correcting a centuries-old distortion that shrank Africa's true size on world maps.",
     "publishedAt": "2026-09-10T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
