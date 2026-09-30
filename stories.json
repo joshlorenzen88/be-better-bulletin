@@ -1,5 +1,605 @@
 [
   {
+    "id": "this-stone-wall-seems-to-have-finally-settled-debate-about-t",
+    "title": "This Stone Wall Seems to Have Finally Settled Debate About The Town That Became Paris",
+    "url": "https://www.goodnewsnetwork.org/this-stone-wall-seems-to-have-finally-settled-debate-about-the-town-that-became-paris/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "Excavations in central Paris have turned up a stone wall that may have finally settled the debate regarding the true origins of the city.",
+    "publishedAt": "2026-09-29T15:30:41.000Z",
+    "addedAt": "2026-09-29T16:49:31.109Z"
+  },
+  {
+    "id": "a-strategy-of-cash-for-photos-turns-animal-hunters-into-anim",
+    "title": "A Strategy of Cash-for-Photos Turns Animal Hunters into Animal Protectors in Indonesia",
+    "url": "https://www.goodnewsnetwork.org/a-strategy-of-cash-for-photos-turns-animal-hunters-into-animal-protectors-in-indonesia/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "A pay-per-photo conservation program in Borneo is turning hunters into protectors of endangered birds and orangutans.",
+    "publishedAt": "2026-09-29T13:00:01.000Z",
+    "addedAt": "2026-09-29T16:49:31.109Z"
+  },
+  {
+    "id": "norway-s-newest-marine-protected-area-shelters-rich-marine-h",
+    "title": "Norway’s Newest Marine Protected Area Shelters Rich Marine Habitat, Whales, and Seabirds",
+    "url": "https://www.goodnewsnetwork.org/norways-newest-marine-protected-area-shelters-rich-marine-habitat-whales-and-seabirds/",
+    "source": "Good News Network",
+    "category": "environment",
+    "summary": "Norway established a new 714-square-mile marine protected area to shelter whales, seabirds, and rich marine habitat.",
+    "publishedAt": "2026-09-29T11:00:24.000Z",
+    "addedAt": "2026-09-29T16:49:31.109Z"
+  },
+  {
+    "id": "the-forest-is-life-how-indigenous-communities-in-peru-are-pr",
+    "title": "‘The forest is life’: how Indigenous communities in Peru are preventing wildfires",
+    "url": "https://www.positive.news/environment/the-forest-is-life-how-indigenous-communities-in-peru-are-preventing-wildfires/",
+    "source": "Positive News",
+    "category": "environment",
+    "summary": "Indigenous communities in Peru are successfully preventing wildfires through traditional forest management practices.",
+    "publishedAt": "2026-09-29T08:00:53.000Z",
+    "addedAt": "2026-09-29T16:49:31.109Z"
+  },
+  {
+    "id": "a-place-to-sleep-for-denver-s-homeless-college-students",
+    "title": "A Place to Sleep for Denver’s Homeless College Students",
+    "url": "https://reasonstobecheerful.world/home-for-denver-homeless-college-students/",
+    "source": "Reasons to be Cheerful",
+    "category": "community",
+    "summary": "This story was originally published by Chalkbeat.",
+    "publishedAt": "2026-09-29T08:00:24.000Z",
+    "addedAt": "2026-09-29T16:49:31.109Z"
+  },
+  {
+    "id": "resilient-french-farmers-use-warming-climate-to-grow-the-cou",
+    "title": "Resilient French Farmers Use Warming Climate to Grow the Country’s Own Tropical Fruit",
+    "url": "https://www.goodnewsnetwork.org/resilient-french-farmers-use-warming-climate-to-grow-the-countrys-own-tropical-fruit/",
+    "source": "Good News Network",
+    "category": "environment",
+    "summary": "French farmers are successfully growing tropical fruits like bananas, papayas, and mangoes as the climate warms.",
+    "publishedAt": "2026-09-28T18:30:42.000Z",
+    "addedAt": "2026-09-29T16:49:31.109Z"
+  },
+  {
+    "id": "vietnam-swiftly-protects-forests-containing-the-last-of-the",
+    "title": "Vietnam Swiftly Protects Forests Containing the Last of the World’s Most-Endangered Monkey",
+    "url": "https://www.goodnewsnetwork.org/vietnam-swiftly-protects-forests-containing-the-last-of-the-worlds-most-endangered-monkey/",
+    "source": "Good News Network",
+    "category": "environment",
+    "summary": "Vietnam establishes a conservation reserve to protect one of the world's most-endangered primate species.",
+    "publishedAt": "2026-09-28T15:30:22.000Z",
+    "addedAt": "2026-09-28T18:32:02.744Z"
+  },
+  {
+    "id": "researchers-unearth-a-clay-tablet-inscribed-with-the-world-s",
+    "title": "Researchers Unearth a Clay Tablet Inscribed With the World’s Oldest Peace Treaty",
+    "url": "https://www.goodnewsnetwork.org/researchers-unearth-a-clay-tablet-inscribed-with-the-worlds-oldest-peace-treaty/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "Look, the order fixed for eternity which the Sun God and the God of the Tempest have created for the country of Egypt and the country of Hatti, (that is) peace and fraternity without leaving place among them to any enmi…",
+    "publishedAt": "2026-09-28T13:00:54.000Z",
+    "addedAt": "2026-09-28T18:32:02.744Z"
+  },
+  {
+    "id": "18-year-old-from-the-bronx-starts-nonprofit-to-sponsor-schoo",
+    "title": "18 Year-Old from the Bronx Starts Nonprofit to Sponsor School Children in Ghana",
+    "url": "https://www.goodnewsnetwork.org/18-year-old-from-the-bronx-starts-nonprofit-to-sponsor-school-children-in-ghana/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "An 18-year-old from the Bronx founded a nonprofit to sponsor school children in Ghana.",
+    "publishedAt": "2026-09-28T11:00:52.000Z",
+    "addedAt": "2026-09-28T18:32:02.744Z"
+  },
+  {
+    "id": "the-ethical-fashion-brand-championing-change-across-the-indu",
+    "title": "The ethical fashion brand championing change across the industry",
+    "url": "https://www.positive.news/economics/the-ethical-fashion-brand-championing-change-across-the-industry/",
+    "source": "Positive News",
+    "category": "environment",
+    "summary": "With a focus on living wages, better fabrics and sustainability, one clothing brand is pushing to transform the fashion industry The post The ethical fashion brand championing change across the industry appeared first o…",
+    "publishedAt": "2026-09-28T09:05:56.000Z",
+    "addedAt": "2026-09-28T18:32:02.744Z"
+  },
+  {
+    "id": "forget-recycling-what-if-we-could-compost-or-reuse-everythin",
+    "title": "Forget Recycling. What If We Could Compost or Reuse Everything?",
+    "url": "https://reasonstobecheerful.world/forget-recycling-what-if-we-could-compost-or-reuse-everything/",
+    "source": "Reasons to be Cheerful",
+    "category": "environment",
+    "summary": "Nora Griefahn’s office showcases her work better than words: The interior walls at the C2C LAB on a busy street in Berlin, Germany, are alive with lush, air-purifying plants; lamp shades have been grown from mycelium; in",
+    "publishedAt": "2026-09-28T08:00:46.000Z",
+    "addedAt": "2026-09-28T18:32:02.744Z"
+  },
+  {
+    "id": "newly-identified-frog-like-creature-named-by-student-scienti",
+    "title": "Newly Identified Frog-like Creature Named by Student Scientists After Their Moms",
+    "url": "https://www.goodnewsnetwork.org/newly-identified-frog-like-creature-named-by-student-scientists-after-their-moms/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "Student scientists named a newly identified prehistoric frog-like creature after their mothers.",
+    "publishedAt": "2026-09-28T03:00:01.000Z",
+    "addedAt": "2026-09-28T18:32:02.744Z"
+  },
+  {
+    "id": "ca-researchers-identify-odors-that-repel-honeybees-from-pest",
+    "title": "CA Researchers Identify Odors That Repel Honeybees From Pesticides",
+    "url": "https://www.goodnewsnetwork.org/ca-researchers-identify-odors-that-repel-honeybees-from-pesticides/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "Researchers identified chemical compounds that safely repel honeybees from pesticide-treated crops.",
+    "publishedAt": "2026-09-27T22:50:42.000Z",
+    "addedAt": "2026-09-28T18:32:02.744Z"
+  },
+  {
+    "id": "archaeologists-risked-their-lives-to-save-30-000-treasures-f",
+    "title": "Archaeologists Risked Their Lives to Save 30,000 Treasures from ISIS Terrorists—New Study Shows How",
+    "url": "https://www.goodnewsnetwork.org/archaeologists-risked-their-lives-to-save-thousands-of-treasures-from-isis-terrorists/",
+    "source": "Good News Network",
+    "category": "culture",
+    "summary": "A study documents how archaeologists risked their lives to save 30,000 historic treasures from ISIS destruction.",
+    "publishedAt": "2026-09-27T19:58:18.000Z",
+    "addedAt": "2026-09-28T18:32:02.744Z"
+  },
+  {
+    "id": "new-york-city-collects-131-million-from-doordash-for-deliver",
+    "title": "New York City Collects $131 Million From DoorDash for Delivery Workers Unfairly Paid After $13 Billion Profit",
+    "url": "https://www.goodnewsnetwork.org/nyc-collects-131-million-from-doordash-for-delivery-workers-unfairly-paid/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "The New York City Department of Consumer and Worker Protection (DCWP) announced a historic $131.5 million enforcement action against DoorDash for systematic violations of the local Delivery Worker Laws.",
+    "publishedAt": "2026-09-27T11:00:38.000Z",
+    "addedAt": "2026-09-27T15:33:14.649Z"
+  },
+  {
+    "id": "nike-founder-phil-knight-gives-away-a-billion-dollars-the-la",
+    "title": "Nike Founder Phil Knight Gives Away a Billion Dollars – the Largest Single Donation to a Public University",
+    "url": "https://www.goodnewsnetwork.org/nike-founder-phil-knight-donates-1-billion-to-oregon-university/",
+    "source": "Good News Network",
+    "category": "society",
+    "summary": "Nike co-founder Phil Knight donated $1 billion to the University of Oregon, the largest single gift to a public university.",
+    "publishedAt": "2026-09-26T22:29:05.000Z",
+    "addedAt": "2026-09-27T15:33:14.649Z"
+  },
+  {
+    "id": "nonprofit-puts-ex-cons-to-work-with-paid-apprenticeships-as",
+    "title": "Nonprofit Puts Ex-Cons to Work with Paid Apprenticeships as Machinists",
+    "url": "https://www.goodnewsnetwork.org/nonprofit-puts-ex-cons-to-work-with-paid-apprenticeships-as-machinists/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "A nonprofit in San Diego is training formerly incarcerated people in machinist skills through paid apprenticeships within weeks of their release.",
+    "publishedAt": "2026-09-25T15:20:37.000Z",
+    "addedAt": "2026-09-25T15:45:21.942Z"
+  },
+  {
+    "id": "with-1-billion-nike-founder-phil-knight-makes-largest-single",
+    "title": "With $1 Billion, Nike Founder Phil Knight Makes Largest Single Donation to a Public University",
+    "url": "https://www.goodnewsnetwork.org/with-1-billion-nike-founder-phil-knight-makes-largest-single-donation-to-a-public-university/",
+    "source": "Good News Network",
+    "category": "society",
+    "summary": "Nike founder Phil Knight donated $1 billion to the University of Oregon, his largest single philanthropic gift to date.",
+    "publishedAt": "2026-09-25T14:47:22.000Z",
+    "addedAt": "2026-09-25T15:45:21.942Z"
+  },
+  {
+    "id": "africa-will-soon-have-a-new-tallest-building-but-probably-no",
+    "title": "Africa Will Soon Have A New Tallest Building – But Probably Not Where You’d Imagine",
+    "url": "https://www.goodnewsnetwork.org/africa-will-soon-have-a-new-tallest-building-but-probably-not-where-youd-imagine/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "By New Years Eve, Africa will see the completion of the continent’s newest tallest building—and probably not where you’d expect.",
+    "publishedAt": "2026-09-25T14:15:00.000Z",
+    "addedAt": "2026-09-25T15:45:21.942Z"
+  },
+  {
+    "id": "nairobi-is-transforming-neglected-libraries-into-vibrant-civ",
+    "title": "Nairobi Is Transforming Neglected Libraries Into Vibrant Civic Hubs",
+    "url": "https://reasonstobecheerful.world/nairobi-libraries-civic-hubs/",
+    "source": "Reasons to be Cheerful",
+    "category": "community",
+    "summary": "Nairobi is renovating neglected libraries into active community spaces where residents can access services like reliable electricity and internet.",
+    "publishedAt": "2026-09-25T08:00:13.000Z",
+    "addedAt": "2026-09-25T15:45:21.942Z"
+  },
+  {
+    "id": "what-went-right-this-week-the-good-news-that-matters-3",
+    "title": "What went right this week: the good news that matters",
+    "url": "https://www.positive.news/society/good-news-stories-from-week-39-of-2026/",
+    "source": "Positive News",
+    "category": "technology",
+    "summary": "Kosovo was cleared of landmines, Germany set a date for quitting oil, and a new species was discovered, plus more The post What went right this week: the good news that matters appeared first on Positive News .",
+    "publishedAt": "2026-09-25T05:11:56.000Z",
+    "addedAt": "2026-09-25T15:45:21.942Z"
+  },
+  {
+    "id": "australian-biologists-livestream-a-remote-desert-waterhole-a",
+    "title": "Australian Biologists Livestream A Remote Desert Waterhole and All its Wild Visitors",
+    "url": "https://www.goodnewsnetwork.org/australian-biologists-livestream-a-remote-desert-waterhole-and-all-its-wild-visitors/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "Australian biologists are livestreaming a remote desert waterhole in a national park, allowing the public to observe wildlife visitors.",
+    "publishedAt": "2026-09-24T18:30:53.000Z",
+    "addedAt": "2026-09-25T15:45:21.942Z"
+  },
+  {
+    "id": "teens-set-world-record-for-most-sports-balls-recycled-in-one",
+    "title": "Teens Set World Record for Most Sports Balls Recycled in One Day, Diverting 2,675 Pounds from Landfills",
+    "url": "https://www.goodnewsnetwork.org/teens-set-world-record-for-most-sports-balls-recycled-in-one-day-diverting-2675-pounds-from-landfills/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "Teenagers set a Guinness World Record by recycling 2,675 pounds of racquet sport balls in a single day, diverting waste from landfills.",
+    "publishedAt": "2026-09-24T15:30:31.000Z",
+    "addedAt": "2026-09-25T15:45:21.942Z"
+  },
+  {
+    "id": "millions-channeled-to-irrigation-improvements-leak-repairs-a",
+    "title": "Millions Channeled to Irrigation Improvements, Leak Repairs Along Colorado River by Corporate Coalition",
+    "url": "https://www.goodnewsnetwork.org/millions-channeled-to-irrigation-improvements-leak-repairs-along-colorado-river-by-corporate-coalition/",
+    "source": "Good News Network",
+    "category": "environment",
+    "summary": "Amazon commits $20 million to water conservation and leak repairs in the drought-stressed Colorado River Basin.",
+    "publishedAt": "2026-09-24T13:00:30.000Z",
+    "addedAt": "2026-09-24T15:44:48.274Z"
+  },
+  {
+    "id": "portuguese-company-turns-cork-wood-into-limitless-material-e",
+    "title": "Portuguese Company Turns Cork Wood into Limitless Material, Even to Insulate Spacecraft",
+    "url": "https://www.goodnewsnetwork.org/portuguese-company-turns-cork-wood-into-limitless-material-even-to-insulate-spacecraft/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "A Portuguese cork company has developed new applications for cork material, including insulation for spacecraft.",
+    "publishedAt": "2026-09-24T11:00:21.000Z",
+    "addedAt": "2026-09-24T15:44:48.274Z"
+  },
+  {
+    "id": "how-the-architecture-of-sound-is-transforming-cities",
+    "title": "How the Architecture of Sound Is Transforming Cities",
+    "url": "https://reasonstobecheerful.world/how-the-architecture-of-sound-is-transforming-cities/",
+    "source": "Reasons to be Cheerful",
+    "category": "technology",
+    "summary": "Before Chris Downey lost his sight, he had a wind chime on his front porch.",
+    "publishedAt": "2026-09-24T08:00:50.000Z",
+    "addedAt": "2026-09-24T15:44:48.274Z"
+  },
+  {
+    "id": "bikes-outnumbered-cars-on-scottish-rush-hour-route-for-the-f",
+    "title": "Bikes Outnumbered Cars on Scottish Rush Hour Route for the First Time Ever",
+    "url": "https://www.goodnewsnetwork.org/bikes-outnumbered-cars-on-scottish-rush-hour-route-for-the-first-time-ever/",
+    "source": "Good News Network",
+    "category": "society",
+    "summary": "E-bikes outnumbered cars during rush hour in Edinburgh for the first time, driven by bike-sharing and dedicated lanes.",
+    "publishedAt": "2026-09-23T18:30:11.000Z",
+    "addedAt": "2026-09-24T15:44:48.274Z"
+  },
+  {
+    "id": "long-lost-gertrude-abercrombie-painting-bought-by-a-bargain",
+    "title": "Long-Lost Gertrude Abercrombie Painting Bought by a Bargain Hunter for $30 Could Fetch $250,000",
+    "url": "https://www.goodnewsnetwork.org/long-lost-gertrude-abercrombie-painting-bought-by-a-bargain-hunter-for-30-could-fetch-250000/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "At a Michigan estate sale in July, a “treasure hunter” noticed an undisturbed painting hanging in a hallway depicting a series of seashells on a dark grey and black field.",
+    "publishedAt": "2026-09-23T15:30:08.000Z",
+    "addedAt": "2026-09-24T15:44:48.274Z"
+  },
+  {
+    "id": "life-after-a-diagnosis-for-panic-disorder",
+    "title": "Life after… a diagnosis for panic disorder",
+    "url": "https://www.positive.news/lifestyle/life-after-a-diagnosis-for-panic-disorder/",
+    "source": "Positive News",
+    "category": "community",
+    "summary": "A person's public discussion of panic disorder and OCD helped others recognize and share their own frightening experiences.",
+    "publishedAt": "2026-09-23T13:14:20.000Z",
+    "addedAt": "2026-09-23T15:21:24.831Z"
+  },
+  {
+    "id": "scientists-pioneer-chemical-bath-method-to-restore-aging-ev",
+    "title": "Scientists Pioneer Chemical Bath Method to Restore Aging EV Batteries Without Breaking Them Down",
+    "url": "https://www.goodnewsnetwork.org/scientists-pioneer-chemical-bath-method-to-restore-aging-ev-batteries-without-breaking-them-down/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "Scientists developed a chemical bath method to restore aging EV batteries without disassembly, potentially recovering lost range.",
+    "publishedAt": "2026-09-23T13:00:49.000Z",
+    "addedAt": "2026-09-23T15:21:24.831Z"
+  },
+  {
+    "id": "flagship-restoration-project-in-brazil-s-cerrado-savannah-wo",
+    "title": "Flagship Restoration Project in Brazil’s Cerrado Savannah Working to Restore 4.4 Million Acres",
+    "url": "https://www.goodnewsnetwork.org/flagship-restoration-project-in-brazils-cerrado-savannah-working-to-restore-4-4-million-acres/",
+    "source": "Good News Network",
+    "category": "environment",
+    "summary": "Brazil's Cerrado savannah restoration project covering 4.4 million acres was recognized as one of the world's three most ambitious ecosystem restoration programs.",
+    "publishedAt": "2026-09-23T11:00:25.000Z",
+    "addedAt": "2026-09-23T15:21:24.831Z"
+  },
+  {
+    "id": "what-we-re-reading-singapore-is-paying-people-to-read",
+    "title": "What We’re Reading: Singapore Is Paying People to Read",
+    "url": "https://reasonstobecheerful.world/what-were-reading-singapore-paying-people-to-read/",
+    "source": "Reasons to be Cheerful",
+    "category": "technology",
+    "summary": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking.",
+    "publishedAt": "2026-09-23T08:00:22.000Z",
+    "addedAt": "2026-09-23T15:21:24.831Z"
+  },
+  {
+    "id": "exceptional-detection-rates-of-bladder-cancer-recorded-in-st",
+    "title": "Exceptional Detection Rates of Bladder Cancer Recorded in Study of Simple, Yet State-of-the-Art Test",
+    "url": "https://www.goodnewsnetwork.org/exceptional-detection-rates-of-bladder-cancer-recorded-in-study-of-simple-yet-state-of-the-art-test/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "A new non-invasive genetic urine test showed exceptional detection rates for bladder cancer in a UK observational study.",
+    "publishedAt": "2026-09-22T18:30:33.000Z",
+    "addedAt": "2026-09-23T15:21:24.831Z"
+  },
+  {
+    "id": "this-curious-bird-had-never-been-seen-before-and-its-discove",
+    "title": "This Curious Bird Had Never Been Seen Before, and its Discovery Changed Ecuador–Perhaps Forever",
+    "url": "https://www.goodnewsnetwork.org/this-curious-bird-had-never-been-seen-before-and-its-discovery-changed-ecuador-perhaps-forever/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "In the late 1990s, a group of scientists were birdwatching in a remote forest in Ecuador when they heard a call like no other.",
+    "publishedAt": "2026-09-22T15:30:15.000Z",
+    "addedAt": "2026-09-23T15:21:24.831Z"
+  },
+  {
+    "id": "135-000-shelter-pets-found-forever-homes-in-august-thanks-to",
+    "title": "135,000 Shelter Pets Found Forever Homes in August Thanks to NBC’s Annual Adopt-a-thon",
+    "url": "https://www.goodnewsnetwork.org/135000-shelter-pets-found-forever-homes-in-august-thanks-to-nbcs-annual-adopt-a-thon/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "135,000 shelter pets found homes during NBC's annual adopt-a-thon campaign.",
+    "publishedAt": "2026-09-22T13:00:22.000Z",
+    "addedAt": "2026-09-22T15:27:14.850Z"
+  },
+  {
+    "id": "prisoners-prove-unlikely-heroes-to-monarch-butterflies-thank",
+    "title": "Prisoners Prove Unlikely Heroes to Monarch Butterflies Thanks to Wisconsin Correctional Program",
+    "url": "https://www.goodnewsnetwork.org/prisoners-prove-unlikely-heroes-to-monarch-butterflies-thanks-to-wisconsin-correctional-program/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "Wisconsin prison inmates are raising monarch butterflies as part of a conservation program.",
+    "publishedAt": "2026-09-22T11:00:21.000Z",
+    "addedAt": "2026-09-22T15:27:14.850Z"
+  },
+  {
+    "id": "winners-of-bird-photographer-of-the-year-announced",
+    "title": "Winners of Bird Photographer of the Year announced",
+    "url": "https://www.positive.news/environment/winners-of-bird-photographer-of-the-year-announced/",
+    "source": "Positive News",
+    "category": "animals",
+    "summary": "The winners of Bird Photographer of the Year 2026 have been revealed The post Winners of Bird Photographer of the Year announced appeared first on Positive News .",
+    "publishedAt": "2026-09-22T07:00:14.000Z",
+    "addedAt": "2026-09-22T15:27:14.850Z"
+  },
+  {
+    "id": "new-ai-model-can-detect-heart-disease-markers-in-simple-elec",
+    "title": "New AI Model Can Detect Heart Disease Markers in Simple Electrocardiogram Readings–a Breakthrough",
+    "url": "https://www.goodnewsnetwork.org/new-ai-model-can-detect-heart-disease-markers-in-simple-electrocardiogram-readings-a-breakthrough/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "AI model can detect heart disease markers from electrocardiogram readings in seconds.",
+    "publishedAt": "2026-09-21T18:30:20.000Z",
+    "addedAt": "2026-09-22T15:27:14.850Z"
+  },
+  {
+    "id": "rural-french-mayors-rally-to-save-their-local-cafe-bistro-an",
+    "title": "Rural French Mayors Rally to Save Their Local Cafe-Bistro, and Help Reverse National Trend",
+    "url": "https://www.goodnewsnetwork.org/rural-french-mayors-rally-to-save-their-local-cafe-bistro-and-help-reverse-national-trend/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "A French town saved its local cafe-bistro with help from the mayor and council, reversing a national trend of rural cafe closures.",
+    "publishedAt": "2026-09-21T15:30:38.000Z",
+    "addedAt": "2026-09-21T16:51:13.172Z"
+  },
+  {
+    "id": "why-great-plains-ranchers-are-setting-fire-to-their-own-land",
+    "title": "Why Great Plains Ranchers Are Setting Fire to Their Own Land",
+    "url": "https://reasonstobecheerful.world/great-plains-ranchers-prescribed-burns/",
+    "source": "Reasons to be Cheerful",
+    "category": "environment",
+    "summary": "Great Plains ranchers are using controlled burns on their own land as a land management and conservation practice.",
+    "publishedAt": "2026-09-21T14:42:43.000Z",
+    "addedAt": "2026-09-21T16:51:13.172Z"
+  },
+  {
+    "id": "korean-drone-rescue-program-helps-mozambique-achieve-zero-fa",
+    "title": "Korean Drone Rescue Program Helps Mozambique Achieve Zero Fatalities During Worst Flood in Decades",
+    "url": "https://www.goodnewsnetwork.org/korean-drone-rescue-program-helps-mozambique-achieve-zero-fatalities-during-worst-flood-in-decades/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "A Korean drone rescue program helped Mozambique achieve zero flood fatalities during one of its worst floods in decades in January.",
+    "publishedAt": "2026-09-21T13:00:32.000Z",
+    "addedAt": "2026-09-21T16:51:13.172Z"
+  },
+  {
+    "id": "historic-philanthropic-gift-will-expand-veterinary-care-acce",
+    "title": "Historic Philanthropic Gift Will Expand Veterinary Care Access to Millions of Americans and Their Pets",
+    "url": "https://www.goodnewsnetwork.org/historic-philanthropic-gift-will-expand-veterinary-care-access-to-millions-of-americans-and-their-pets/",
+    "source": "Good News Network",
+    "category": "society",
+    "summary": "A philanthropic organization committed $250 million over five years to expand access to affordable veterinary care for millions of Americans and their pets.",
+    "publishedAt": "2026-09-21T11:00:29.000Z",
+    "addedAt": "2026-09-21T16:51:13.172Z"
+  },
+  {
+    "id": "the-race-to-get-more-young-people-in-the-uk-into-work-educat",
+    "title": "The race to get more young people in the UK into work, education or training",
+    "url": "https://www.positive.news/society/number-of-young-people-out-of-work-and-education-falls-below-one-million/",
+    "source": "Positive News",
+    "category": "animals",
+    "summary": "The UK has one of the highest NEET rates for young adults in Europe.",
+    "publishedAt": "2026-09-21T09:39:04.000Z",
+    "addedAt": "2026-09-21T16:51:13.172Z"
+  },
+  {
+    "id": "cavemen-used-mammoth-tusk-patterns-to-create-unique-art-reve",
+    "title": "Cavemen Used Mammoth Tusk Patterns to Create Unique Art, Reveals New Research",
+    "url": "https://www.goodnewsnetwork.org/cavemen-used-mammoth-tusk-patterns-to-create-unique-art-reveals-new-research/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "[Stephen Beech | SWNS news] Cavemen used mammoth tusk patterns to create unique art, reveals new research.",
+    "publishedAt": "2026-09-21T03:20:17.000Z",
+    "addedAt": "2026-09-21T16:51:13.172Z"
+  },
+  {
+    "id": "couple-fosters-59-dogs-in-retirement-we-love-to-get-them-out",
+    "title": "Couple Fosters 59 Dogs in Retirement: ‘We love to get them out of the kennels’",
+    "url": "https://www.goodnewsnetwork.org/couple-fosters-59-dogs-in-retirement-we-love-to-get-them-out-of-the-kennels/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "A British couple has fostered 59 dogs over 15 years in retirement, helping animals transition out of kennels.",
+    "publishedAt": "2026-09-20T22:48:46.000Z",
+    "addedAt": "2026-09-21T16:51:13.172Z"
+  },
+  {
+    "id": "165-mile-bike-trail-through-minnesota-finally-completed-afte",
+    "title": "165-Mile Bike Trail Through Minnesota Finally Completed After 30 years, One of the Longest in America",
+    "url": "https://www.goodnewsnetwork.org/165mi-bike-trail-through-minnesota-finally-completed-after-30-yrs/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "After 30 years of planning and fundraising, a 165-mile paved bike trail through Minnesota was completed, becoming one of America's longest.",
+    "publishedAt": "2026-09-20T17:39:10.000Z",
+    "addedAt": "2026-09-21T16:51:13.172Z"
+  },
+  {
+    "id": "new-york-city-is-putting-the-park-back-in-park-avenue-and-ad",
+    "title": "New York City is Putting ‘The Park’ Back in Park Avenue – And Adding a Protected Bike Lane (LOOK)",
+    "url": "https://www.goodnewsnetwork.org/new-york-city-is-putting-the-park-back-in-park-avenue/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "New York City is restoring green space and adding a protected bike lane to Park Avenue, reclaiming its historical landscape.",
+    "publishedAt": "2026-09-19T21:56:51.000Z",
+    "addedAt": "2026-09-20T14:35:58.519Z"
+  },
+  {
+    "id": "fox-left-for-dead-after-being-run-over-is-now-recovering-tha",
+    "title": "Fox Left For Dead After Being Run Over is Now Recovering Thanks to Swimming Lessons",
+    "url": "https://www.goodnewsnetwork.org/fox-left-for-dead-on-road-is-recovering-thanks-to-swim-lessons/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "A fox cub hit by a car is recovering after receiving hydrotherapy swimming sessions at a rescue facility.",
+    "publishedAt": "2026-09-19T20:13:56.000Z",
+    "addedAt": "2026-09-20T14:35:58.519Z"
+  },
+  {
+    "id": "chesapeake-bay-blue-crab-numbers-see-encouraging-bounceback",
+    "title": "Chesapeake Bay Blue Crab Numbers See Encouraging Bounceback in New Survey",
+    "url": "https://www.goodnewsnetwork.org/chesapeake-bay-blue-crab-numbers-see-encouraging-bounceback-in-new-survey/",
+    "source": "Good News Network",
+    "category": "environment",
+    "summary": "Blue crab populations in the Chesapeake Bay are showing signs of recovery according to recent conservation surveys.",
+    "publishedAt": "2026-09-19T18:55:20.000Z",
+    "addedAt": "2026-09-20T14:35:58.519Z"
+  },
+  {
+    "id": "company-s-textile-dyes-work-through-magnetism-cutting-fashio",
+    "title": "Company’s Textile Dyes Work Through Magnetism, Cutting Fashion’s Water-Use, Energy, and Pollution",
+    "url": "https://www.goodnewsnetwork.org/companys-textile-dyes-work-through-magnetism-cutting-fashions-water-use-energy-and-pollution/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "A French startup developed magnetic textile dyes that significantly reduce water use, energy consumption, and pollution in fashion manufacturing.",
+    "publishedAt": "2026-09-18T18:30:36.000Z",
+    "addedAt": "2026-09-19T14:12:53.963Z"
+  },
+  {
+    "id": "unsealed-for-the-first-time-this-600-yo-tomb-in-peru-was-jus",
+    "title": "Unsealed for the First Time, This 600-yo Tomb in Peru Was Just Declared the ‘Discovery of the Decade’",
+    "url": "https://www.goodnewsnetwork.org/unsealed-for-the-first-time-this-600-yo-tomb-in-peru-was-just-declared-the-discovery-of-the-decade/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "An unspoiled, undiscovered tomb containing the remains of an elite society belong to a major Andean civilization has been uncovered in Peru.",
+    "publishedAt": "2026-09-18T15:30:26.000Z",
+    "addedAt": "2026-09-19T14:12:53.963Z"
+  },
+  {
+    "id": "cataract-surgery-restores-sight-for-54-year-old-chimpanzee-t",
+    "title": "Cataract Surgery Restores Sight for 54-Year-Old Chimpanzee–the First Such Procedure at Chimp Haven",
+    "url": "https://www.goodnewsnetwork.org/cataract-surgery-restores-sight-for-54-year-old-chimpanzee-the-first-such-procedure-at-chimp-haven/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "A 54-year-old chimpanzee at a sanctuary regained sight after undergoing cataract surgery, the first such procedure performed on a chimp.",
+    "publishedAt": "2026-09-18T12:30:44.000Z",
+    "addedAt": "2026-09-18T14:49:29.461Z"
+  },
+  {
+    "id": "new-cat-species-identified-for-the-first-time-in-over-100-ye",
+    "title": "New Cat Species Identified for the First Time in Over 100 Years–Meet the Tilcayo",
+    "url": "https://www.goodnewsnetwork.org/new-cat-species-identified-for-the-first-time-in-over-100-years-meet-the-tilcayo/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "Researchers identified a previously unknown cat species, the tilcayo, marking the first new cat species discovery in over 100 years.",
+    "publishedAt": "2026-09-18T08:45:29.000Z",
+    "addedAt": "2026-09-18T14:49:29.461Z"
+  },
+  {
+    "id": "in-remote-alaska-the-promise-and-limits-of-vertical-farming",
+    "title": "In Remote Alaska, the Promise and Limits of Vertical Farming",
+    "url": "https://reasonstobecheerful.world/in-remote-alaska-the-promise-and-limits-of-vertical-farming/",
+    "source": "Reasons to be Cheerful",
+    "category": "animals",
+    "summary": "This story was originally published by Civil Eats.",
+    "publishedAt": "2026-09-18T08:00:09.000Z",
+    "addedAt": "2026-09-18T14:49:29.461Z"
+  },
+  {
+    "id": "what-went-right-this-week-the-good-news-that-matters-2",
+    "title": "What went right this week: the good news that matters",
+    "url": "https://www.positive.news/society/good-news-stories-from-week-38-of-2026/",
+    "source": "Positive News",
+    "category": "science",
+    "summary": "EU to ban social media for kids, England approves life-extending cancer drug, and reading linked to better health, plus more The post What went right this week: the good news that matters appeared first on Positive News…",
+    "publishedAt": "2026-09-18T05:28:35.000Z",
+    "addedAt": "2026-09-18T14:49:29.461Z"
+  },
+  {
+    "id": "team-sequesters-plastic-and-makes-new-products-before-it-bre",
+    "title": "Team Sequesters Plastic and Makes New Products Before it Breaks Down in Environment",
+    "url": "https://www.goodnewsnetwork.org/team-sequesters-plastic-and-makes-new-products-before-it-breaks-down-in-environment/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "A California recycling team developed a method to process plastic into new products before it degrades in the environment.",
+    "publishedAt": "2026-09-17T18:30:31.000Z",
+    "addedAt": "2026-09-18T14:49:29.461Z"
+  },
+  {
+    "id": "scientists-solve-mystery-behind-snowfall-that-dropped-695-bi",
+    "title": "Scientists Solve Mystery Behind Snowfall That Dropped 695 Billion Tons of Ice on Antarctica",
+    "url": "https://www.goodnewsnetwork.org/scientists-solve-mystery-behind-snowfall-that-dropped-695-billion-tons-of-ice-on-antarctica/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "Scientists identified tropical ocean warming as the cause of massive snowstorms that added 695 billion tons of ice to East Antarctica between 2021 and 2023.",
+    "publishedAt": "2026-09-17T15:30:25.000Z",
+    "addedAt": "2026-09-18T14:49:29.461Z"
+  },
+  {
+    "id": "the-world-is-getting-noisier-but-we-can-change-that",
+    "title": "The World Is Getting Noisier — But We Can Change That",
+    "url": "https://reasonstobecheerful.world/rethinking-noise-pollution-protect-health-well-being/",
+    "source": "Reasons to be Cheerful",
+    "category": "technology",
+    "summary": "I spent years immersed in noise.",
+    "publishedAt": "2026-09-17T13:55:12.000Z",
+    "addedAt": "2026-09-17T15:28:01.151Z"
+  },
+  {
+    "id": "chinese-scientists-develop-new-oil-refining-method-that-cuts",
+    "title": "Chinese Scientists Develop New Oil Refining Method That Cuts Energy Use by 90%",
+    "url": "https://www.goodnewsnetwork.org/chinese-scientists-develop-new-oil-refining-method-that-cuts-energy-use-by-90/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "Chinese scientists developed an oil refining method that separates crude oil at room temperature, reducing energy use by 90% compared to traditional distillation.",
+    "publishedAt": "2026-09-17T13:00:22.000Z",
+    "addedAt": "2026-09-17T15:28:01.151Z"
+  },
+  {
+    "id": "students-win-james-dyson-award-for-device-that-screens-stude",
+    "title": "Students Win James Dyson Award for Device That Screens Students for Concussions in Just 60 Seconds",
+    "url": "https://www.goodnewsnetwork.org/students-win-james-dyson-award-for-device-that-screens-students-for-concussions-in-just-60-seconds/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "Harvard students invented a low-cost eye-tracking headset that can screen athletes for concussions in 60 seconds.",
+    "publishedAt": "2026-09-17T11:01:50.000Z",
+    "addedAt": "2026-09-17T15:28:01.151Z"
+  },
+  {
     "id": "nashville-singer-songwriter-becomes-local-celebrity-rescuing",
     "title": "Nashville Singer-Songwriter Becomes Local Celebrity Rescuing Foxes and Saving Them from Mange",
     "url": "https://www.goodnewsnetwork.org/nashville-singer-songwriter-becomes-local-celebrity-rescuing-foxes-and-saving-them-from-mange/",
@@ -198,605 +798,5 @@
     "summary": "Millions of people playing their daily Wordle games will be eager to hear about this new research.",
     "publishedAt": "2026-09-13T15:22:28.000Z",
     "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "elephants-resist-impulsive-behavior",
-    "title": "Elephants Can Think Before They Act and Resist Impulsive Behavior, Study Shows",
-    "url": "https://www.goodnewsnetwork.org/elephants-can-think-before-they-act-and-resist-impulsive-behavior/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "A new study found elephants are able to pause and resist impulsive behavior, demonstrating cognitive self-control abilities.",
-    "publishedAt": "2026-09-13T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "the-blackout-of-65-left-800k-trapped-in-nyc-subway-6-hours-l",
-    "title": "The Blackout of ‘65 Left 800K Trapped in NYC Subway – 6 Hours Later People Were Inspired by Each Other",
-    "url": "https://www.goodnewsnetwork.org/the-massive-blackout-of-65-left-people-inspired-by-each-other/",
-    "source": "Good News Network",
-    "category": "animals",
-    "summary": "In November of 1965 a great blackout spread across the northeastern United States and parts of Canada.",
-    "publishedAt": "2026-09-12T21:07:54.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "massive-footprints-reveal-first-ever-adult-t-rex-trackway-a",
-    "title": "Massive Footprints Reveal First Ever Adult T Rex Trackway, a 66-Million-Year-old Walk Through North Dakota",
-    "url": "https://www.goodnewsnetwork.org/massive-footprints-reveal-first-ever-adult-t-rex-trackway/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "Scientists have confirmed the discovery of the first adult T.",
-    "publishedAt": "2026-09-12T19:15:02.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "homeless-pianist-raises-50k",
-    "title": "Homeless Man Who Went Viral Playing Piano in a Church Has Now Raised $50K for Charity",
-    "url": "https://www.goodnewsnetwork.org/homeless-guy-famous-for-playing-piano-in-church-raising-50k/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A homeless man who became known for playing piano in a church has raised $50,000 for charity since his performances went viral.",
-    "publishedAt": "2026-09-12T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "luxurious-bath-complex-used-by-roman-emperor-found-in-serbia",
-    "title": "Luxurious Bath Complex Used by Roman Emperor Found in Serbia",
-    "url": "https://www.goodnewsnetwork.org/luxurious-bath-complex-used-by-roman-emperor-found-in-serbia/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "From Serbia comes the story of a technically-impressive and luxurious Roman bath complex discovered for the first time.",
-    "publishedAt": "2026-09-11T13:00:55.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "hotel-staff-lost-plushie-vip",
-    "title": "Hotel Staff Give Girl's Lost Plushie VIP Treatment Before Sending Her Home With a Note",
-    "url": "https://www.goodnewsnetwork.org/hotel-staff-give-girls-lost-plushie-the-vip-treatment-before-sending-her-home-with-a-note-look/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "Hotel staff who found a young guest's lost stuffed toy staged a photo \"vacation\" for it around the hotel before mailing it back to her with a note.",
-    "publishedAt": "2026-09-11T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "wa-mine-cleanup-good-samaritan-permit",
-    "title": "First Permit to Clean Up Old Mine Waste Issued for Washington State Under 2024 'Good Samaritan Act'",
-    "url": "https://www.goodnewsnetwork.org/first-permit-to-clean-up-old-mine-waste-issued-for-wa-state-under-2024-good-samaritan-act/",
-    "source": "Good News Network",
-    "category": "environment",
-    "summary": "Washington State issued its first permit under the 2024 Good Samaritan Act, clearing the way for groups to clean up abandoned mine waste without taking on liability for pollution they didn't cause.",
-    "publishedAt": "2026-09-11T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "kenyan-robotic-hands-deaf-students",
-    "title": "Kenyan Startup Makes Robotic Hands That Translate a Teacher's Voice Into Sign Language for Deaf Students",
-    "url": "https://www.goodnewsnetwork.org/kenyan-startup-makes-robotic-hands-that-translate-teachers-voice-into-signs-for-deaf-students/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "A Kenyan startup built robotic hands that convert a teacher's spoken words into sign language in real time, helping deaf students follow along in class.",
-    "publishedAt": "2026-09-11T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "we-held-each-other-up",
-    "title": "‘We Held Each Other Up’",
-    "url": "https://reasonstobecheerful.world/we-held-each-other-up/",
-    "source": "Reasons to be Cheerful",
-    "category": "technology",
-    "summary": "This week in our New York City office, we found ourselves talking about what we remembered from 25 years ago: the darkness, the sadness — and the ways people cared for one another.",
-    "publishedAt": "2026-09-11T08:00:33.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "what-went-right-this-week-the-good-news-that-matters",
-    "title": "What went right this week: the good news that matters",
-    "url": "https://www.positive.news/society/good-news-stories-from-week-37-of-2026/",
-    "source": "Positive News",
-    "category": "technology",
-    "summary": "Solutions to save the planet, protecting childhood from algorithms, and the new world map, plus more The post What went right this week: the good news that matters appeared first on Positive News .",
-    "publishedAt": "2026-09-11T05:50:39.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "a-hungry-cleaning-lady-bit-into-an-apple-and-solved-the-case",
-    "title": "A Hungry Cleaning Lady Bit into an Apple and Solved the Case of Legendary Diamond Heist",
-    "url": "https://www.goodnewsnetwork.org/a-hungry-cleaning-lady-bit-into-an-apple-and-solved-the-case-of-legendary-diamond-heist/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "It’s a beautiful stone no, the Grand Condé diamond?",
-    "publishedAt": "2026-09-10T15:30:31.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "bepicolombo-mercury-arrival",
-    "title": "Humanity's 3rd Visit to Mercury Kicks Off With the Successful Arrival of the BepiColombo Mission",
-    "url": "https://www.goodnewsnetwork.org/humanitys-3rd-visit-to-mercury-kicks-off-with-the-successful-arrival-of-bepicolombo-mission/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "The joint European-Japanese BepiColombo spacecraft successfully arrived at Mercury, becoming only the third mission ever to reach the planet.",
-    "publishedAt": "2026-09-10T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "homegrown-national-park-187000-acres",
-    "title": "The 'National Park' That Stretches From Coast to Coast, One Yard at a Time",
-    "url": "https://reasonstobecheerful.world/the-national-park-that-stretches-from-coast-to-coast",
-    "source": "Reasons to be Cheerful",
-    "category": "environment",
-    "summary": "Entomologist Doug Tallamy's Homegrown National Park campaign, which encourages homeowners to replant yards with native species, has grown to more than 187,000 registered acres of restored habitat.",
-    "publishedAt": "2026-09-10T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "91yo-oldest-appalachian-trail-hiker",
-    "title": "91-Year-Old 'Greybeard' Becomes Oldest Person to Hike the Appalachian Trail After 359 Days and 71 Falls",
-    "url": "https://www.goodnewsnetwork.org/91-yo-greybeard-becomes-oldest-person-to-hike-the-appalachian-trial-after-359-days-and-71-falls/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A 91-year-old hiker became the oldest person on record to complete the Appalachian Trail, finishing the 2,197-mile trek after 359 days despite 71 falls along the way.",
-    "publishedAt": "2026-09-10T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "un-equal-earth-map-replaces-mercator",
-    "title": "UN Adopts Equal Earth Map, Ending Africa's Mercator-Map Shrinkage",
-    "url": "https://news.un.org/en/story/2026/09/1168284",
-    "source": "UN News",
-    "category": "society",
-    "summary": "The United Nations voted to adopt the Equal Earth projection in place of the Mercator map, correcting a centuries-old distortion that shrank Africa's true size on world maps.",
-    "publishedAt": "2026-09-10T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "indie-comic-creator-sells-out-thanks-to-viral-visit-from-rev",
-    "title": "Indie Comic Creator Sells Out Thanks to Viral Visit from Reviewer Who Stopped When Others Didn’t",
-    "url": "https://www.goodnewsnetwork.org/indie-comic-creator-sells-out-thanks-to-viral-visit-from-reviewer-who-stopped-when-others-didnt/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "It’s so tempting to dismiss social media as all doom scrolling through AI-generated slop and political arguments, but it also just turbo boosted this young comic book author’s career.",
-    "publishedAt": "2026-09-10T11:30:04.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "in-pictures-10-years-of-the-comedy-wildlife-photography-awar",
-    "title": "In pictures: 10 years of the Comedy Wildlife Photography Awards",
-    "url": "https://www.positive.news/environment/celebrating-10-years-of-the-nikon-comedy-wildlife-photography-awards/",
-    "source": "Positive News",
-    "category": "technology",
-    "summary": "Ten years of Comedy Wildlife Photography is brought to life in a new immersive experience in London this autumn The post In pictures: 10 years of the Comedy Wildlife Photography Awards appeared first on Positive News .",
-    "publishedAt": "2026-09-10T07:00:49.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "scientists-recreated-chirps-of-jurassic-insects-simulating-a",
-    "title": "Scientists Recreated Chirps of Jurassic Insects, Simulating a 165 Million-yo Soundscape (Listen)",
-    "url": "https://www.goodnewsnetwork.org/scientists-recreated-chirps-of-jurassic-insects-simulating-a-165-million-yo-soundscape-listen/",
-    "source": "Good News Network",
-    "category": "animals",
-    "summary": "It wasn’t just the roars of the dinosaurs that made up the soundscape of the animal world during the Jurassic period.",
-    "publishedAt": "2026-09-09T13:00:54.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "ford-living-roof-factory",
-    "title": "A 'Living Roof' Is Growing Atop Ford's Largest Factory, Saving Energy and Boosting Birds",
-    "url": "https://www.goodnewsnetwork.org/living-roof-grows-atop-fords-largest-factory-saving-energy-and-boosting-biodiversity/",
-    "source": "Good News Network",
-    "category": "environment",
-    "summary": "Ford has planted a living green roof atop its largest factory, cutting the building's energy use while creating new habitat for birds and pollinators.",
-    "publishedAt": "2026-09-09T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "arthritis-drug-hair-regrowth-alopecia",
-    "title": "Arthritis Drug Demonstrates Substantial Hair Regrowth in 1,400 Alopecia Patients",
-    "url": "https://www.goodnewsnetwork.org/arthritis-drug-demonstrates-substantial-hair-regrowth-in-1400-alopecia-patients/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "A trial of an existing arthritis drug found it produced substantial hair regrowth in a large group of alopecia patients, pointing to a promising new treatment option.",
-    "publishedAt": "2026-09-09T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "viking-silver-hoard-denmark",
-    "title": "Yard Work Reveals Largest Trove of Viking Silver Ever Discovered in Denmark",
-    "url": "https://www.goodnewsnetwork.org/yard-work-reveals-largest-trove-of-viking-silver-ever-discovered-in-denmark/",
-    "source": "Good News Network",
-    "category": "culture",
-    "summary": "A homeowner doing routine yard work in Denmark uncovered the largest hoard of Viking-era silver ever found in the country.",
-    "publishedAt": "2026-09-09T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "in-war-children-lose-control-over-their-lives-play-can-bring",
-    "title": "‘In war, children lose control over their lives, play can bring some of that back’",
-    "url": "https://www.positive.news/society/peace/the-right-to-play-displaced-by-conflict/",
-    "source": "Positive News",
-    "category": "animals",
-    "summary": "With nearly 50 million children displaced by conflict, charities are finding ways to give young people something often lost in war: play The post ‘In war, children lose control over their lives, play can bring some of t…",
-    "publishedAt": "2026-09-09T10:16:53.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "what-we-re-reading-what-if-you-could-opt-out-of-algorithms",
-    "title": "What We’re Reading: What If You Could Opt Out of Algorithms?",
-    "url": "https://reasonstobecheerful.world/what-were-reading-australia-says-algorithms-optional/",
-    "source": "Reasons to be Cheerful",
-    "category": "technology",
-    "summary": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking.",
-    "publishedAt": "2026-09-09T08:00:32.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "armless-racing-driver-hits-110-mph-steering-with-his-feet-ai",
-    "title": "Armless Racing Driver Hits 110 mph Steering with His Feet–Aims to Make History at Le Mans",
-    "url": "https://www.goodnewsnetwork.org/armless-racing-driver-hits-110-mph-steering-with-his-feet-aims-to-make-history-at-le-mans/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "Meet the world’s only armless racing driver who uses his feet to steer.",
-    "publishedAt": "2026-09-08T15:30:46.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "emt-ran-1-5-miles-up-1-000-feet-of-elevation-in-31-minutes-t",
-    "title": "EMT Ran 1.5 Miles up 1,000 Feet of Elevation in 31 Minutes to Get Blood Transfusion for Injured Climber",
-    "url": "https://www.goodnewsnetwork.org/emt-ran-1-5-miles-up-1000-feet-of-elevation-in-31-minutes-to-get-blood-transfusion-for-injured-climber/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "Experienced rock climber and father Jacob Gregory was dying.",
-    "publishedAt": "2026-09-08T13:00:34.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "fda-pancreatic-cancer-drug-lifespan",
-    "title": "FDA Immediately Approves Drug That's Doubling Lifespan for Late-Stage Pancreatic Cancer Patients",
-    "url": "https://www.goodnewsnetwork.org/fda-immediately-approves-drug-thats-doubling-lifespan-for-late-pancreatic-cancer-patients/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "The FDA granted immediate approval to a new drug shown to roughly double survival time for patients with late-stage pancreatic cancer.",
-    "publishedAt": "2026-09-08T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "s-carolina-aquarium-celebrates-baby-boom-of-critically-endan",
-    "title": "S. Carolina Aquarium Celebrates ‘Baby Boom’ of Critically-Endangered Penguin Chicks",
-    "url": "https://www.goodnewsnetwork.org/s-carolina-aquarium-celebrates-baby-boom-of-critically-endangered-penguin-chicks/",
-    "source": "Good News Network",
-    "category": "animals",
-    "summary": "5 baby penguins from a species considered Critically-Endangered have hatched at an aquarium down in South Carolina.",
-    "publishedAt": "2026-09-08T11:30:38.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "they-re-resilient-low-effort-and-beautiful-how-to-plant-a-ru",
-    "title": "They’re resilient, low-effort and beautiful: how to plant a rubble garden",
-    "url": "https://www.positive.news/environment/theyre-resilient-low-effort-and-beautiful-how-to-plant-a-rubble-garden/",
-    "source": "Positive News",
-    "category": "environment",
-    "summary": "Forward-thinking gardeners are using leftover builders’ waste to create gardens that are drought-tolerant and full of biodiversity The post They’re resilient, low-effort and beautiful: how to plant a rubble garden appea…",
-    "publishedAt": "2026-09-08T09:01:02.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "22-yo-with-down-syndrome-becomes-certified-fitness-instructo",
-    "title": "22-yo with Down Syndrome Becomes Certified Fitness Instructor, Leads Class of 60 at Local Gym",
-    "url": "https://www.goodnewsnetwork.org/22-yo-with-down-syndrome-becomes-certified-fitness-instructor-leads-class-of-60-at-local-gym/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "A 22-year-old Utahan with Down Syndrome has just become a certified fitness instructor for the popular fitness program UpBeat Barre.",
-    "publishedAt": "2026-09-07T18:30:03.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "firm-buys-texas-coal-plant-to-leverage-its-grid-connections",
-    "title": "Firm Buys Texas Coal Plant to Leverage its Grid Connections for New Massive Solar Project",
-    "url": "https://www.goodnewsnetwork.org/firm-buys-texas-coal-plant-to-leverage-its-grid-connections-for-new-massive-solar-project/",
-    "source": "Good News Network",
-    "category": "environment",
-    "summary": "Coal power has a huge role still to play in the American energy mix—by turning over its substantial grid infrastructure to renewable energy projects.",
-    "publishedAt": "2026-09-07T15:30:29.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "fitted-with-a-berlin-heart-little-macs-is-absolutely-thrivin",
-    "title": "Fitted with a Berlin Heart, Little Macs Is ‘Absolutely Thriving’ While He Waits for a Heart Transplant",
-    "url": "https://www.goodnewsnetwork.org/fitted-with-a-berlin-heart-little-macs-is-absolutely-thriving-while-he-waits-for-a-heart-transplant/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "From the UK comes the story of a baby called Macs, who seemed poised for final-stage heart failure, but who has been saved by a device called a Berlin Heart.",
-    "publishedAt": "2026-09-07T13:00:58.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "chance-encounter-between-2-indiana-graduates-rescues-former",
-    "title": "Chance Encounter Between 2 Indiana Graduates Rescues Former College Ball Star from Homelessness",
-    "url": "https://www.goodnewsnetwork.org/chance-encounter-between-2-indiana-graduates-rescues-former-college-ball-star-from-homelessness/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "See that red backpack there?",
-    "publishedAt": "2026-09-07T11:00:20.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "we-re-likely-to-breach-1-5c-what-happens-next-is-still-in-ou",
-    "title": "We’re likely to breach 1.5C. What happens next is still in our hands",
-    "url": "https://www.positive.news/environment/were-likely-to-breach-1-5c-what-happens-next-is-still-in-our-hands/",
-    "source": "Positive News",
-    "category": "environment",
-    "summary": "Crossing the climate threshold now looks unavoidable, but temperatures are still shaped by the choices we make now The post We’re likely to breach 1.5C.",
-    "publishedAt": "2026-09-07T10:04:14.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "beavers-are-having-a-moment",
-    "title": "Beavers Are Having a Moment",
-    "url": "https://reasonstobecheerful.world/beavers-big-moment/",
-    "source": "Reasons to be Cheerful",
-    "category": "technology",
-    "summary": "Over the last 20 years, Oregon’s wilderness has suffered big time.",
-    "publishedAt": "2026-09-07T08:00:15.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "teen-discovers-coconut-fungi-can-filter-plastic-and-sunscree",
-    "title": "Teen Discovers Coconut Fungi Can Filter Plastic and Sunscreen From Sea—And Wins Science Fair",
-    "url": "https://www.goodnewsnetwork.org/teen-discovers-coconut-fungi-can-filter-plastic-and-sunscreen-from-sea/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "An East Honolulu high school student discovered a fungi in coconut husks that could clean up plastics and sunscreen from the ocean—and her won multiple awards at the Hawaiʻi State Science & Engineering Fair.",
-    "publishedAt": "2026-09-06T21:33:34.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "salmon-return-california",
-    "title": "Endangered Salmon Return to California Rivers in Incredible Numbers",
-    "url": "https://www.goodnewsnetwork.org/endangered-salmon-return-to-california-rivers-in-incredible-numbers-everybodys-just-ecstatic/",
-    "source": "Good News Network",
-    "category": "environment",
-    "summary": "A record 30,000 coho salmon returned to central California rivers this year — ten times the average and double last season's count, a sign of real recovery for the endangered species.",
-    "publishedAt": "2026-09-04T18:30:21Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "nyc-street-cleanup",
-    "title": "Neighbors Get Swept Up in Man's Viral Journey to Clean a NYC Street Block Every Day for 100 Days",
-    "url": "https://www.goodnewsnetwork.org/neighbors-gets-swept-up-in-mans-viral-journey-to-clean-1-nyc-street-block-every-day-for-100-days/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A Washington Heights resident's viral 100-day street-cleaning streak has pulled his neighbors in too, turning one block into a shared community project.",
-    "publishedAt": "2026-09-04T15:30:31Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "terrier-badger-rescue",
-    "title": "A Terrier Rescued After Spending 2 Days Underground Lost in a Badger Warren",
-    "url": "https://www.goodnewsnetwork.org/a-terrier-rescued-after-spending-2-days-underground-lost-in-a-badger-warren/",
-    "source": "Good News Network",
-    "category": "animals",
-    "summary": "Cello, a 6-year-old parson Russell terrier, was pulled safely out of a Nottinghamshire badger warren after two days trapped underground.",
-    "publishedAt": "2026-09-04T13:00:44Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "sweden-finland-railway",
-    "title": "After 30 Years of Estranged Trains, Sweden and Finland Re-Connect Their Railway Lines",
-    "url": "https://www.goodnewsnetwork.org/after-30-years-of-estranged-trains-sweden-and-finland-re-connect-their-railway-lines/",
-    "source": "Good News Network",
-    "category": "society",
-    "summary": "Direct rail service across the Arctic border is running again after three decades apart, reconnecting towns on both sides of the Sweden-Finland line.",
-    "publishedAt": "2026-09-04T12:10:04Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "bhutan-eliminates-dog-rabies",
-    "title": "WHO Validates Bhutan for Eliminating Dog-Transmitted Human Rabies",
-    "url": "https://www.who.int/news/item/04-09-2026-who-validates-bhutan-for-eliminating-dog-transmitted-human-rabies",
-    "source": "World Health Organization",
-    "category": "science",
-    "summary": "The WHO confirmed Bhutan has eliminated dog-transmitted rabies in humans, making it the first country in Southeast Asia to do so after more than a decade of vaccination campaigns.",
-    "publishedAt": "2026-09-04T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "the-spark-your-laundromat-could-be-a-library",
-    "title": "The Spark: Your Laundromat Could Be a Library",
-    "url": "https://reasonstobecheerful.world/the-spark-laundromat-libraries/",
-    "source": "Reasons to be Cheerful",
-    "category": "technology",
-    "summary": "Welcome back to The Spark, our monthly celebration of how people just like you are creating positive change, one meaningful step at a time.",
-    "publishedAt": "2026-09-04T08:00:47.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "what-went-right-this-week-disease-diagnoses-in-seconds-plus",
-    "title": "What went right this week: disease diagnoses ‘in seconds’, plus more",
-    "url": "https://www.positive.news/society/good-news-stories-from-week-36-of-2026/",
-    "source": "Positive News",
-    "category": "science",
-    "summary": "A ‘superhuman’ tool to spot heart disease, France slows fast fashion, and a species comes back from the brink, plus more The post What went right this week: disease diagnoses ‘in seconds’, plus more appeared first on Po…",
-    "publishedAt": "2026-09-04T05:09:49.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "clay-homes-india",
-    "title": "Indian Home Stays Cool Without A/C Through Clever Clay Architecture",
-    "url": "https://www.goodnewsnetwork.org/indian-home-stays-cool-without-a-c-through-clever-clay-architecture/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "Architects in India are using thermodynamic clay designs to keep homes cool without air conditioning — a low-energy answer to rising heat.",
-    "publishedAt": "2026-09-03T19:00:38Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "oyster-reefs-nyc",
-    "title": "3 Million Oysters Eaten by New Yorkers Are Rebuilding the City's Reefs",
-    "url": "https://www.goodnewsnetwork.org/3-million-oysters-eaten-by-new-yorkers-are-rebuilding-the-citys-reefs/",
-    "source": "Good News Network",
-    "category": "environment",
-    "summary": "The Billion Oyster Project is turning restaurants' discarded shells into new reefs that filter harbor water and support marine life.",
-    "publishedAt": "2026-09-03T13:00:37Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "timor-leste-eliminates-trachoma",
-    "title": "WHO Validates Timor-Leste's Elimination of Trachoma as a Public Health Problem",
-    "url": "https://www.who.int/news/item/03-09-2026-who-validates-timor-leste-s-elimination-of-trachoma-as-a-public-health-problem",
-    "source": "World Health Organization",
-    "category": "science",
-    "summary": "Timor-Leste became the last Southeast Asian country to eliminate trachoma, the world's leading infectious cause of blindness, through sanitation improvements and antibiotic distribution.",
-    "publishedAt": "2026-09-03T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "my-life-changing-career-break-happened-because-i-was-wearing",
-    "title": "‘My life-changing career break happened because I was wearing a secondhand coat’",
-    "url": "https://www.positive.news/society/richard-e-grant-fronts-second-hand-september-as-britons-try-to-buy-fewer-clothes/",
-    "source": "Positive News",
-    "category": "technology",
-    "summary": "Richard E Grant struck gold in a charity shop – now he’s fronting a camping to inspire others to do the same The post ‘My life-changing career break happened because I was wearing a secondhand coat’ appeared first on Po…",
-    "publishedAt": "2026-09-03T08:02:45.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "former-poachers-are-protecting-one-of-nigeria-s-last-rainfor",
-    "title": "Former Poachers Are Protecting One of Nigeria’s Last Rainforests",
-    "url": "https://reasonstobecheerful.world/former-poachers-protecting-forest-nigeria/",
-    "source": "Reasons to be Cheerful",
-    "category": "animals",
-    "summary": "Sunday Abiodun can often tell an animal is nearby before he sees it — from a broken twig or the way birds suddenly stop singing.",
-    "publishedAt": "2026-09-03T08:00:52.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "libya-rifles-ballots",
-    "title": "Belligerents in 6-Year Military Standoff Agree to Swap Rifles for Ballots",
-    "url": "https://www.goodnewsnetwork.org/belligerents-in-this-6-year-military-standoff-agree-to-swap-rifles-for-ballots/",
-    "source": "Good News Network",
-    "category": "society",
-    "summary": "Libya's rival factions have agreed to hold elections after UN-brokered talks, opening a path out of a six-year military standoff.",
-    "publishedAt": "2026-09-02T18:30:49Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "stray-cat-stationmaster",
-    "title": "Stray Cat Nursed Back to Health by Train Staff Climbs the Ranks to Become Stationmaster",
-    "url": "https://www.goodnewsnetwork.org/stray-cat-nursed-back-to-health-by-train-staff-climbs-the-ranks-to-become-stationmaster/",
-    "source": "Good News Network",
-    "category": "animals",
-    "summary": "Japanese railway staff nursed a stray cat back to health — and then gave her an honorary promotion to station master.",
-    "publishedAt": "2026-09-02T15:30:59Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "picasso-found-milwaukee",
-    "title": "Original Picasso Stolen 8 Years Ago Found Hanging in a Vacant Apartment by Milwaukee Landlord",
-    "url": "https://www.goodnewsnetwork.org/original-picasso-stolen-8-years-ago-found-hanging-in-relinquished-apartment-by-milwaukee-landlord/",
-    "source": "Good News Network",
-    "category": "culture",
-    "summary": "A Milwaukee landlord doing a walkthrough of an abandoned unit found an original Picasso that had been missing for eight years.",
-    "publishedAt": "2026-09-02T13:00:02Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "nepal-flood-warning",
-    "title": "Last-Minute Flood Warning Saved Over 900 Nepal Students",
-    "url": "https://www.goodnewsnetwork.org/last-minute-flood-warning-saved-over-900-nepal-students-school-principal-said/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A school accountant's urgent alert gave more than 900 students and staff time to evacuate before a flash flood destroyed their school.",
-    "publishedAt": "2026-09-02T11:00:17Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "brazil-supercentenarians",
-    "title": "What Brazil's Supercentenarians Can Teach Us About Living to 120",
-    "url": "https://www.positive.news/society/what-brazils-supercentenarians-can-teach-us-about-living-to-120/",
-    "source": "Positive News",
-    "category": "science",
-    "summary": "Researchers are studying why Brazil has an unusually high number of people living past 110, and what their lives suggest about healthy longevity.",
-    "publishedAt": "2026-09-02T09:00:00Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "what-we-re-reading-in-baltimore-911-now-has-more-ways-to-hel",
-    "title": "What We’re Reading: In Baltimore, 911 Now Has More Ways to Help",
-    "url": "https://reasonstobecheerful.world/what-were-reading-baltimore-911-crisis-support/",
-    "source": "Reasons to be Cheerful",
-    "category": "science",
-    "summary": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking.",
-    "publishedAt": "2026-09-02T08:00:52.000Z",
-    "addedAt": "2026-09-16T22:20:26.620Z"
-  },
-  {
-    "id": "pokemon-fans-help-child",
-    "title": "Pokémon Fans Rally to Help Child After He Was Scammed Out of His Most Valuable Card",
-    "url": "https://www.goodnewsnetwork.org/pokemon-fans-rally-to-help-child-after-he-was-scammed-out-of-his-most-valuable-card/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "Fellow collectors at a Pokémon convention banded together to help a young fan after he was defrauded in a card trade.",
-    "publishedAt": "2026-09-01T15:30:51Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "uganda-ebola-free",
-    "title": "WHO Declares Uganda Ebola-Free After 42 Days Without New Cases",
-    "url": "https://www.goodnewsnetwork.org/who-declares-uganda-ebola-free-after-42-days-without-new-cases/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "Uganda has reached 42 straight days without a new Ebola case, officially ending its latest outbreak.",
-    "publishedAt": "2026-09-01T13:00:18Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "kakapo-population-325-record",
-    "title": "Kākāpō Population Soars to 325 After Record Breeding Season",
-    "url": "https://www.rnz.co.nz/news/environment/1204957/kakapo-population-soars-to-325",
-    "source": "RNZ",
-    "category": "animals",
-    "summary": "New Zealand's critically endangered kākāpō parrot reached a record population of 325 birds after a breeding season that produced 90 new chicks, its highest count in 75 years.",
-    "publishedAt": "2026-09-01T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "china-solar-surpasses-coal-capacity",
-    "title": "Solar Surpasses Coal as China's Top Power Source for the First Time",
-    "url": "https://www.euronews.com/2026/09/01/solar-outpaces-coal-for-the-first-time-in-china-how-does-europe-compare",
-    "source": "Euronews",
-    "category": "environment",
-    "summary": "China's installed solar power capacity overtook coal-fired capacity for the first time on record, a milestone in the country's shift toward renewable energy.",
-    "publishedAt": "2026-09-01T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "good-samaritan-fire",
-    "title": "Good Samaritan Helps Mother After Seeing Her Destroyed Home on the News",
-    "url": "https://www.goodnewsnetwork.org/good-samaritan-helps-mother-after-seeing-her-destroyed-home-on-the-news-hes-been-a-blessing/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A Bronx man saw a fire-displaced mother's story on the news and stepped in to help her rebuild.",
-    "publishedAt": "2026-09-01T11:00:52Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "flock-camera-contracts",
-    "title": "US Cities Are Terminating Flock Camera Contracts at Record Pace After Nationwide Pushback",
-    "url": "https://www.goodnewsnetwork.org/us-cities-are-terminating-flock-camera-contracts-at-record-pace-in-august-after-nationwide-pushback/",
-    "source": "Good News Network",
-    "category": "society",
-    "summary": "A wave of US cities canceled automated license-plate surveillance contracts in August after bipartisan privacy pushback.",
-    "publishedAt": "2026-08-31T18:30:28Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "london-lungs-pollution",
-    "title": "In London, Children's Lungs Grow Faster as Traffic Pollution Falls",
-    "url": "https://www.goodnewsnetwork.org/in-london-childrens-lungs-grow-faster-as-traffic-pollution-falls/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "Kids growing up inside London's low-emissions zone are showing healthier lung development than those in more polluted areas nearby.",
-    "publishedAt": "2026-08-31T15:30:20Z",
-    "addedAt": "2026-09-05T00:00:00Z"
   }
 ]
