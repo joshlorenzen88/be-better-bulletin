@@ -24,6 +24,8 @@
     --joke-tint: #e6ddfb;
     --spotlight: #3f9d5f;
     --spotlight-tint: #dcf3e3;
+    --motivation: #d1495b;
+    --motivation-tint: #f7d7db;
     --accent-grad-1: #163a53;
     --accent-grad-2: #f2a91e;
     --focus: #3f8fbf;
@@ -47,6 +49,8 @@
       --joke-tint: #2a2140;
       --spotlight: #6fd191;
       --spotlight-tint: #163a26;
+      --motivation: #f28b98;
+      --motivation-tint: #4a1e24;
       --accent-grad-1: #0c2136;
       --accent-grad-2: #f4b93a;
       --focus: #6fc1ea;
@@ -70,6 +74,8 @@
     --joke-tint: #2a2140;
     --spotlight: #6fd191;
     --spotlight-tint: #163a26;
+    --motivation: #f28b98;
+    --motivation-tint: #4a1e24;
     --accent-grad-1: #0c2136;
     --accent-grad-2: #f4b93a;
     --focus: #6fc1ea;
@@ -191,24 +197,25 @@
   /* ---------- Daily practices (Stoic / Parenting) ---------- */
   .practice-row {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     margin-top: 18px;
     flex-wrap: wrap;
   }
   .practice-btn {
     font-family: "IBM Plex Mono", ui-monospace, monospace;
-    font-size: 0.76rem;
-    letter-spacing: 0.03em;
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
     border: 1px solid var(--line);
     background: var(--paper-raised);
     color: var(--ink);
-    padding: 9px 16px;
+    padding: 8px 11px;
     border-radius: 999px;
     cursor: pointer;
     box-shadow: var(--shadow);
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
+    white-space: nowrap;
   }
   .practice-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
   .practice-btn[data-practice="stoic"].active {
@@ -229,6 +236,11 @@
   .practice-btn[data-practice="spotlight"].active {
     background: var(--spotlight-tint);
     border-color: var(--spotlight);
+    color: var(--ink);
+  }
+  .practice-btn[data-practice="motivation"].active {
+    background: var(--motivation-tint);
+    border-color: var(--motivation);
     color: var(--ink);
   }
 
@@ -600,7 +612,6 @@
       <h1 class="wordmark"><strong>Be Better</strong> <em>Bulletin</em></h1>
       <div class="masthead-meta">
         <div id="today-date">—</div>
-        <div id="story-count">loading stories</div>
       </div>
     </div>
     <p class="tagline">Good news from the world, every day — real reporting, no politics, and curated for a positive start to your day.</p>
@@ -614,6 +625,7 @@
 
     <div class="practice-row">
       <button class="practice-btn" id="btn-stoic" data-practice="stoic" aria-expanded="false">🏛️ Daily Stoic</button>
+      <button class="practice-btn" id="btn-motivation" data-practice="motivation" aria-expanded="false">🔥 Daily Motivation</button>
       <button class="practice-btn" id="btn-parenting" data-practice="parenting" aria-expanded="false">👪 Daily Parenting</button>
       <button class="practice-btn" id="btn-dadjoke" data-practice="dadjoke" aria-expanded="false">😂 Daily Dad Joke</button>
     </div>
@@ -739,6 +751,45 @@
     { quote: "Nature has given men one tongue but two ears, that we may hear from others twice as much as we speak.", author: "Epictetus", work: "Fragments", title: "Listen twice as long", body: "In your next real conversation today, deliberately let the other person speak roughly twice as long as you do.", prompt: "In your next conversation, can you let yourself be the one who's mostly listening?" }
   ];
 
+  // ---------- Daily Motivation: quote + one push for today, rotated by day-of-year ----------
+  var MOTIVATION_PRACTICES = [
+    { quote: "It is not the critic who counts... The credit belongs to the man who is actually in the arena.", author: "Theodore Roosevelt", title: "Get in the arena", body: "Pick the thing you've been watching from the sidelines — a hard conversation, a project, a decision. Take one real step into it today instead of staying safely in the stands.", prompt: "What's one thing today you could stop critiquing from the sidelines and actually attempt?" },
+    { quote: "You may encounter many defeats, but you must not be defeated.", author: "Maya Angelou", title: "Separate the setback from the story", body: "A loss today is just an event. Whether it becomes 'defeat' depends on what you do next. Pick one recent setback and decide your very next move on it, right now.", prompt: "What recent defeat are you ready to stop carrying as identity and start treating as data?" },
+    { quote: "I've failed over and over and over again in my life, and that is why I succeed.", author: "Michael Jordan", title: "Bank the failure as tuition", body: "Think of a recent miss — a pitch, an attempt, a conversation that didn't land. Write one specific thing it taught you that you now know and didn't before.", prompt: "What did your last failure actually teach you that a win couldn't have?" },
+    { quote: "Whether you think you can, or you think you can't — you're right.", author: "Henry Ford", title: "Check your starting assumption", body: "Notice the story you're telling yourself about today's hardest task before you even start it. If it's 'I can't,' try swapping it for 'I haven't yet' and begin anyway.", prompt: "What's one task today where your own doubt is the biggest obstacle, bigger than the task itself?" },
+    { quote: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt", title: "Say the dream out loud", body: "Name, specifically, the thing you actually want — not the safe version, the real one. Tell one person today, or write it down where you'll see it again.", prompt: "What's the version of your goal you've been quietly downgrading to sound more reasonable?" },
+    { quote: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill", title: "Just continue", body: "You don't need a breakthrough today. You need one more rep — one more email, one more attempt, one more hour of effort on the thing that matters.", prompt: "What's the smallest way you can simply continue today, without needing a breakthrough?" },
+    { quote: "If you really want to do something, you'll find a way. If you don't, you'll find an excuse.", author: "Jim Rohn", title: "Catch the excuse in real time", body: "Notice the next reason you give yourself for not doing the important thing today. Ask honestly: is that a real constraint, or a comfortable excuse?", prompt: "What excuse have you been quietly leaning on this week that wouldn't survive being said out loud?" },
+    { quote: "It always seems impossible until it's done.", author: "Nelson Mandela", title: "Shrink 'impossible' to 'next step'", body: "Take the goal that feels too big and identify the one concrete action in front of you right now. Do only that — let tomorrow worry about the rest.", prompt: "What impossible-feeling goal actually just needs its very next small step done today?" },
+    { quote: "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.", author: "Helen Keller", title: "Act as if it'll work", body: "For the next hour, act on your goal as though you fully expect it to succeed — not recklessly, just without the usual hedge of pre-emptive doubt.", prompt: "What would you attempt today if you were genuinely confident it would work out?" },
+    { quote: "Genius is one percent inspiration and ninety-nine percent perspiration.", author: "Thomas Edison", title: "Trade inspiration for repetition", body: "Skip waiting for motivation today. Do the unglamorous, repetitive part of your work for twenty-five focused minutes and let momentum follow the effort, not the other way around.", prompt: "What boring, repetitive piece of your goal have you been waiting to feel motivated for instead of just doing?" },
+    { quote: "You miss 100% of the shots you don't take.", author: "Wayne Gretzky", title: "Take the shot", body: "Identify the ask, application, or attempt you've been sitting on because you might hear no. Make the attempt today — a no costs you nothing you don't already have.", prompt: "What shot have you been avoiding purely because you might miss it?" },
+    { quote: "Discipline is choosing between what you want now and what you want most.", author: "Abraham Lincoln (attributed)", title: "Pick the long game once", body: "Notice the next small trade-off between comfort now and progress later — snoozing the alarm, skipping the workout, putting off the task. Choose the long game this one time.", prompt: "What's today's version of the trade between what you want now and what you want most?" },
+    { quote: "Well done is better than well said.", author: "Benjamin Franklin", title: "Ship the unfinished version", body: "Stop polishing the plan and send, publish, or deliver the imperfect version of the thing you've been refining. Done today beats perfect someday.", prompt: "What have you been quietly perfecting instead of just finishing and putting out into the world?" },
+    { quote: "Energy and persistence conquer all things.", author: "Benjamin Franklin", title: "Outlast, don't outsmart", body: "Some problems don't need a clever solution — they just need you to keep showing up longer than it takes most people to quit. Show up once more today.", prompt: "Where would simply not quitting today put you further ahead than almost anyone else?" },
+    { quote: "A champion is defined not by their wins but by how they can recover when they fall.", author: "Serena Williams", title: "Practice the recovery, not just the win", body: "Think of your last stumble. Instead of replaying it, practice the recovery — what's the single next action that gets you moving again?", prompt: "What's your actual plan for getting back up after today's setback, whatever it turns out to be?" },
+    { quote: "Do the one thing you think you cannot do. Fail at it. Try again.", author: "Oprah Winfrey", title: "Attempt the thing you've ruled out", body: "Pick the task you've silently decided is beyond you. Spend fifteen minutes on it today anyway, with permission to do it badly.", prompt: "What have you quietly decided you're 'not the kind of person' who can do?" },
+    { quote: "You are never too old to set another goal or to dream a new dream.", author: "C.S. Lewis", title: "Set one new target", body: "Pick a goal you'd start today if age, timing, or 'too late' weren't part of the conversation. Write it down as though it's simply next.", prompt: "What goal have you shelved because you decided the window had closed?" },
+    { quote: "Act as if what you do makes a difference. It does.", author: "William James", title: "Treat the small task as consequential", body: "Take the smallest item on today's list and do it as if it genuinely matters — because the habit of caring about small things is what builds the ability to do big ones.", prompt: "What small task today have you been phoning in that deserves your full effort instead?" },
+    { quote: "The only way to do great work is to love what you do.", author: "Steve Jobs", title: "Find the part worth loving", body: "In today's work, identify the one piece you actually enjoy — even in a task you mostly dislike, there's usually a sliver worth leaning into. Start there.", prompt: "What's the one part of today's work you'd choose to do even if no one made you?" },
+    { quote: "Perseverance is not a long race; it is many short races one after the other.", author: "Walter Elliot", title: "Win just this next lap", body: "Stop thinking about the whole marathon of your goal. Define today as one short race with a clear finish line, and run only that one.", prompt: "What's the one short lap in front of you right now, separate from the whole long race?" },
+    { quote: "What you get by achieving your goals is not as important as what you become by achieving your goals.", author: "Zig Ziglar", title: "Notice who you're becoming", body: "Look past the outcome of today's effort to the habit it's building in you — discipline, courage, follow-through. That's the real prize, even before the goal lands.", prompt: "Who are you becoming through the daily effort, separate from whether today's specific goal is hit?" },
+    { quote: "Courage is resistance to fear, mastery of fear, not absence of fear.", author: "Mark Twain", title: "Act alongside the fear", body: "You don't need the fear to disappear before you act. Identify what you're afraid of today and take the step with the fear still present, not after it's gone.", prompt: "What are you waiting to feel brave enough for, that you could just do scared instead?" },
+    { quote: "The man who moves a mountain begins by carrying away small stones.", author: "Confucius", title: "Carry one stone", body: "Your big goal doesn't move today. One small, specific piece of it does. Name that one stone and carry it before anything else competes for your attention.", prompt: "What's the one small stone you can carry today toward your mountain?" },
+    { quote: "Quality is not an act, it is a habit.", author: "Aristotle", title: "Repeat the standard, not just the intention", body: "Pick one standard you hold for your best work and apply it to something small and routine today — an email, a chore, a quick task — on purpose.", prompt: "Where could you apply your real standard today instead of your 'good enough for now' one?" },
+    { quote: "I am not a product of my circumstances. I am a product of my decisions.", author: "Stephen Covey", title: "Claim the next decision", body: "Name one circumstance you've been using to explain away a choice. Separate the circumstance from the decision, and make the decision on purpose today.", prompt: "What decision have you been quietly blaming your circumstances for instead of owning?" },
+    { quote: "Either you run the day, or the day runs you.", author: "Jim Rohn", title: "Decide the day before it decides you", body: "Before you open your messages today, name the one thing that would make today a win. Protect time for it before the day's noise fills every gap.", prompt: "What's the one thing that would make today a win if nothing else got done?" },
+    { quote: "There is no failure except in no longer trying.", author: "Elbert Hubbard", title: "Redefine today's only failure", body: "Lower the bar for what counts as losing today — the only real failure is not showing up for the attempt. Everything else is just information.", prompt: "What would change about today if the only real failure was simply not trying?" },
+    { quote: "Great works are performed not by strength but by perseverance.", author: "Samuel Johnson", title: "Trade intensity for consistency", body: "Instead of one heroic push today, do the smaller, sustainable version you could actually repeat tomorrow and the day after.", prompt: "What's the sustainable, repeatable version of today's effort, instead of the unsustainable heroic one?" },
+    { quote: "Start where you are. Use what you have. Do what you can.", author: "Arthur Ashe", title: "Work with today's resources", body: "Stop waiting for better conditions, more time, or more certainty. List what you actually have available right now and start with that.", prompt: "What could you start today using only what's already in front of you?" },
+    { quote: "Fall seven times, stand up eight.", author: "Japanese proverb", title: "Count the standing up, not the falling", body: "Today's setback isn't the story — what you do after it is. Note one fall from this week and the fact that you're still standing up from it.", prompt: "What fall from recently are you still in the process of standing back up from, and what does the next stand look like?" },
+    { quote: "Ability is what you're capable of doing. Motivation determines what you do. Attitude determines how well you do it.", author: "Lou Holtz", title: "Fix the attitude, not just the task", body: "You may not control how you feel about today's work, but you do control the attitude you bring to it. Choose one on purpose before you start.", prompt: "What attitude are you choosing to bring to today's hardest task, on purpose, before it starts?" },
+    { quote: "You can't build a reputation on what you are going to do.", author: "Henry Ford", title: "Let today's action speak", body: "Skip announcing the plan. Do the one concrete thing today that proves it, and let the results talk instead of the intentions.", prompt: "What plan have you been talking about that's ready to become an action instead?" },
+    { quote: "The harder the conflict, the more glorious the triumph.", author: "Thomas Paine", title: "Reframe the hard day", body: "If today is genuinely difficult, that difficulty is also the size of what you'll have actually done by the end of it. Let that be motivating, not just draining.", prompt: "What does today's difficulty say about the size of what you're actually attempting?" },
+    { quote: "Do what you can, with what you have, where you are.", author: "Theodore Roosevelt", title: "Stop waiting for the ideal setup", body: "Name the resource, tool, or condition you've been telling yourself you need before you start. Begin today without it and adjust as you go.", prompt: "What are you waiting to have before you start, that you could actually start without?" },
+    { quote: "Your time is limited, so don't waste it living someone else's life.", author: "Steve Jobs", title: "Check whose goal you're chasing", body: "Look at today's top priority and ask honestly whether it's actually yours, or one you inherited from expectation. Give real effort to the one that's truly yours.", prompt: "Is today's main effort actually pointed at something you want, or something you think you're supposed to want?" }
+  ];
+
   // ---------- Daily Parenting: curated principle + practice pairs, rotated by day-of-year ----------
   var PARENTING_PRACTICES = [
     { quote: "Kids do well when they can, and connection comes before correction.", author: "Positive parenting research", title: "Connect first", body: "Before addressing misbehavior, get down to your child's eye level and connect for a moment — a hand on the shoulder, a calm voice — before you address what happened.", prompt: "What's one moment today where you could connect before you correct?" },
@@ -824,6 +875,7 @@
 
   var PRACTICE_POOLS = {
     stoic: { pool: STOIC_PRACTICES, eyebrow: "The Daily Stoic", label: "Today's mind exercise" },
+    motivation: { pool: MOTIVATION_PRACTICES, eyebrow: "Daily Motivation", label: "Today's push" },
     parenting: { pool: PARENTING_PRACTICES, eyebrow: "Daily Parenting", label: "Today's parenting practice" },
     dadjoke: { pool: DAD_JOKES, eyebrow: "Daily Dad Joke", label: "Punchline" }
   };
@@ -948,7 +1000,6 @@
     feed: document.getElementById("feed"),
     rail: document.getElementById("rail"),
     dateEl: document.getElementById("today-date"),
-    countEl: document.getElementById("story-count"),
     notifyToggle: document.getElementById("notify-toggle"),
     notifyLabel: document.getElementById("notify-label"),
     toast: document.getElementById("toast")
@@ -1071,7 +1122,6 @@
   function render() {
     renderRail();
     if (state.storiesError) {
-      els.countEl.textContent = "couldn't load stories";
       els.feed.innerHTML = '<div class="state-msg"><p class="big">No stories here yet</p><p>We couldn\'t load today\'s stories. Check your connection and try refreshing.</p></div>';
       return;
     }
@@ -1079,7 +1129,6 @@
     var list = state.stories.filter(function (s) {
       return state.activeCategory === "all" || s.category === state.activeCategory;
     });
-    els.countEl.textContent = state.stories.length + (state.stories.length === 1 ? " story today" : " stories today");
     if (list.length === 0) {
       els.feed.innerHTML = '<div class="state-msg"><p class="big">No stories here yet</p><p>Check back soon, or pick a different category.</p></div>';
       return;
