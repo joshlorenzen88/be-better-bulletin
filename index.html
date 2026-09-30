@@ -232,6 +232,39 @@
     color: var(--ink);
   }
 
+  .practice-row-divider {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 16px 0 14px;
+  }
+  .spotlight-block { margin-bottom: 0; }
+  .practice-btn.spotlight-big-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.98rem;
+    font-weight: 600;
+    padding: 16px 22px;
+    border-radius: 12px;
+    border-color: var(--spotlight);
+  }
+  .spotlight-toggle-row { margin-top: 10px; }
+  .spotlight-toggle-btn {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.74rem;
+    letter-spacing: 0.03em;
+    background: none;
+    border: 1px dashed var(--spotlight);
+    color: var(--ink);
+    padding: 8px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .spotlight-toggle-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .spotlight-toggle-btn[aria-expanded="true"] {
+    background: var(--spotlight-tint);
+    border-style: solid;
+  }
+
   .practice-panel {
     margin-top: 12px;
     padding: 20px 20px 18px;
@@ -460,7 +493,7 @@
 
   /* ---------- Share Your Story ---------- */
   .spotlight-form-section {
-    margin-top: 28px;
+    margin-top: 14px;
     padding: 22px 20px;
     background: var(--paper-raised);
     border: 1px solid var(--line);
@@ -583,8 +616,14 @@
       <button class="practice-btn" id="btn-stoic" data-practice="stoic" aria-expanded="false">🏛️ Daily Stoic</button>
       <button class="practice-btn" id="btn-parenting" data-practice="parenting" aria-expanded="false">👪 Daily Parenting</button>
       <button class="practice-btn" id="btn-dadjoke" data-practice="dadjoke" aria-expanded="false">😂 Daily Dad Joke</button>
-      <button class="practice-btn" id="btn-spotlight" data-practice="spotlight" aria-expanded="false">📣 Reader Story</button>
     </div>
+
+    <hr class="practice-row-divider" aria-hidden="true">
+
+    <div class="spotlight-block">
+      <button class="practice-btn spotlight-big-btn" id="btn-spotlight" data-practice="spotlight" aria-expanded="false">📣 Reader Story of the Day</button>
+    </div>
+
     <section class="practice-panel" id="practice-panel" aria-label="Daily practice" hidden>
       <div class="practice-eyebrow">
         <span class="practice-eyebrow-label" id="practice-eyebrow-label">—</span>
@@ -599,6 +638,34 @@
       <div class="practice-prompt"><span class="mark">→</span><span id="practice-prompt"></span></div>
     </section>
 
+    <div class="spotlight-toggle-row">
+      <button type="button" class="spotlight-toggle-btn" id="spotlight-toggle-btn" aria-expanded="false" aria-controls="spotlight-form-wrap">✍️ Share your own story</button>
+    </div>
+
+    <section class="spotlight-form-section" id="spotlight-form-wrap" aria-label="Share your story" hidden>
+      <p class="spotlight-form-eyebrow">Share Your Positive Story</p>
+      <h2 class="spotlight-form-title">Something good happen to you lately?</h2>
+      <p class="spotlight-form-sub">Tell us about it. We read every submission, and feature one reader's story on the page each day.</p>
+      <form class="spotlight-form" id="spotlight-form" action="https://formspree.io/f/mzezwaej" method="POST">
+        <div class="spotlight-field">
+          <label for="spotlight-name">Your name</label>
+          <input type="text" id="spotlight-name" name="name" maxlength="80" required>
+        </div>
+        <div class="spotlight-field">
+          <label for="spotlight-location">City, State</label>
+          <input type="text" id="spotlight-location" name="location" maxlength="80" required placeholder="e.g. Norman, OK">
+        </div>
+        <div class="spotlight-field">
+          <label for="spotlight-story">Your story</label>
+          <textarea id="spotlight-story" name="story" maxlength="4000" required></textarea>
+        </div>
+        <div class="spotlight-submit-row">
+          <button type="submit" class="spotlight-submit-btn" id="spotlight-submit-btn">Submit your story</button>
+          <span class="spotlight-form-status" id="spotlight-form-status"></span>
+        </div>
+      </form>
+    </section>
+
     <div class="rail" id="rail"></div>
   </header>
 
@@ -607,30 +674,6 @@
     <div class="skeleton"><div class="skel-line" style="width:24%"></div><div class="skel-line" style="width:70%;height:18px"></div><div class="skel-line" style="width:88%"></div></div>
     <div class="skeleton"><div class="skel-line" style="width:28%"></div><div class="skel-line" style="width:75%;height:18px"></div><div class="skel-line" style="width:60%"></div></div>
   </main>
-
-  <section class="spotlight-form-section" aria-label="Share your story">
-    <p class="spotlight-form-eyebrow">Share Your Positive Story</p>
-    <h2 class="spotlight-form-title">Something good happen to you lately?</h2>
-    <p class="spotlight-form-sub">Tell us about it. We read every submission, and feature one reader's story on the page each day.</p>
-    <form class="spotlight-form" id="spotlight-form" action="https://formspree.io/f/mzezwaej" method="POST">
-      <div class="spotlight-field">
-        <label for="spotlight-name">Your name</label>
-        <input type="text" id="spotlight-name" name="name" maxlength="80" required>
-      </div>
-      <div class="spotlight-field">
-        <label for="spotlight-location">City, State</label>
-        <input type="text" id="spotlight-location" name="location" maxlength="80" required placeholder="e.g. Norman, OK">
-      </div>
-      <div class="spotlight-field">
-        <label for="spotlight-story">Your story</label>
-        <textarea id="spotlight-story" name="story" maxlength="4000" required></textarea>
-      </div>
-      <div class="spotlight-submit-row">
-        <button type="submit" class="spotlight-submit-btn" id="spotlight-submit-btn">Submit your story</button>
-        <span class="spotlight-form-status" id="spotlight-form-status"></span>
-      </div>
-    </form>
-  </section>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -915,6 +958,7 @@
   setupPracticeButtons();
   fetchSpotlight();
   setupSpotlightForm();
+  setupSpotlightToggle();
 
   function escapeHtml(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -941,6 +985,19 @@
     els.toast.classList.add("show");
     clearTimeout(showToast._t);
     showToast._t = setTimeout(function () { els.toast.classList.remove("show"); }, 2200);
+  }
+
+  // Keeps the "Share your own story" form collapsed until the person clicks
+  // the toggle button, and lets them close it again the same way.
+  function setupSpotlightToggle() {
+    var toggleBtn = document.getElementById("spotlight-toggle-btn");
+    var wrap = document.getElementById("spotlight-form-wrap");
+    if (!toggleBtn || !wrap) return;
+    toggleBtn.addEventListener("click", function () {
+      var willOpen = wrap.hidden;
+      wrap.hidden = !willOpen;
+      toggleBtn.setAttribute("aria-expanded", willOpen ? "true" : "false");
+    });
   }
 
   // ---------- Share Your Story form (submits to Formspree, no page backend) ----------
