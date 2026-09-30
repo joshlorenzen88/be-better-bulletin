@@ -22,6 +22,8 @@
     --coral-tint: #bfe2f2;
     --joke: #7c5cd6;
     --joke-tint: #e6ddfb;
+    --spotlight: #3f9d5f;
+    --spotlight-tint: #dcf3e3;
     --accent-grad-1: #163a53;
     --accent-grad-2: #f2a91e;
     --focus: #3f8fbf;
@@ -43,6 +45,8 @@
       --coral-tint: #163449;
       --joke: #b9a1f2;
       --joke-tint: #2a2140;
+      --spotlight: #6fd191;
+      --spotlight-tint: #163a26;
       --accent-grad-1: #0c2136;
       --accent-grad-2: #f4b93a;
       --focus: #6fc1ea;
@@ -64,6 +68,8 @@
     --coral-tint: #163449;
     --joke: #b9a1f2;
     --joke-tint: #2a2140;
+    --spotlight: #6fd191;
+    --spotlight-tint: #163a26;
     --accent-grad-1: #0c2136;
     --accent-grad-2: #f4b93a;
     --focus: #6fc1ea;
@@ -218,6 +224,11 @@
   .practice-btn[data-practice="dadjoke"].active {
     background: var(--joke-tint);
     border-color: var(--joke);
+    color: var(--ink);
+  }
+  .practice-btn[data-practice="spotlight"].active {
+    background: var(--spotlight-tint);
+    border-color: var(--spotlight);
     color: var(--ink);
   }
 
@@ -447,6 +458,97 @@
   }
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
+  /* ---------- Share Your Story ---------- */
+  .spotlight-form-section {
+    margin-top: 28px;
+    padding: 22px 20px;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .spotlight-form-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 3px;
+    background: var(--spotlight);
+  }
+  .spotlight-form-eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--spotlight);
+    font-weight: 500;
+    margin: 0 0 8px;
+  }
+  .spotlight-form-title {
+    font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0 0 6px;
+  }
+  .spotlight-form-sub {
+    margin: 0 0 16px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 52ch;
+  }
+  .spotlight-form { display: flex; flex-direction: column; gap: 12px; }
+  .spotlight-field { display: flex; flex-direction: column; gap: 5px; }
+  .spotlight-field label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .spotlight-field input,
+  .spotlight-field textarea {
+    font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.92rem;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 12px;
+    resize: vertical;
+  }
+  .spotlight-field textarea { min-height: 96px; line-height: 1.5; }
+  .spotlight-field input:focus-visible,
+  .spotlight-field textarea:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 1px;
+  }
+  .spotlight-submit-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .spotlight-submit-btn {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    border: 1px solid var(--spotlight);
+    background: var(--spotlight-tint);
+    color: var(--ink);
+    padding: 10px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .spotlight-submit-btn:disabled { opacity: 0.6; cursor: default; }
+  .spotlight-submit-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .spotlight-form-status {
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
   @media (prefers-reduced-motion: reduce) {
     * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
   }
@@ -481,6 +583,7 @@
       <button class="practice-btn" id="btn-stoic" data-practice="stoic" aria-expanded="false">🏛️ Daily Stoic</button>
       <button class="practice-btn" id="btn-parenting" data-practice="parenting" aria-expanded="false">👪 Daily Parenting</button>
       <button class="practice-btn" id="btn-dadjoke" data-practice="dadjoke" aria-expanded="false">😂 Daily Dad Joke</button>
+      <button class="practice-btn" id="btn-spotlight" data-practice="spotlight" aria-expanded="false">📣 Reader Story</button>
     </div>
     <section class="practice-panel" id="practice-panel" aria-label="Daily practice" hidden>
       <div class="practice-eyebrow">
@@ -504,6 +607,30 @@
     <div class="skeleton"><div class="skel-line" style="width:24%"></div><div class="skel-line" style="width:70%;height:18px"></div><div class="skel-line" style="width:88%"></div></div>
     <div class="skeleton"><div class="skel-line" style="width:28%"></div><div class="skel-line" style="width:75%;height:18px"></div><div class="skel-line" style="width:60%"></div></div>
   </main>
+
+  <section class="spotlight-form-section" aria-label="Share your story">
+    <p class="spotlight-form-eyebrow">Share Your Positive Story</p>
+    <h2 class="spotlight-form-title">Something good happen to you lately?</h2>
+    <p class="spotlight-form-sub">Tell us about it. We read every submission, and feature one reader's story on the page each day.</p>
+    <form class="spotlight-form" id="spotlight-form" action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID" method="POST">
+      <div class="spotlight-field">
+        <label for="spotlight-name">Your name</label>
+        <input type="text" id="spotlight-name" name="name" maxlength="80" required>
+      </div>
+      <div class="spotlight-field">
+        <label for="spotlight-location">City, State</label>
+        <input type="text" id="spotlight-location" name="location" maxlength="80" required placeholder="e.g. Norman, OK">
+      </div>
+      <div class="spotlight-field">
+        <label for="spotlight-story">Your story</label>
+        <textarea id="spotlight-story" name="story" maxlength="4000" required></textarea>
+      </div>
+      <div class="spotlight-submit-row">
+        <button type="submit" class="spotlight-submit-btn" id="spotlight-submit-btn">Submit your story</button>
+        <span class="spotlight-form-status" id="spotlight-form-status"></span>
+      </div>
+    </form>
+  </section>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -666,7 +793,63 @@
 
   var practiceState = { open: false, kind: null };
 
+  // ---------- Reader Story spotlight: fetched from community-spotlight.json ----------
+  var spotlightState = { loaded: false, data: null };
+
+  function fetchSpotlight() {
+    fetch("./community-spotlight.json", { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        spotlightState.loaded = true;
+        spotlightState.data = data && data.story ? data : null;
+        if (practiceState.open && practiceState.kind === "spotlight") renderPractice("spotlight");
+      })
+      .catch(function () {
+        spotlightState.loaded = true;
+        spotlightState.data = null;
+        if (practiceState.open && practiceState.kind === "spotlight") renderPractice("spotlight");
+      });
+  }
+
+  function renderSpotlightPractice() {
+    var now = new Date();
+    document.getElementById("practice-eyebrow-label").textContent = "Reader Story of the Day";
+    document.getElementById("practice-day").textContent = now.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+    var s = spotlightState.data;
+    if (!spotlightState.loaded) {
+      document.getElementById("practice-label").textContent = "Loading…";
+      document.getElementById("practice-quote").textContent = "";
+      document.getElementById("practice-attribution").textContent = "";
+      document.getElementById("practice-title").textContent = "";
+      document.getElementById("practice-body").textContent = "";
+      document.getElementById("practice-prompt").textContent = "";
+      return;
+    }
+    if (!s) {
+      document.getElementById("practice-label").textContent = "Featured reader";
+      document.getElementById("practice-quote").textContent = "“No story has been featured yet — check back soon.”";
+      document.getElementById("practice-attribution").textContent = "";
+      document.getElementById("practice-title").textContent = "";
+      document.getElementById("practice-body").textContent = "";
+      document.getElementById("practice-prompt").textContent = "→ Be the first — share your story below.";
+      return;
+    }
+    document.getElementById("practice-label").textContent = "Featured reader";
+    document.getElementById("practice-quote").textContent = "“" + s.story + "”";
+    document.getElementById("practice-attribution").textContent = "";
+    document.getElementById("practice-title").textContent = s.name + (s.location ? " — " + s.location : "");
+    document.getElementById("practice-body").textContent = "";
+    document.getElementById("practice-prompt").textContent = "→ Want to be featured? Share your own story below.";
+  }
+
   function renderPractice(kind) {
+    if (kind === "spotlight") {
+      renderSpotlightPractice();
+      return;
+    }
     var cfg = PRACTICE_POOLS[kind];
     var now = new Date();
     var idx = dayOfYear(now) % cfg.pool.length;
@@ -730,6 +913,8 @@
 
   els.dateEl.textContent = new Date().toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
   setupPracticeButtons();
+  fetchSpotlight();
+  setupSpotlightForm();
 
   function escapeHtml(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -756,6 +941,41 @@
     els.toast.classList.add("show");
     clearTimeout(showToast._t);
     showToast._t = setTimeout(function () { els.toast.classList.remove("show"); }, 2200);
+  }
+
+  // ---------- Share Your Story form (submits to Formspree, no page backend) ----------
+  function setupSpotlightForm() {
+    var form = document.getElementById("spotlight-form");
+    var btn = document.getElementById("spotlight-submit-btn");
+    var status = document.getElementById("spotlight-form-status");
+    if (!form) return;
+    form.addEventListener("submit", function (evt) {
+      evt.preventDefault();
+      if (form.action.indexOf("YOUR_FORMSPREE_FORM_ID") !== -1) {
+        status.textContent = "Story submissions aren't set up yet.";
+        return;
+      }
+      btn.disabled = true;
+      status.textContent = "Submitting…";
+      var formData = new FormData(form);
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" }
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          form.reset();
+          status.textContent = "";
+          showToast("Thanks! Your story has been submitted for review.");
+        })
+        .catch(function () {
+          status.textContent = "Something went wrong — please try again in a moment.";
+        })
+        .finally(function () {
+          btn.disabled = false;
+        });
+    });
   }
 
   function renderRail() {

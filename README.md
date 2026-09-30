@@ -9,11 +9,17 @@ depends on a chat session, an API key, or manual intervention.
 ## How it works
 
 - **`index.html`** — the whole page (masthead, category rail, story cards,
-  Daily Stoic / Daily Parenting panels, dark mode, notify toggle). On load it
-  fetches `./stories.json` and renders whatever's there; if the fetch fails
-  it shows a friendly "couldn't load stories" state instead of breaking.
+  Daily Stoic / Daily Parenting / Daily Dad Joke / Reader Story panels, dark
+  mode, notify toggle). On load it fetches `./stories.json` and renders
+  whatever's there; if the fetch fails it shows a friendly "couldn't load
+  stories" state instead of breaking.
 - **`stories.json`** — the top ~80 stories, newest first. This is what the
   page actually reads.
+- **`community-spotlight.json`** — today's featured reader story (name,
+  city/state, story text). Written by `scripts/set-spotlight.mjs`, not by
+  hand. If this file doesn't exist yet, the "📣 Reader Story" panel just
+  shows a friendly "no story yet — be the first to share" message instead
+  of breaking.
 - **`data/stories-db.json`** — the full historical archive (capped at ~150,
   oldest pruned first). This is the source of truth for dedup, and
   `stories.json` is just its top slice.
@@ -128,6 +134,72 @@ Useful env vars:
 - `ANTHROPIC_MODEL=...` — override the model id if you need to (see
   [docs.claude.com/en/docs/about-claude/models](https://docs.claude.com/en/docs/about-claude/models)
   for current ids; the script's default may need updating over time).
+
+## Reader stories: setup and daily use
+
+Visitors can submit their own positive story (name, city/state, story text)
+through a form on the page. You read submissions and pick one to feature
+each day. This needs a one-time setup (creating a free Formspree account)
+and then a simple daily step (running a script).
+
+### One-time setup: connect the submission form to Formspree
+
+The site can't collect form submissions itself (it's just static files with
+no server), so it hands them off to [Formspree](https://formspree.io), a
+free service made for exactly this — it emails you every submission and
+gives you a dashboard to review them.
+
+1. Go to [formspree.io](https://formspree.io) and sign up for a free
+   account.
+2. Create a new form (call it whatever you like, e.g. "Be Better Bulletin —
+   Reader Stories").
+3. Formspree will give you a **form endpoint URL**. It looks like
+   `https://formspree.io/f/abcdwxyz` — that last part after `/f/` is your
+   form ID.
+4. Open **`index.html`** in VS Code and find this line (use Ctrl+F / Cmd+F
+   to search for `YOUR_FORMSPREE_FORM_ID`):
+
+   ```html
+   <form class="spotlight-form" id="spotlight-form" action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID" method="POST">
+   ```
+
+   Replace `YOUR_FORMSPREE_FORM_ID` with the ID Formspree gave you, so it
+   reads something like `action="https://formspree.io/f/abcdwxyz"`.
+5. Save the file, then commit and push it (see the git steps you've used
+   before: `git add index.html`, `git commit -m "Connect story form to
+   Formspree"`, `git push`).
+
+Until you do this, the "Share Your Story" form on the site will show a
+message saying submissions aren't set up yet — it won't break or send
+anything nowhere.
+
+### Daily step: featuring a reader's story
+
+1. Check your email (or your Formspree dashboard) for new submissions.
+2. Pick the one you want to feature today.
+3. In VS Code's terminal, from the project folder, run:
+
+   ```bash
+   node scripts/set-spotlight.mjs
+   ```
+
+4. It will ask you for the name, city/state, and story — type or paste
+   each one in, pressing Enter when done (for the story, press Enter twice
+   in a row — once to finish typing, once on the blank line — to move on).
+   It then shows you a preview and asks you to confirm.
+5. Once you confirm, it writes `community-spotlight.json` for you — you
+   never need to edit that file by hand.
+6. Commit and push it so the live site picks it up:
+
+   ```bash
+   git add community-spotlight.json
+   git commit -m "Feature today's reader story"
+   git push
+   ```
+
+   (If `git push` is rejected because the daily fetch workflow committed
+   something in the meantime, run `git pull` first, then `git push` again
+   — same as with any other change to this repo.)
 
 ## Adding more RSS sources
 
