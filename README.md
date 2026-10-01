@@ -20,6 +20,10 @@ depends on a chat session, an API key, or manual intervention.
   hand. If this file doesn't exist yet, the "📣 Reader Story" panel just
   shows a friendly "no story yet — be the first to share" message instead
   of breaking.
+- **`data/spotlight-archive.json`** — every previously featured reader
+  story, newest first. Also written automatically by
+  `scripts/set-spotlight.mjs` (it archives the outgoing story each time you
+  publish a new one). Powers the "📚 Past Stories" list on the page.
 - **`data/stories-db.json`** — the full historical archive (capped at ~150,
   oldest pruned first). This is the source of truth for dedup, and
   `stories.json` is just its top slice.
@@ -188,11 +192,15 @@ anything nowhere.
    in a row — once to finish typing, once on the blank line — to move on).
    It then shows you a preview and asks you to confirm.
 5. Once you confirm, it writes `community-spotlight.json` for you — you
-   never need to edit that file by hand.
-6. Commit and push it so the live site picks it up:
+   never need to edit that file by hand. It also automatically saves
+   whatever story was previously featured into
+   `data/spotlight-archive.json`, so past stories aren't lost — that's what
+   powers the "📚 Past Stories" list on the page (a collapsible section
+   visitors can open to read everything featured before today).
+6. Commit and push both files so the live site picks it up:
 
    ```bash
-   git add community-spotlight.json
+   git add community-spotlight.json data/spotlight-archive.json
    git commit -m "Feature today's reader story"
    git push
    ```
@@ -200,6 +208,10 @@ anything nowhere.
    (If `git push` is rejected because the daily fetch workflow committed
    something in the meantime, run `git pull` first, then `git push` again
    — same as with any other change to this repo.)
+
+Note: `data/spotlight-archive.json` starts out as an empty list (`[]`) and
+fills in automatically the next time you run the script — you never edit it
+by hand either.
 
 ## Adding more RSS sources
 

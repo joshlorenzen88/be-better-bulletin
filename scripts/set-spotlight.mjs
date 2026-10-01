@@ -8,15 +8,33 @@
 // the root of the project. That file is what the live site reads to show
 // the "Reader Story of the Day" panel.
 //
+// Before overwriting it, it also saves whatever was previously featured
+// into data/spotlight-archive.json, so past stories aren't lost — that's
+// what powers the "Past Stories" list on the site.
+//
 // You do not need to edit any JSON by hand. Just answer the prompts.
 
 import { createInterface } from "node:readline";
-import { writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = join(__dirname, "..", "community-spotlight.json");
+const ARCHIVE_PATH = join(__dirname, "..", "data", "spotlight-archive.json");
+
+function loadJson(path, fallback) {
+  if (!existsSync(path)) return fallback;
+  try {
+    return JSON.parse(readFileSync(path, "utf8"));
+  } catch {
+    return fallback;
+  }
+}
+
+function sameStory(a, b) {
+  return a && b && a.name === b.name && a.location === b.location && a.story === b.story && a.date === b.date;
+}
 
 const rl = createInterface({ input: process.stdin, output: process.stdout });
 
@@ -103,12 +121,21 @@ async function main() {
     return;
   }
 
+  // Archive whatever was previously featured before it gets overwritten,
+  // so it isn't lost — that's the whole point of the "Past Stories" list.
+  const previous = loadJson(OUTPUT_PATH, null);
+  const archive = loadJson(ARCHIVE_PATH, []);
+  if (previous && previous.story && !archive.some((entry) => sameStory(entry, previous))) {
+    archive.unshift(previous);
+  }
+
   writeFileSync(OUTPUT_PATH, JSON.stringify(record, null, 2) + "\n", "utf8");
+  writeFileSync(ARCHIVE_PATH, JSON.stringify(archive, null, 2) + "\n", "utf8");
   console.log("");
-  console.log("Done! Wrote community-spotlight.json.");
-  console.log("Next: commit and push this file so the live site picks it up:");
+  console.log("Done! Wrote community-spotlight.json" + (archive.length ? " and updated the archive (" + archive.length + " past " + (archive.length === 1 ? "story" : "stories") + ")." : "."));
+  console.log("Next: commit and push these files so the live site picks it up:");
   console.log("");
-  console.log("  git add community-spotlight.json");
+  console.log("  git add community-spotlight.json data/spotlight-archive.json");
   console.log('  git commit -m "Feature today\'s reader story"');
   console.log("  git push");
   console.log("");

@@ -594,6 +594,58 @@
     color: var(--muted);
   }
 
+  /* ---------- Past Stories archive ---------- */
+  .spotlight-archive-section {
+    margin-top: 14px;
+    padding: 22px 20px;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .spotlight-archive-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 3px;
+    background: var(--spotlight);
+  }
+  .spotlight-archive-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .spotlight-archive-item {
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+  }
+  .spotlight-archive-item:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+  .spotlight-archive-meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--spotlight);
+    font-weight: 500;
+    margin: 0 0 6px;
+  }
+  .spotlight-archive-story {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+  .spotlight-archive-empty {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
   }
@@ -676,6 +728,18 @@
           <span class="spotlight-form-status" id="spotlight-form-status"></span>
         </div>
       </form>
+    </section>
+
+    <div class="spotlight-toggle-row">
+      <button type="button" class="spotlight-toggle-btn" id="spotlight-archive-toggle-btn" aria-expanded="false" aria-controls="spotlight-archive-wrap">📚 Past Stories</button>
+    </div>
+
+    <section class="spotlight-archive-section" id="spotlight-archive-wrap" aria-label="Past reader stories" hidden>
+      <p class="spotlight-form-eyebrow">Past Reader Stories</p>
+      <h2 class="spotlight-form-title">Previously featured</h2>
+      <div class="spotlight-archive-list" id="spotlight-archive-list">
+        <p class="spotlight-archive-empty">Loading…</p>
+      </div>
     </section>
 
     <div class="rail" id="rail"></div>
@@ -909,6 +973,55 @@
       });
   }
 
+  // ---------- Past Stories: fetched from data/spotlight-archive.json ----------
+  function fetchArchive() {
+    fetch("./data/spotlight-archive.json", { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        renderArchive(Array.isArray(data) ? data : []);
+      })
+      .catch(function () {
+        renderArchive([]);
+      });
+  }
+
+  function renderArchive(entries) {
+    var list = document.getElementById("spotlight-archive-list");
+    if (!list) return;
+    if (!entries.length) {
+      list.innerHTML = '<p class="spotlight-archive-empty">No past stories yet — check back once a new one is featured.</p>';
+      return;
+    }
+    var html = "";
+    entries.forEach(function (entry) {
+      var dateLabel = entry.date || "";
+      if (dateLabel) {
+        var d = new Date(dateLabel + "T00:00:00");
+        if (!isNaN(d.getTime())) dateLabel = d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+      }
+      var meta = escapeHtml(entry.name || "Anonymous") +
+        (entry.location ? " — " + escapeHtml(entry.location) : "") +
+        (dateLabel ? " · " + escapeHtml(dateLabel) : "");
+      html += '<div class="spotlight-archive-item"><p class="spotlight-archive-meta">' + meta + "</p>" +
+        '<p class="spotlight-archive-story">“' + escapeHtml(entry.story || "") + "”</p></div>";
+    });
+    list.innerHTML = html;
+  }
+
+  function setupSpotlightArchiveToggle() {
+    var toggleBtn = document.getElementById("spotlight-archive-toggle-btn");
+    var wrap = document.getElementById("spotlight-archive-wrap");
+    if (!toggleBtn || !wrap) return;
+    toggleBtn.addEventListener("click", function () {
+      var willOpen = wrap.hidden;
+      wrap.hidden = !willOpen;
+      toggleBtn.setAttribute("aria-expanded", willOpen ? "true" : "false");
+    });
+  }
+
   function renderSpotlightPractice() {
     var now = new Date();
     document.getElementById("practice-eyebrow-label").textContent = "Reader Story of the Day";
@@ -1010,6 +1123,8 @@
   fetchSpotlight();
   setupSpotlightForm();
   setupSpotlightToggle();
+  fetchArchive();
+  setupSpotlightArchiveToggle();
 
   function escapeHtml(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
