@@ -1,5 +1,25 @@
 [
   {
+    "id": "fan-storms-out-as-team-loses-on-tv-only-to-become-hero-for-w",
+    "title": "Fan ‘Storms Out’ as Team Loses on TV, Only to Become Hero for Woman Stuck in Mud Chest-high",
+    "url": "https://www.goodnewsnetwork.org/fan-storms-out-as-team-loses-and-finds-woman-stuck-in-mud/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "A man rescued a woman who was trapped chest-deep in mud after he happened to leave his house during a sports game.",
+    "publishedAt": "2026-10-03T14:59:55.000Z",
+    "addedAt": "2026-10-03T15:04:57.775Z"
+  },
+  {
+    "id": "hunter-gatherers-don-t-have-trouble-sleeping-why-and-what-ca",
+    "title": "Hunter-Gatherers Don’t Have Trouble Sleeping: Why? and What Can We Learn from Them?",
+    "url": "https://www.goodnewsnetwork.org/hunter-gatherers-dont-have-trouble-sleeping-why-and-what-can-we-learn-from-them/",
+    "source": "Good News Network",
+    "category": "science",
+    "summary": "The BBC recently spoke with a sleep scientist who’s spent much of his career studying the sleeping habits of the last remaining, contactable, hunter-gatherer societies on Earth.",
+    "publishedAt": "2026-10-02T18:30:12.000Z",
+    "addedAt": "2026-10-03T15:04:57.775Z"
+  },
+  {
     "id": "uk-s-national-museums-to-continue-25-year-policy-of-free-ent",
     "title": "UK’s National Museums to Continue 25-Year Policy of Free Entry for Foreign Visitors",
     "url": "https://www.goodnewsnetwork.org/uks-national-museums-to-continue-25-year-policy-of-free-entry-for-foreign-visitors/",
@@ -1030,12 +1050,12 @@
     "addedAt": "2026-09-16T22:20:26.620Z"
   },
   {
-    "id": "kenyan-robotic-hands-deaf-students",
-    "title": "Kenyan Startup Makes Robotic Hands That Translate a Teacher's Voice Into Sign Language for Deaf Students",
-    "url": "https://www.goodnewsnetwork.org/kenyan-startup-makes-robotic-hands-that-translate-teachers-voice-into-signs-for-deaf-students/",
+    "id": "hotel-staff-lost-plushie-vip",
+    "title": "Hotel Staff Give Girl's Lost Plushie VIP Treatment Before Sending Her Home With a Note",
+    "url": "https://www.goodnewsnetwork.org/hotel-staff-give-girls-lost-plushie-the-vip-treatment-before-sending-her-home-with-a-note-look/",
     "source": "Good News Network",
-    "category": "technology",
-    "summary": "A Kenyan startup built robotic hands that convert a teacher's spoken words into sign language in real time, helping deaf students follow along in class.",
+    "category": "community",
+    "summary": "Hotel staff who found a young guest's lost stuffed toy staged a photo \"vacation\" for it around the hotel before mailing it back to her with a note.",
     "publishedAt": "2026-09-11T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -1050,12 +1070,12 @@
     "addedAt": "2026-09-14T12:45:36Z"
   },
   {
-    "id": "hotel-staff-lost-plushie-vip",
-    "title": "Hotel Staff Give Girl's Lost Plushie VIP Treatment Before Sending Her Home With a Note",
-    "url": "https://www.goodnewsnetwork.org/hotel-staff-give-girls-lost-plushie-the-vip-treatment-before-sending-her-home-with-a-note-look/",
+    "id": "kenyan-robotic-hands-deaf-students",
+    "title": "Kenyan Startup Makes Robotic Hands That Translate a Teacher's Voice Into Sign Language for Deaf Students",
+    "url": "https://www.goodnewsnetwork.org/kenyan-startup-makes-robotic-hands-that-translate-teachers-voice-into-signs-for-deaf-students/",
     "source": "Good News Network",
-    "category": "community",
-    "summary": "Hotel staff who found a young guest's lost stuffed toy staged a photo \"vacation\" for it around the hotel before mailing it back to her with a note.",
+    "category": "technology",
+    "summary": "A Kenyan startup built robotic hands that convert a teacher's spoken words into sign language in real time, helping deaf students follow along in class.",
     "publishedAt": "2026-09-11T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -1090,22 +1110,12 @@
     "addedAt": "2026-09-16T22:20:26.620Z"
   },
   {
-    "id": "un-equal-earth-map-replaces-mercator",
-    "title": "UN Adopts Equal Earth Map, Ending Africa's Mercator-Map Shrinkage",
-    "url": "https://news.un.org/en/story/2026/09/1168284",
-    "source": "UN News",
-    "category": "society",
-    "summary": "The United Nations voted to adopt the Equal Earth projection in place of the Mercator map, correcting a centuries-old distortion that shrank Africa's true size on world maps.",
-    "publishedAt": "2026-09-10T12:00:00Z",
-    "addedAt": "2026-09-14T12:45:36Z"
-  },
-  {
-    "id": "91yo-oldest-appalachian-trail-hiker",
-    "title": "91-Year-Old 'Greybeard' Becomes Oldest Person to Hike the Appalachian Trail After 359 Days and 71 Falls",
-    "url": "https://www.goodnewsnetwork.org/91-yo-greybeard-becomes-oldest-person-to-hike-the-appalachian-trial-after-359-days-and-71-falls/",
+    "id": "bepicolombo-mercury-arrival",
+    "title": "Humanity's 3rd Visit to Mercury Kicks Off With the Successful Arrival of the BepiColombo Mission",
+    "url": "https://www.goodnewsnetwork.org/humanitys-3rd-visit-to-mercury-kicks-off-with-the-successful-arrival-of-bepicolombo-mission/",
     "source": "Good News Network",
-    "category": "community",
-    "summary": "A 91-year-old hiker became the oldest person on record to complete the Appalachian Trail, finishing the 2,197-mile trek after 359 days despite 71 falls along the way.",
+    "category": "science",
+    "summary": "The joint European-Japanese BepiColombo spacecraft successfully arrived at Mercury, becoming only the third mission ever to reach the planet.",
     "publishedAt": "2026-09-10T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -1120,12 +1130,22 @@
     "addedAt": "2026-09-14T12:45:36Z"
   },
   {
-    "id": "bepicolombo-mercury-arrival",
-    "title": "Humanity's 3rd Visit to Mercury Kicks Off With the Successful Arrival of the BepiColombo Mission",
-    "url": "https://www.goodnewsnetwork.org/humanitys-3rd-visit-to-mercury-kicks-off-with-the-successful-arrival-of-bepicolombo-mission/",
+    "id": "91yo-oldest-appalachian-trail-hiker",
+    "title": "91-Year-Old 'Greybeard' Becomes Oldest Person to Hike the Appalachian Trail After 359 Days and 71 Falls",
+    "url": "https://www.goodnewsnetwork.org/91-yo-greybeard-becomes-oldest-person-to-hike-the-appalachian-trial-after-359-days-and-71-falls/",
     "source": "Good News Network",
-    "category": "science",
-    "summary": "The joint European-Japanese BepiColombo spacecraft successfully arrived at Mercury, becoming only the third mission ever to reach the planet.",
+    "category": "community",
+    "summary": "A 91-year-old hiker became the oldest person on record to complete the Appalachian Trail, finishing the 2,197-mile trek after 359 days despite 71 falls along the way.",
+    "publishedAt": "2026-09-10T12:00:00Z",
+    "addedAt": "2026-09-14T12:45:36Z"
+  },
+  {
+    "id": "un-equal-earth-map-replaces-mercator",
+    "title": "UN Adopts Equal Earth Map, Ending Africa's Mercator-Map Shrinkage",
+    "url": "https://news.un.org/en/story/2026/09/1168284",
+    "source": "UN News",
+    "category": "society",
+    "summary": "The United Nations voted to adopt the Equal Earth projection in place of the Mercator map, correcting a centuries-old distortion that shrank Africa's true size on world maps.",
     "publishedAt": "2026-09-10T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -1160,12 +1180,12 @@
     "addedAt": "2026-09-16T22:20:26.620Z"
   },
   {
-    "id": "viking-silver-hoard-denmark",
-    "title": "Yard Work Reveals Largest Trove of Viking Silver Ever Discovered in Denmark",
-    "url": "https://www.goodnewsnetwork.org/yard-work-reveals-largest-trove-of-viking-silver-ever-discovered-in-denmark/",
+    "id": "ford-living-roof-factory",
+    "title": "A 'Living Roof' Is Growing Atop Ford's Largest Factory, Saving Energy and Boosting Birds",
+    "url": "https://www.goodnewsnetwork.org/living-roof-grows-atop-fords-largest-factory-saving-energy-and-boosting-biodiversity/",
     "source": "Good News Network",
-    "category": "culture",
-    "summary": "A homeowner doing routine yard work in Denmark uncovered the largest hoard of Viking-era silver ever found in the country.",
+    "category": "environment",
+    "summary": "Ford has planted a living green roof atop its largest factory, cutting the building's energy use while creating new habitat for birds and pollinators.",
     "publishedAt": "2026-09-09T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -1180,12 +1200,12 @@
     "addedAt": "2026-09-14T12:45:36Z"
   },
   {
-    "id": "ford-living-roof-factory",
-    "title": "A 'Living Roof' Is Growing Atop Ford's Largest Factory, Saving Energy and Boosting Birds",
-    "url": "https://www.goodnewsnetwork.org/living-roof-grows-atop-fords-largest-factory-saving-energy-and-boosting-biodiversity/",
+    "id": "viking-silver-hoard-denmark",
+    "title": "Yard Work Reveals Largest Trove of Viking Silver Ever Discovered in Denmark",
+    "url": "https://www.goodnewsnetwork.org/yard-work-reveals-largest-trove-of-viking-silver-ever-discovered-in-denmark/",
     "source": "Good News Network",
-    "category": "environment",
-    "summary": "Ford has planted a living green roof atop its largest factory, cutting the building's energy use while creating new habitat for birds and pollinators.",
+    "category": "culture",
+    "summary": "A homeowner doing routine yard work in Denmark uncovered the largest hoard of Viking-era silver ever found in the country.",
     "publishedAt": "2026-09-09T12:00:00Z",
     "addedAt": "2026-09-14T12:45:36Z"
   },
@@ -1477,26 +1497,6 @@
     "category": "culture",
     "summary": "A Milwaukee landlord doing a walkthrough of an abandoned unit found an original Picasso that had been missing for eight years.",
     "publishedAt": "2026-09-02T13:00:02Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "nepal-flood-warning",
-    "title": "Last-Minute Flood Warning Saved Over 900 Nepal Students",
-    "url": "https://www.goodnewsnetwork.org/last-minute-flood-warning-saved-over-900-nepal-students-school-principal-said/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A school accountant's urgent alert gave more than 900 students and staff time to evacuate before a flash flood destroyed their school.",
-    "publishedAt": "2026-09-02T11:00:17Z",
-    "addedAt": "2026-09-05T00:00:00Z"
-  },
-  {
-    "id": "brazil-supercentenarians",
-    "title": "What Brazil's Supercentenarians Can Teach Us About Living to 120",
-    "url": "https://www.positive.news/society/what-brazils-supercentenarians-can-teach-us-about-living-to-120/",
-    "source": "Positive News",
-    "category": "science",
-    "summary": "Researchers are studying why Brazil has an unusually high number of people living past 110, and what their lives suggest about healthy longevity.",
-    "publishedAt": "2026-09-02T09:00:00Z",
     "addedAt": "2026-09-05T00:00:00Z"
   }
 ]
