@@ -1,5 +1,45 @@
 [
   {
+    "id": "rare-1-in-100m-ghost-lobster-goes-to-school-to-help-scientis",
+    "title": "Rare 1-in-100M ‘Ghost Lobster’ Goes to School to Help Scientists Crack Genetic Mystery–in Time for Halloween",
+    "url": "https://www.goodnewsnetwork.org/100m-ghost-lobster-goes-to-college/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "An extremely rare ghost lobster, with a 1-in-100-million occurrence rate, has arrived at Maine's Marine Science Center to help scientists study its genetics.",
+    "publishedAt": "2026-10-04T15:04:49.000Z",
+    "addedAt": "2026-10-04T15:41:57.746Z"
+  },
+  {
+    "id": "ai-chatbots-will-never-replace-advice-from-elders-say-seven",
+    "title": "AI Chatbots Will Never Replace Advice From Elders, Say Seven of 10 in New Poll",
+    "url": "https://www.goodnewsnetwork.org/ai-chatbots-will-never-replace-advice-from-elders-say-seven-of-10-in-new-poll/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "More than seven in 10 Brits believe AI will never replace advice from their elders.",
+    "publishedAt": "2026-10-04T11:00:36.000Z",
+    "addedAt": "2026-10-04T15:41:57.746Z"
+  },
+  {
+    "id": "underwater-umbrellas-could-protect-coral-reefs-from-heat-dam",
+    "title": "Underwater Umbrellas Could Protect Coral Reefs From Heat Damage",
+    "url": "https://www.goodnewsnetwork.org/underwater-umbrellas-could-protect-coral-reefs-from-heat-damage/",
+    "source": "Good News Network",
+    "category": "environment",
+    "summary": "Scientists in Florida are testing underwater umbrellas that could shield coral reefs from heat damage and reverse some bleaching.",
+    "publishedAt": "2026-10-03T21:13:54.000Z",
+    "addedAt": "2026-10-04T15:41:57.746Z"
+  },
+  {
+    "id": "ancient-christian-complex-reopens-in-syria-after-14-years-a",
+    "title": "Ancient Christian Complex Reopens in Syria After 14 Years, a War, and an Earthquake",
+    "url": "https://www.goodnewsnetwork.org/ancient-christian-site-reopens-in-syria-after-14-years-a-war-and-an-earthquake/",
+    "source": "Good News Network",
+    "category": "culture",
+    "summary": "A 5th-century Christian heritage site in Aleppo, Syria has reopened to the public after restoration and clearing of war damage.",
+    "publishedAt": "2026-10-03T17:18:47.000Z",
+    "addedAt": "2026-10-04T15:41:57.746Z"
+  },
+  {
     "id": "fan-storms-out-as-team-loses-on-tv-only-to-become-hero-for-w",
     "title": "Fan ‘Storms Out’ as Team Loses on TV, Only to Become Hero for Woman Stuck in Mud Chest-high",
     "url": "https://www.goodnewsnetwork.org/fan-storms-out-as-team-loses-and-finds-woman-stuck-in-mud/",
@@ -758,45 +798,5 @@
     "summary": "A California recycling team developed a method to process plastic into new products before it degrades in the environment.",
     "publishedAt": "2026-09-17T18:30:31.000Z",
     "addedAt": "2026-09-18T14:49:29.461Z"
-  },
-  {
-    "id": "scientists-solve-mystery-behind-snowfall-that-dropped-695-bi",
-    "title": "Scientists Solve Mystery Behind Snowfall That Dropped 695 Billion Tons of Ice on Antarctica",
-    "url": "https://www.goodnewsnetwork.org/scientists-solve-mystery-behind-snowfall-that-dropped-695-billion-tons-of-ice-on-antarctica/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "Scientists identified tropical ocean warming as the cause of massive snowstorms that added 695 billion tons of ice to East Antarctica between 2021 and 2023.",
-    "publishedAt": "2026-09-17T15:30:25.000Z",
-    "addedAt": "2026-09-18T14:49:29.461Z"
-  },
-  {
-    "id": "the-world-is-getting-noisier-but-we-can-change-that",
-    "title": "The World Is Getting Noisier — But We Can Change That",
-    "url": "https://reasonstobecheerful.world/rethinking-noise-pollution-protect-health-well-being/",
-    "source": "Reasons to be Cheerful",
-    "category": "technology",
-    "summary": "I spent years immersed in noise.",
-    "publishedAt": "2026-09-17T13:55:12.000Z",
-    "addedAt": "2026-09-17T15:28:01.151Z"
-  },
-  {
-    "id": "chinese-scientists-develop-new-oil-refining-method-that-cuts",
-    "title": "Chinese Scientists Develop New Oil Refining Method That Cuts Energy Use by 90%",
-    "url": "https://www.goodnewsnetwork.org/chinese-scientists-develop-new-oil-refining-method-that-cuts-energy-use-by-90/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "Chinese scientists developed an oil refining method that separates crude oil at room temperature, reducing energy use by 90% compared to traditional distillation.",
-    "publishedAt": "2026-09-17T13:00:22.000Z",
-    "addedAt": "2026-09-17T15:28:01.151Z"
-  },
-  {
-    "id": "students-win-james-dyson-award-for-device-that-screens-stude",
-    "title": "Students Win James Dyson Award for Device That Screens Students for Concussions in Just 60 Seconds",
-    "url": "https://www.goodnewsnetwork.org/students-win-james-dyson-award-for-device-that-screens-students-for-concussions-in-just-60-seconds/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "Harvard students invented a low-cost eye-tracking headset that can screen athletes for concussions in 60 seconds.",
-    "publishedAt": "2026-09-17T11:01:50.000Z",
-    "addedAt": "2026-09-17T15:28:01.151Z"
   }
 ]
