@@ -7,10 +7,131 @@
       "color": "#c95116",
       "label": "Daily Deals",
       "description": "Tools, home improvement & seasonal finds",
-      "status": "unavailable",
-      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
-      "deals": [],
-      "attemptedAt": null
+      "status": "snapshot",
+      "message": "Manually checked against the retailer's live Daily Deals page on Oct 7, 2026 (Home Depot has no public deals API). This snapshot will be replaced by tomorrow's automatic check.",
+      "deals": [
+        {
+          "id": "hd-1",
+          "name": "GE 1.6 cu. ft. Over-the-Range Microwave in Stainless Steel",
+          "description": "Over-the-range microwave",
+          "price": 229,
+          "original": 389,
+          "category": "Appliances",
+          "url": "https://www.homedepot.com/p/GE-1-6-cu-ft-Over-the-Range-Microwave-in-Stainless-Steel-JVM3160RFSS/204394354",
+          "image": "https://images.thdstatic.com/productImages/d569c107-263b-4881-9980-d3565783ea36/svn/stainless-steel-ge-over-the-range-microwaves-jvm3160rfss-64_600.jpg",
+          "icon": "home",
+          "retailer": "hd",
+          "checkedAt": "2026-10-07T16:52:11.000Z",
+          "expiresAt": "2026-10-08T07:00:00Z",
+          "method": "Checked snapshot"
+        },
+        {
+          "id": "hd-2",
+          "name": "Frigidaire 24 in. Front Control Smart Built-In Tall Tub 62 dBA Dishwasher in Stainless Steel",
+          "description": "Front control, smart-enabled dishwasher",
+          "price": 299,
+          "original": 419,
+          "category": "Appliances",
+          "url": "https://www.homedepot.com/p/Frigidaire-24-in-Front-Control-Smart-Built-In-Tall-Tub-62-dBA-Dishwasher-in-Stainless-Steel-FDPC4221AS/314298606",
+          "image": "https://images.thdstatic.com/productImages/370e1782-4bc8-4cbb-b7de-acb9ce7d301c/svn/stainless-steel-frigidaire-built-in-dishwashers-fdpc4221as-64_600.jpg",
+          "icon": "home",
+          "retailer": "hd",
+          "checkedAt": "2026-10-07T16:52:11.000Z",
+          "expiresAt": "2026-10-08T07:00:00Z",
+          "method": "Checked snapshot"
+        },
+        {
+          "id": "hd-3",
+          "name": "GE 30 in. 4 Burner Free-Standing Electric Range in Stainless Steel w/ Stainless Knobs",
+          "description": "Free-standing electric range",
+          "price": 649,
+          "original": 929,
+          "category": "Appliances",
+          "url": "https://www.homedepot.com/p/GE-30-in-4-Burner-Element-Free-Standing-Electric-Range-in-Stainless-Steel-w-Stainless-Knobs-GRF40HSVSS/329011820",
+          "image": "https://images.thdstatic.com/productImages/c453b1f0-355b-471e-b5b6-e8c697c2fc0b/svn/stainless-steel-ge-single-oven-electric-ranges-grf40hsvss-64_600.jpg",
+          "icon": "home",
+          "retailer": "hd",
+          "checkedAt": "2026-10-07T16:52:11.000Z",
+          "expiresAt": "2026-10-08T07:00:00Z",
+          "method": "Checked snapshot"
+        },
+        {
+          "id": "hd-4",
+          "name": "Frigidaire 30 in. 5 Burner Freestanding Gas Range with Quick Boil and Even Baking Technology",
+          "description": "Freestanding gas range",
+          "price": 749,
+          "original": 979,
+          "category": "Appliances",
+          "url": "https://www.homedepot.com/p/Frigidaire-30-in-5-Burner-Freestanding-Gas-Range-in-Stainless-Steel-with-Quick-Boil-and-Even-Baking-Technology-FCRG3052BS/341304656",
+          "image": "https://images.thdstatic.com/productImages/cbd28e79-08fc-44f9-ac3a-ed420edeebec/svn/stainless-steel-frigidaire-single-oven-gas-ranges-fcrg3052bs-64_600.jpg",
+          "icon": "home",
+          "retailer": "hd",
+          "checkedAt": "2026-10-07T16:52:11.000Z",
+          "expiresAt": "2026-10-08T07:00:00Z",
+          "method": "Checked snapshot"
+        },
+        {
+          "id": "hd-5",
+          "name": "LG 24 cu. ft. Top Mount Freezer Refrigerator with Multi-Flow Air System, Garage Ready",
+          "description": "Top mount freezer refrigerator",
+          "price": 899,
+          "original": 1199,
+          "category": "Appliances",
+          "url": "https://www.homedepot.com/p/LG-24-cu-ft-Top-Mount-Freezer-Refrigerator-with-Multi-Flow-Air-System-in-Stainless-Steel-Garage-Ready-LHTNS2403S/321887244",
+          "image": "https://images.thdstatic.com/productImages/131e431b-49ef-4a1d-a586-a476ded3a9cb/svn/stainless-steel-lg-top-freezer-refrigerators-lhtns2403s-64_600.jpg",
+          "icon": "home",
+          "retailer": "hd",
+          "checkedAt": "2026-10-07T16:52:11.000Z",
+          "expiresAt": "2026-10-08T07:00:00Z",
+          "method": "Checked snapshot"
+        },
+        {
+          "id": "hd-6",
+          "name": "GE 24 in. Built-In Tall Tub Dishwasher w/ Sanitize, Dry Boost, 52 dBA",
+          "description": "Built-in tall tub dishwasher",
+          "price": 429,
+          "original": 749,
+          "category": "Appliances",
+          "url": "https://www.homedepot.com/p/GE-24-in-Built-In-Tall-Tub-Top-Control-Stainless-Steel-Dishwasher-w-Sanitize-Dry-Boost-52-dBA-GDT550PYRFS/317761281",
+          "image": "https://images.thdstatic.com/productImages/c39cc26e-9b9d-4107-9bcf-576b8c0cad80/svn/stainless-steel-ge-built-in-dishwashers-gdt550pyrfs-64_600.jpg",
+          "icon": "home",
+          "retailer": "hd",
+          "checkedAt": "2026-10-07T16:52:11.000Z",
+          "expiresAt": "2026-10-08T07:00:00Z",
+          "method": "Checked snapshot"
+        },
+        {
+          "id": "hd-7",
+          "name": "LG 36 in. 28 cu. ft. 3-Door French Door Refrigerator w/ Ice and Water Dispenser and Craft Ice",
+          "description": "French door refrigerator",
+          "price": 1799,
+          "original": 3099,
+          "category": "Appliances",
+          "url": "https://www.homedepot.com/p/LG-36-in-28-cu-ft-3-Door-French-Door-Refrigerator-w-Ice-and-Water-Dispenser-and-Craft-Ice-in-PrintProof-Stainless-Steel-LHFS28XBS/325158253",
+          "image": "https://images.thdstatic.com/productImages/239f6aa5-23ac-454f-950b-44a0f67a5125/svn/printproof-stainless-steel-lg-french-door-refrigerators-lhfs28xbs-64_600.jpg",
+          "icon": "home",
+          "retailer": "hd",
+          "checkedAt": "2026-10-07T16:52:11.000Z",
+          "expiresAt": "2026-10-08T07:00:00Z",
+          "method": "Checked snapshot"
+        },
+        {
+          "id": "hd-8",
+          "name": "Samsung 30 in. 1.7 cu. ft. Fingerprint Resistant Stainless Steel Over-the-Range Microwave",
+          "description": "Over-the-range microwave",
+          "price": 249,
+          "original": 319,
+          "category": "Appliances",
+          "url": "https://www.homedepot.com/p/Samsung-30-in-1-7-cu-ft-1000-W-Fingerprint-Resistant-Stainless-Steel-Over-the-Range-Microwave-ME17R7021ES/312751901",
+          "image": "https://images.thdstatic.com/productImages/36137b95-c7f0-47ef-bd43-ae5532f6b6e7/svn/fingerprint-resistant-stainless-steel-samsung-over-the-range-microwaves-me17r7021es-64_600.jpg",
+          "icon": "home",
+          "retailer": "hd",
+          "checkedAt": "2026-10-07T16:52:11.000Z",
+          "expiresAt": "2026-10-08T07:00:00Z",
+          "method": "Checked snapshot"
+        }
+      ],
+      "attemptedAt": "2026-10-07T16:52:11.000Z"
     },
     {
       "id": "lowes",
@@ -19,10 +140,41 @@
       "color": "#174887",
       "label": "Daily Deals",
       "description": "Tools, appliances & outdoor living",
-      "status": "unavailable",
-      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
-      "deals": [],
-      "attemptedAt": null
+      "status": "snapshot",
+      "message": "Manually checked against the retailer's live Daily Deals page on Oct 7, 2026 (automatic checks are blocked, HTTP 403). This snapshot will be replaced by tomorrow's automatic check.",
+      "deals": [
+        {
+          "id": "lowes-1",
+          "name": "EGO POWER+ 56-volt Cordless String Trimmer and Leaf Blower Combo Kit, 2.5 Ah",
+          "description": "Battery and charger included",
+          "price": 299,
+          "original": 359,
+          "category": "Tools",
+          "url": "https://www.lowes.com/pd/EGO-56-volt-Cordless-Power-Equipment-Combo-Kit/5014702047",
+          "image": "https://mobileimages.lowes.com/productimages/c0794599-c248-4d7e-8e2c-ea24b015c1df/72281819.jpeg",
+          "icon": "tools",
+          "retailer": "lowes",
+          "checkedAt": "2026-10-07T16:52:11.000Z",
+          "expiresAt": "2026-11-05T04:59:59Z",
+          "method": "Checked snapshot"
+        },
+        {
+          "id": "lowes-2",
+          "name": "Blackstone 36\" Original Omnivore Griddle with Hard Cover, 4-Burner Liquid Propane",
+          "description": "Flat top grill with hard cover",
+          "price": 299,
+          "original": 399,
+          "category": "Home & seasonal",
+          "url": "https://www.lowes.com/pd/Blackstone-Blackstone-36-in-Culinary-Griddle-with-Hard-Cover/5016187219",
+          "image": "https://mobileimages.lowes.com/productimages/2f883437-f0d5-4b24-b0cc-11efe46853b9/75565561.jpeg",
+          "icon": "tag",
+          "retailer": "lowes",
+          "checkedAt": "2026-10-07T16:52:11.000Z",
+          "expiresAt": "2026-12-31T04:59:59Z",
+          "method": "Checked snapshot"
+        }
+      ],
+      "attemptedAt": "2026-10-07T16:52:11.000Z"
     },
     {
       "id": "bestbuy",
@@ -32,9 +184,9 @@
       "label": "Deal of the Day",
       "description": "Electronics, computers & home tech",
       "status": "unavailable",
-      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
+      "message": "Could not reach the retailer. Open its daily page below.",
       "deals": [],
-      "attemptedAt": null
+      "attemptedAt": "2026-10-07T16:23:52.959Z"
     },
     {
       "id": "woot",
@@ -43,11 +195,11 @@
       "color": "#537239",
       "label": "Daily offers",
       "description": "Rotating deals across home & electronics",
-      "status": "unavailable",
-      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
+      "status": "limited",
+      "message": "Product listings are not exposed in readable data. Browse the retailer directly.",
       "deals": [],
-      "attemptedAt": null
+      "attemptedAt": "2026-10-07T16:23:52.959Z"
     }
   ],
-  "checkedAt": null
+  "checkedAt": "2026-10-07T16:52:11.000Z"
 }
