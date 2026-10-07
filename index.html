@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Be Better Bulletin</title>
 <meta name="description" content="Good news from the world, every day — real reporting, no politics, and curated for a positive start to your day.">
+
+<!-- PWA / installable app -->
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#fbf8f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c2136" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Be Better">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
 <style>
@@ -26,6 +40,8 @@
     --spotlight-tint: #dcf3e3;
     --motivation: #d1495b;
     --motivation-tint: #f7d7db;
+    --deal: #0f7a86;
+    --deal-tint: #d8eef0;
     --accent-grad-1: #163a53;
     --accent-grad-2: #f2a91e;
     --focus: #3f8fbf;
@@ -51,6 +67,8 @@
       --spotlight-tint: #163a26;
       --motivation: #f28b98;
       --motivation-tint: #4a1e24;
+      --deal: #59c9d6;
+      --deal-tint: #123a40;
       --accent-grad-1: #0c2136;
       --accent-grad-2: #f4b93a;
       --focus: #6fc1ea;
@@ -76,6 +94,8 @@
     --spotlight-tint: #163a26;
     --motivation: #f28b98;
     --motivation-tint: #4a1e24;
+    --deal: #59c9d6;
+    --deal-tint: #123a40;
     --accent-grad-1: #0c2136;
     --accent-grad-2: #f4b93a;
     --focus: #6fc1ea;
@@ -365,6 +385,154 @@
     line-height: 1.5;
   }
   .practice-prompt .mark { color: var(--amber-ink); flex: none; font-weight: 600; }
+
+  /* ---------- Daily Deal Desk ---------- */
+  .practice-btn[data-practice="deals"].active {
+    background: var(--deal-tint);
+    border-color: var(--deal);
+    color: var(--ink);
+  }
+  .dealdesk-panel {
+    margin-top: 12px;
+    padding: 18px 18px 16px;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .dealdesk-panel::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 3px;
+    background: var(--deal);
+  }
+  .dealdesk-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .dealdesk-eyebrow {
+    display: block;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--deal);
+    font-weight: 600;
+  }
+  .dealdesk-sub { margin: 4px 0 0; color: var(--muted); font-size: 0.82rem; max-width: 42ch; }
+  .dealdesk-updated {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .dealdesk-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .dealdesk-search {
+    flex: 1 1 180px;
+    font: inherit;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    padding: 9px 12px;
+    color: var(--ink);
+  }
+  .dealdesk-select {
+    font: inherit;
+    font-size: 0.82rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    padding: 9px 10px;
+    color: var(--ink);
+  }
+  .dealdesk-search:focus-visible, .dealdesk-select:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .dealdesk-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+  .dealdesk-sectionline { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 14px 0 10px; flex-wrap: wrap; }
+  .dealdesk-heading { font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 0.98rem; }
+  .dealdesk-link-btn {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 5px 11px;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .dealdesk-link-btn[aria-pressed="true"] { background: var(--deal-tint); border-color: var(--deal); color: var(--ink); }
+  .dealdesk-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  @media (min-width: 480px) { .dealdesk-grid { grid-template-columns: repeat(2, 1fr); } }
+  .dealdesk-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .dealdesk-visual {
+    height: 130px;
+    background: var(--paper-raised);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .dealdesk-visual svg { width: 56px; height: 56px; stroke: var(--muted); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .dealdesk-visual .product-photo { width: 100%; height: 100%; object-fit: contain; padding: 14px; }
+  .dealdesk-visual .image-fallback { display: none; }
+  .dealdesk-visual.photo-failed .product-photo { display: none; }
+  .dealdesk-visual.photo-failed .image-fallback { display: block; }
+  .dealdesk-badge {
+    position: absolute; top: 8px; left: 8px;
+    background: var(--deal-tint); color: var(--ink);
+    padding: 3px 8px; border-radius: 5px;
+    font-size: 0.68rem; font-weight: 700;
+  }
+  .dealdesk-save {
+    position: absolute; right: 8px; top: 8px;
+    background: var(--paper-raised); border: 1px solid var(--line);
+    border-radius: 50%; width: 28px; height: 28px;
+    color: var(--deal); font-size: 15px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .dealdesk-save:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .dealdesk-content { padding: 12px 13px; display: flex; flex-direction: column; flex: 1; }
+  .dealdesk-retailer-tag { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  .dealdesk-card h3 { font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif; font-size: 0.92rem; line-height: 1.3; margin: 5px 0; }
+  .dealdesk-desc { font-size: 0.74rem; color: var(--muted); margin: 0 0 10px; }
+  .dealdesk-price { font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif; font-size: 1.2rem; font-weight: 700; margin-top: auto; }
+  .dealdesk-price del { color: var(--muted); font-size: 0.74rem; font-weight: 400; margin-left: 6px; }
+  .dealdesk-savings { font-size: 0.72rem; color: var(--deal); margin: 2px 0 8px; }
+  .dealdesk-time { font-size: 0.66rem; color: var(--muted); margin-bottom: 9px; line-height: 1.4; }
+  .dealdesk-shop {
+    display: block; text-align: center; text-decoration: none;
+    border: 1px solid var(--line); border-radius: 7px; padding: 7px;
+    font-size: 0.74rem; font-weight: 600; color: var(--ink);
+  }
+  .dealdesk-shop:hover { background: var(--paper-raised); }
+  .dealdesk-sources { display: flex; flex-direction: column; gap: 8px; }
+  .dealdesk-source {
+    border: 1px solid var(--line); background: var(--paper);
+    border-radius: 10px; padding: 11px 13px;
+  }
+  .dealdesk-source-head { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
+  .dealdesk-source-head strong { font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif; font-size: 0.88rem; }
+  .dealdesk-status-tag { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.04em; background: var(--line-soft); border-radius: 4px; padding: 2px 6px; white-space: nowrap; }
+  .dealdesk-source p { margin: 4px 0 6px; font-size: 0.76rem; color: var(--muted); }
+  .dealdesk-source a { font-size: 0.76rem; font-weight: 600; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; }
+  .dealdesk-empty { grid-column: 1/-1; text-align: center; padding: 28px 16px; color: var(--muted); border: 1px dashed var(--line); border-radius: 10px; }
+  .dealdesk-empty strong { display: block; color: var(--ink); margin-bottom: 4px; }
+  .dealdesk-details { margin-top: 16px; color: var(--muted); font-size: 0.76rem; line-height: 1.5; }
+  .dealdesk-details summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+  .dealdesk-details p { margin: 8px 0 0; }
 
   /* ---------- Category rail ---------- */
   .rail {
@@ -685,6 +853,7 @@
       <button class="practice-btn" id="btn-motivation" data-practice="motivation" aria-expanded="false">🔥 Daily Motivation</button>
       <button class="practice-btn" id="btn-parenting" data-practice="parenting" aria-expanded="false">👪 Daily Parenting</button>
       <button class="practice-btn" id="btn-dadjoke" data-practice="dadjoke" aria-expanded="false">😂 Daily Dad Joke</button>
+      <button class="practice-btn" id="btn-deals" data-practice="deals" aria-expanded="false" aria-controls="dealdesk-panel">🛒 Daily Deal Desk</button>
     </div>
 
     <hr class="practice-row-divider" aria-hidden="true">
@@ -705,6 +874,55 @@
       <h3 class="practice-title" id="practice-title"></h3>
       <p class="practice-body" id="practice-body"></p>
       <div class="practice-prompt"><span class="mark">→</span><span id="practice-prompt"></span></div>
+    </section>
+
+    <section class="dealdesk-panel" id="dealdesk-panel" aria-label="Daily Deal Desk" hidden>
+      <div class="dealdesk-head">
+        <div>
+          <span class="dealdesk-eyebrow">Daily Deal Desk</span>
+          <p class="dealdesk-sub">Today's offers from Home Depot, Lowe's, Best Buy &amp; Woot — checked once a day.</p>
+        </div>
+        <span class="dealdesk-updated" id="dd-updated" role="status" aria-live="polite">Loading…</span>
+      </div>
+
+      <div class="dealdesk-bar">
+        <input class="dealdesk-search" id="dd-search" aria-label="Search deals" placeholder="Search tools, brands, appliances…">
+        <select class="dealdesk-select" id="dd-retailer" aria-label="Filter retailer">
+          <option value="">All retailers</option>
+          <option value="hd">The Home Depot</option>
+          <option value="lowes">Lowe’s</option>
+          <option value="bestbuy">Best Buy</option>
+          <option value="woot">Woot!</option>
+        </select>
+        <select class="dealdesk-select" id="dd-sort" aria-label="Sort deals">
+          <option value="discount">Biggest discount</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="new">Recently checked</option>
+        </select>
+      </div>
+
+      <div class="dealdesk-chips" id="dd-categories"></div>
+
+      <div class="dealdesk-sectionline">
+        <span class="dealdesk-heading" id="dd-heading">Today’s finds</span>
+        <button type="button" class="dealdesk-link-btn" id="dd-saved-toggle" aria-pressed="false">♡ Saved (<span id="dd-savedcount">0</span>)</button>
+      </div>
+
+      <div class="dealdesk-grid" id="dd-deals">
+        <div class="dealdesk-empty"><strong>Loading today’s deals…</strong></div>
+      </div>
+
+      <div class="dealdesk-sectionline">
+        <span class="dealdesk-heading">The retailer desk</span>
+      </div>
+      <div class="dealdesk-sources" id="dd-sources"></div>
+
+      <details class="dealdesk-details">
+        <summary>How this desk stays up to date</summary>
+        <p>Once a day, an automated check tries to read product listings published on each retailer’s daily-deals page, plus Best Buy’s and Woot’s official developer APIs when a key is configured. Some retailers block automated requests or only show products inside a browser — those are shown honestly as unavailable, with a direct link instead of a guess. Nothing here is ever invented.</p>
+        <p>A listing with no stated end time is marked “End time not provided” and drops from view after 6 hours unless it’s checked again. Saved items stay in this browser only and don’t reserve anything. Always confirm price, shipping, and availability on the retailer’s own site before buying.</p>
+      </details>
     </section>
 
     <div class="spotlight-toggle-row">
@@ -1097,6 +1315,7 @@
 
   function setupPracticeButtons() {
     var panel = document.getElementById("practice-panel");
+    var dealsPanel = document.getElementById("dealdesk-panel");
     var buttons = document.querySelectorAll(".practice-btn");
     Array.prototype.forEach.call(buttons, function (btn) {
       btn.addEventListener("click", function () {
@@ -1104,6 +1323,7 @@
         if (practiceState.open && practiceState.kind === kind) {
           // toggle closed
           panel.hidden = true;
+          dealsPanel.hidden = true;
           practiceState.open = false;
           practiceState.kind = null;
           btn.classList.remove("active");
@@ -1114,14 +1334,191 @@
           b.classList.remove("active");
           b.setAttribute("aria-expanded", "false");
         });
-        renderPractice(kind);
-        panel.hidden = false;
+        panel.hidden = true;
+        dealsPanel.hidden = true;
+        if (kind === "deals") {
+          dealsPanel.hidden = false;
+          ensureDealsLoaded();
+        } else {
+          renderPractice(kind);
+          panel.hidden = false;
+        }
         practiceState.open = true;
         practiceState.kind = kind;
         btn.classList.add("active");
         btn.setAttribute("aria-expanded", "true");
       });
     });
+  }
+
+  // ---------- Daily Deal Desk: fetched from deals.json, generated once a day ----------
+  var dealsState = { loaded: false, loading: false, retailers: [], checkedAt: null, category: "All", savedOnly: false };
+  var dealsSaved = {};
+  try { dealsSaved = JSON.parse(localStorage.getItem("dealdesk.saved") || "{}") || {}; } catch (e) {}
+
+  var DEAL_ICONS = {
+    battery: '<rect x="12" y="24" width="40" height="32" rx="5"/><path d="M24 24v-7h16v7M28 34l-5 10h12l-5 9M51 34h7v12h-7"/>',
+    tools: '<path d="M19 10a12 12 0 0014 17L51 45a6 6 0 01-8 8L25 35A12 12 0 0110 20l9 9 9-9z"/>',
+    home: '<path d="M8 30L32 10l24 20M15 25v30h34V25M26 55V38h12v17"/>',
+    air: '<rect x="7" y="14" width="50" height="24" rx="4"/><path d="M15 30h34M20 45v11M32 45v7M44 45v11"/>',
+    tag: '<path d="M8 8h25l23 23-25 25L8 33z"/><circle cx="21" cy="21" r="3"/>'
+  };
+  var DEAL_STATUS_LABEL = { live: "Live listings", snapshot: "Checked snapshot", limited: "Direct page", unavailable: "Access limited" };
+
+  function dealMoney(n) {
+    return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(n);
+  }
+  function dealActive(p) {
+    return (!p.expiresAt || Date.parse(p.expiresAt) > Date.now()) && (!p.validUntil || Date.parse(p.validUntil) > Date.now());
+  }
+  function dealDiscount(p) {
+    return p.original > p.price ? Math.round((1 - p.price / p.original) * 100) : 0;
+  }
+  function dealDateLabel(iso) {
+    var d = new Date(iso);
+    return isNaN(d.getTime()) ? "" : d.toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+  }
+  function allDeals() {
+    return dealsState.retailers.reduce(function (acc, r) { return acc.concat(r.deals || []); }, []);
+  }
+
+  function fetchDeals() {
+    if (dealsState.loading) return;
+    dealsState.loading = true;
+    var updatedEl = document.getElementById("dd-updated");
+    if (updatedEl) updatedEl.textContent = "Checking…";
+    fetch("./deals.json", { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        dealsState.loaded = true;
+        dealsState.loading = false;
+        dealsState.retailers = Array.isArray(data.retailers) ? data.retailers : [];
+        dealsState.checkedAt = data.checkedAt || null;
+        renderDeals();
+      })
+      .catch(function () {
+        dealsState.loaded = true;
+        dealsState.loading = false;
+        var el = document.getElementById("dd-updated");
+        if (el) el.textContent = "Couldn’t load today’s deals.";
+        renderDeals();
+      });
+  }
+
+  function ensureDealsLoaded() {
+    if (!dealsState.loaded && !dealsState.loading) fetchDeals();
+    else renderDeals();
+  }
+
+  function renderDeals() {
+    var panel = document.getElementById("dealdesk-panel");
+    if (!panel || panel.hidden) return; // don't touch the DOM while the panel is closed
+    var retailers = dealsState.retailers;
+
+    var categories = ["All", "Tools", "Appliances", "Home & seasonal", "Other"];
+    document.getElementById("dd-categories").innerHTML = categories.map(function (c) {
+      return '<button type="button" class="chip' + (c === dealsState.category ? " active" : "") + '" data-dd-category="' + escapeHtml(c) + '">' + escapeHtml(c) + "</button>";
+    }).join("");
+
+    var q = (document.getElementById("dd-search").value || "").toLowerCase();
+    var retailerFilter = document.getElementById("dd-retailer").value;
+    var sort = document.getElementById("dd-sort").value;
+
+    var list = (dealsState.savedOnly ? Object.values(dealsSaved) : allDeals()).filter(function (p) {
+      return (dealsState.savedOnly || dealActive(p)) &&
+        (!retailerFilter || p.retailer === retailerFilter) &&
+        (dealsState.category === "All" || p.category === dealsState.category) &&
+        ((p.name + " " + p.description).toLowerCase().indexOf(q) !== -1);
+    });
+
+    list.sort(function (a, b) {
+      if (sort === "low") return a.price - b.price;
+      if (sort === "high") return b.price - a.price;
+      if (sort === "new") return Date.parse(b.checkedAt) - Date.parse(a.checkedAt);
+      return dealDiscount(b) - dealDiscount(a);
+    });
+
+    document.getElementById("dd-heading").textContent = (dealsState.savedOnly ? "Saved finds" : "Today’s finds") + " · " + list.length;
+
+    var savedBtn = document.getElementById("dd-saved-toggle");
+    savedBtn.setAttribute("aria-pressed", dealsState.savedOnly ? "true" : "false");
+    savedBtn.innerHTML = (dealsState.savedOnly ? "♥" : "♡") + ' Saved (<span id="dd-savedcount">' + Object.keys(dealsSaved).length + "</span>)";
+
+    var dealsEl = document.getElementById("dd-deals");
+    if (!list.length) {
+      dealsEl.innerHTML = '<div class="dealdesk-empty"><strong>' +
+        (dealsState.savedOnly ? "No saved finds match" : "No readable offers match") + "</strong><p>" +
+        (dealsState.savedOnly ? "Save a find with the heart button, or clear your filters." : "Try another filter, or browse the retailer desk below — a blocked source can still have deals on its own site.") +
+        "</p></div>";
+    } else {
+      dealsEl.innerHTML = list.map(function (p) {
+        var r = retailers.filter(function (rr) { return rr.id === p.retailer; })[0];
+        var discount = dealDiscount(p);
+        var icon = DEAL_ICONS[p.icon] || DEAL_ICONS.tag;
+        var photo = p.image
+          ? '<img class="product-photo" src="' + escapeHtml(p.image) + '" alt="' + escapeHtml(p.name) + '" loading="lazy" referrerpolicy="no-referrer"><svg class="image-fallback" viewBox="0 0 64 64" aria-hidden="true">' + icon + "</svg>"
+          : '<svg viewBox="0 0 64 64" aria-hidden="true">' + icon + "</svg>";
+        var timeLine = !dealActive(p) ? "Expired · check retailer" : (p.expiresAt ? "Ends " + dealDateLabel(p.expiresAt) : "End time not provided");
+        return '<article class="dealdesk-card"><div class="dealdesk-visual">' +
+          (discount ? '<span class="dealdesk-badge">' + discount + "% off</span>" : "") +
+          '<button type="button" class="dealdesk-save" data-dd-save="' + escapeHtml(p.id) + '" aria-label="' + (dealsSaved[p.id] ? "Unsave " : "Save ") + escapeHtml(p.name) + '" aria-pressed="' + !!dealsSaved[p.id] + '">' + (dealsSaved[p.id] ? "♥" : "♡") + "</button>" +
+          photo +
+          '</div><div class="dealdesk-content"><span class="dealdesk-retailer-tag">' + escapeHtml((r && r.name) || p.retailer) + "</span><h3>" + escapeHtml(p.name) + '</h3><p class="dealdesk-desc">' + escapeHtml(p.description) + '</p><div class="dealdesk-price">' + dealMoney(p.price) + (p.original ? "<del>" + dealMoney(p.original) + "</del>" : "") + '</div><div class="dealdesk-savings">' + (p.original ? "Save " + dealMoney(p.original - p.price) : "Retailer-listed price") + '</div><div class="dealdesk-time">' + timeLine + "<br>" + escapeHtml(p.method) + " · " + dealDateLabel(p.checkedAt) + '</div><a class="dealdesk-shop" href="' + escapeHtml(p.url) + '" target="_blank" rel="noopener noreferrer">View at retailer ↗</a></div></article>';
+      }).join("");
+    }
+
+    document.getElementById("dd-sources").innerHTML = retailers.map(function (r) {
+      return '<article class="dealdesk-source"><div class="dealdesk-source-head"><strong>' + escapeHtml(r.name) + '</strong><span class="dealdesk-status-tag">' + escapeHtml(DEAL_STATUS_LABEL[r.status] || r.status) + "</span></div><p>" + escapeHtml(r.description) + " — " + escapeHtml(r.message) + '</p><a href="' + escapeHtml(r.url) + '" target="_blank" rel="noopener noreferrer">Browse ' + escapeHtml(r.label) + " ↗</a></article>";
+    }).join("");
+
+    var updatedEl = document.getElementById("dd-updated");
+    if (updatedEl && dealsState.loaded) {
+      if (dealsState.checkedAt) {
+        var liveCount = retailers.filter(function (r) { return r.status === "live"; }).length;
+        updatedEl.textContent = "Last checked " + dealDateLabel(dealsState.checkedAt) + " · " + liveCount + " live source" + (liveCount === 1 ? "" : "s");
+      } else {
+        updatedEl.textContent = "Not checked yet.";
+      }
+    }
+  }
+
+  function setupDealsPanel() {
+    document.getElementById("dd-search").addEventListener("input", renderDeals);
+    document.getElementById("dd-retailer").addEventListener("change", renderDeals);
+    document.getElementById("dd-sort").addEventListener("change", renderDeals);
+    document.getElementById("dd-saved-toggle").addEventListener("click", function () {
+      dealsState.savedOnly = !dealsState.savedOnly;
+      renderDeals();
+    });
+    document.getElementById("dd-categories").addEventListener("click", function (e) {
+      var b = e.target.closest("[data-dd-category]");
+      if (!b) return;
+      dealsState.category = b.getAttribute("data-dd-category");
+      renderDeals();
+    });
+    document.getElementById("dd-deals").addEventListener("click", function (e) {
+      var b = e.target.closest("[data-dd-save]");
+      if (!b) return;
+      var id = b.getAttribute("data-dd-save");
+      var match = allDeals().filter(function (pp) { return pp.id === id; })[0];
+      var p = match || dealsSaved[id];
+      if (dealsSaved[id]) delete dealsSaved[id];
+      else if (p) dealsSaved[id] = p;
+      try {
+        localStorage.setItem("dealdesk.saved", JSON.stringify(dealsSaved));
+      } catch (err) {
+        showToast("Browser storage unavailable. Saved for this visit only.");
+      }
+      renderDeals();
+    });
+    document.addEventListener("error", function (e) {
+      if (e.target.classList && e.target.classList.contains("product-photo") && e.target.closest(".dealdesk-visual")) {
+        e.target.closest(".dealdesk-visual").classList.add("photo-failed");
+      }
+    }, true);
   }
 
 
@@ -1143,6 +1540,7 @@
 
   els.dateEl.textContent = new Date().toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
   setupPracticeButtons();
+  setupDealsPanel();
   fetchSpotlight();
   setupSpotlightForm();
   setupSpotlightToggle();
@@ -1378,6 +1776,13 @@
   render();
   boot();
 })();
+</script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("/sw.js").catch(function () {});
+    });
+  }
 </script>
 
 </body></html>

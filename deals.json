@@ -1,0 +1,53 @@
+{
+  "retailers": [
+    {
+      "id": "hd",
+      "name": "The Home Depot",
+      "url": "https://www.homedepot.com/daily-deals",
+      "color": "#c95116",
+      "label": "Daily Deals",
+      "description": "Tools, home improvement & seasonal finds",
+      "status": "unavailable",
+      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
+      "deals": [],
+      "attemptedAt": null
+    },
+    {
+      "id": "lowes",
+      "name": "Lowe’s",
+      "url": "https://www.lowes.com/l/savings/daily-deals",
+      "color": "#174887",
+      "label": "Daily Deals",
+      "description": "Tools, appliances & outdoor living",
+      "status": "unavailable",
+      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
+      "deals": [],
+      "attemptedAt": null
+    },
+    {
+      "id": "bestbuy",
+      "name": "Best Buy",
+      "url": "https://www.bestbuy.com/site/top-deals/deal-of-the-day/pcmcat248000050016.c?id=pcmcat248000050016",
+      "color": "#64551c",
+      "label": "Deal of the Day",
+      "description": "Electronics, computers & home tech",
+      "status": "unavailable",
+      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
+      "deals": [],
+      "attemptedAt": null
+    },
+    {
+      "id": "woot",
+      "name": "Woot!",
+      "url": "https://www.woot.com/",
+      "color": "#537239",
+      "label": "Daily offers",
+      "description": "Rotating deals across home & electronics",
+      "status": "unavailable",
+      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
+      "deals": [],
+      "attemptedAt": null
+    }
+  ],
+  "checkedAt": null
+}

@@ -42,8 +42,29 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if git diff --quiet -- stories.json data/stories-db.json; then
             echo "No story changes today."
-            exit 0
+          else
+            git add stories.json data/stories-db.json
+            git commit -m "Daily story update: $(date -u +'%Y-%m-%d')"
+            git push
           fi
-          git add stories.json data/stories-db.json
-          git commit -m "Daily story update: $(date -u +'%Y-%m-%d')"
-          git push
+
+      - name: Run Daily Deal Desk collection
+        env:
+          # Both optional. With no key set, that retailer falls back to
+          # reading its own daily-deals page directly — see
+          # scripts/fetch-deals.mjs for what each path does.
+          BESTBUY_API_KEY: ${{ secrets.BESTBUY_API_KEY }}
+          WOOT_API_KEY: ${{ secrets.WOOT_API_KEY }}
+        run: node scripts/fetch-deals.mjs
+
+      - name: Commit updated deals if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- deals.json; then
+            echo "No deal changes today."
+          else
+            git add deals.json
+            git commit -m "Daily deal update: $(date -u +'%Y-%m-%d')"
+            git push
+          fi
