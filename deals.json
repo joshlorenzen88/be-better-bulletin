@@ -7,10 +7,10 @@
       "color": "#c95116",
       "label": "Daily Deals",
       "description": "Tools, home improvement & seasonal finds",
-      "status": "unavailable",
-      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
+      "status": "limited",
+      "message": "Product listings are not exposed in readable data. Browse the retailer directly.",
       "deals": [],
-      "attemptedAt": null
+      "attemptedAt": "2026-10-07T16:23:52.959Z"
     },
     {
       "id": "lowes",
@@ -20,9 +20,9 @@
       "label": "Daily Deals",
       "description": "Tools, appliances & outdoor living",
       "status": "unavailable",
-      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
+      "message": "Retailer declined automatic access (HTTP 403). Browse its daily page directly.",
       "deals": [],
-      "attemptedAt": null
+      "attemptedAt": "2026-10-07T16:23:52.959Z"
     },
     {
       "id": "bestbuy",
@@ -32,9 +32,9 @@
       "label": "Deal of the Day",
       "description": "Electronics, computers & home tech",
       "status": "unavailable",
-      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
+      "message": "Could not reach the retailer. Open its daily page below.",
       "deals": [],
-      "attemptedAt": null
+      "attemptedAt": "2026-10-07T16:23:52.959Z"
     },
     {
       "id": "woot",
@@ -43,11 +43,11 @@
       "color": "#537239",
       "label": "Daily offers",
       "description": "Rotating deals across home & electronics",
-      "status": "unavailable",
-      "message": "Not checked yet. Trigger the \"Daily story fetch\" workflow from the Actions tab to run the first check, or wait for tomorrow's automatic run.",
+      "status": "limited",
+      "message": "Product listings are not exposed in readable data. Browse the retailer directly.",
       "deals": [],
-      "attemptedAt": null
+      "attemptedAt": "2026-10-07T16:23:52.959Z"
     }
   ],
-  "checkedAt": null
+  "checkedAt": "2026-10-07T16:23:52.959Z"
 }
