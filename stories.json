@@ -1,5 +1,75 @@
 [
   {
+    "id": "teen-s-disaster-messaging-app-can-hop-across-bluetooth-when",
+    "title": "Teen’s Disaster Messaging App Can ‘Hop’ Across Bluetooth When Cellular Networks Collapse",
+    "url": "https://www.goodnewsnetwork.org/teens-disaster-messaging-app-can-hop-across-bluetooth-when-cellular-networks-collapse/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "A teen developed a messaging app that uses Bluetooth to transmit messages when cellular networks fail during disasters.",
+    "publishedAt": "2026-10-16T13:00:35.000Z",
+    "addedAt": "2026-10-16T15:17:42.077Z"
+  },
+  {
+    "id": "largest-private-conservation-project-in-the-us-hits-major-mi",
+    "title": "Largest Private Conservation Project in the US Hits Major Milestone as Free-Roaming Bison Pass 1,000",
+    "url": "https://www.goodnewsnetwork.org/largest-private-conservation-project-in-the-us-hits-major-milestone-as-free-roaming-bison-pass-1000/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "A private conservation project on the Great Plains reached a milestone with over 1,000 free-roaming bison.",
+    "publishedAt": "2026-10-16T11:00:30.000Z",
+    "addedAt": "2026-10-16T15:17:42.077Z"
+  },
+  {
+    "id": "what-dementia-taught-me-about-living-through-a-callous-time",
+    "title": "What Dementia Taught Me About Living Through a Callous Time",
+    "url": "https://reasonstobecheerful.world/what-dementia-taught-me-about-living-through-a-callous-time/",
+    "source": "Reasons to be Cheerful",
+    "category": "technology",
+    "summary": "Just as President Joe Biden was showing signs of cognitive decline so conspicuous that he was compelled to drop out of the presidential race in 2024, my own father’s dementia was worsening.",
+    "publishedAt": "2026-10-16T08:30:34.000Z",
+    "addedAt": "2026-10-16T15:17:42.077Z"
+  },
+  {
+    "id": "welcome-to-the-depolarization-project",
+    "title": "Welcome to the Depolarization Project",
+    "url": "https://reasonstobecheerful.world/depolarization-project-introduction/",
+    "source": "Reasons to be Cheerful",
+    "category": "technology",
+    "summary": "If you’re anything like us, you’re not exactly in a congenial mood right now.",
+    "publishedAt": "2026-10-16T08:00:02.000Z",
+    "addedAt": "2026-10-16T15:17:42.077Z"
+  },
+  {
+    "id": "what-went-right-this-week-the-good-news-that-matters",
+    "title": "What went right this week: the good news that matters",
+    "url": "https://www.positive.news/society/good-news-stories-from-week-42-of-2026/",
+    "source": "Positive News",
+    "category": "technology",
+    "summary": "Indonesia’s plummeting poverty rate, America’s largest wildlife bridge, and ‘a new era’ for the River Thames, plus more The post What went right this week: the good news that matters appeared first on Positive News .",
+    "publishedAt": "2026-10-16T05:00:50.000Z",
+    "addedAt": "2026-10-16T15:17:42.077Z"
+  },
+  {
+    "id": "an-extinct-crocodilian-s-skull-was-found-in-the-rocks-that-b",
+    "title": "An Extinct Crocodilian’s Skull Was Found in the Rocks That Built the Sphinx, and it’s Also Missing its Nose",
+    "url": "https://www.goodnewsnetwork.org/an-extinct-crocodilians-skull-was-found-in-the-rocks-that-built-the-sphinx-and-its-also-missing-its-nose/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "A new crocodilian species has been identified from fossils recovered from a rock layer harvested by ancient Egyptians to build the Sphinx And funnily enough, just like the iconic Egyptian landmark, this fossilized repti…",
+    "publishedAt": "2026-10-15T17:30:16.000Z",
+    "addedAt": "2026-10-16T15:17:42.077Z"
+  },
+  {
+    "id": "tribe-just-a-signature-away-from-recovering-1-100-ancestral",
+    "title": "Tribe Just a Signature Away from Recovering 1,100 Ancestral Acres Along Undammed Elwha River",
+    "url": "https://www.goodnewsnetwork.org/tribe-just-a-signature-away-from-recovering-1100-ancestral-acres-along-undammed-elwha-river/",
+    "source": "Good News Network",
+    "category": "environment",
+    "summary": "A tribe is close to recovering 1,100 ancestral acres along Washington's Elwha River, which is now recovering after a dam removal.",
+    "publishedAt": "2026-10-15T15:30:41.000Z",
+    "addedAt": "2026-10-16T15:17:42.077Z"
+  },
+  {
     "id": "esa-s-new-sentinel-3c-satellite-makes-its-debut-with-sumptuo",
     "title": "ESA’s New Sentinel 3C Satellite Makes its Debut with Sumptuous Images of Italy and the Arctic",
     "url": "https://www.goodnewsnetwork.org/esas-new-sentinel-3c-satellite-makes-its-debut-with-sumptuous-images-of-italy-and-the-arctic/",
@@ -728,75 +798,5 @@
     "summary": "Britain's Sycamore Gap tree, illegally felled three years ago, is regenerating with new shoots growing to 3 feet tall from its stump.",
     "publishedAt": "2026-10-01T18:30:18.000Z",
     "addedAt": "2026-10-02T16:32:56.011Z"
-  },
-  {
-    "id": "chinese-commercial-reactor-achieves-nuclear-fusion-with-clea",
-    "title": "Chinese Commercial Reactor Achieves Nuclear Fusion with Clean Hydrogen-Boron Fuel",
-    "url": "https://www.goodnewsnetwork.org/chinese-commercial-reactor-achieves-nuclear-fusion-with-clean-hydrogen-boron-fuel/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "Chinese engineers achieved nuclear fusion using hydrogen-boron fuel, a cleaner alternative that an international review team called a significant advance.",
-    "publishedAt": "2026-10-01T15:30:26.000Z",
-    "addedAt": "2026-10-01T17:18:05.407Z"
-  },
-  {
-    "id": "reviving-l-a-s-burned-landscapes-one-seed-bomb-at-a-time",
-    "title": "Reviving L.A.’s Burned Landscapes, One Seed Bomb at a Time",
-    "url": "https://reasonstobecheerful.world/california-fires-seed-bomb-project/",
-    "source": "Reasons to be Cheerful",
-    "category": "environment",
-    "summary": "Los Angeles communities are using seed bombs to restore vegetation in areas burned by wildfires.",
-    "publishedAt": "2026-10-01T14:25:04.000Z",
-    "addedAt": "2026-10-01T17:18:05.407Z"
-  },
-  {
-    "id": "genetic-analysis-all-but-confirms-the-most-unique-of-humpbac",
-    "title": "Genetic Analysis All But Confirms the Most Unique of Humpback Populations Is Actually a Subspecies",
-    "url": "https://www.goodnewsnetwork.org/genetic-analysis-all-but-confirms-the-most-unique-of-humpback-populations-is-actually-a-subspecies/",
-    "source": "Good News Network",
-    "category": "animals",
-    "summary": "Genetic analysis confirms Arabian Sea humpback whales are a distinct subspecies, separate from Atlantic and Pacific populations.",
-    "publishedAt": "2026-10-01T13:00:21.000Z",
-    "addedAt": "2026-10-01T13:56:43.751Z"
-  },
-  {
-    "id": "stunning-collection-of-stolen-greek-artifacts-spanning-5-000",
-    "title": "Stunning Collection of Stolen Greek Artifacts Spanning 5,000 Years Were Just Returned to Greece",
-    "url": "https://www.goodnewsnetwork.org/stunning-collection-of-stolen-greek-artifacts-spanning-5000-years-were-just-returned-to-greece/",
-    "source": "Good News Network",
-    "category": "culture",
-    "summary": "Millions of dollars in stolen ancient Greek artifacts were returned to Greece by New York authorities after being identified at the Metropolitan Museum of Art.",
-    "publishedAt": "2026-10-01T11:00:34.000Z",
-    "addedAt": "2026-10-01T13:56:43.751Z"
-  },
-  {
-    "id": "why-good-leaders-listen",
-    "title": "Why good leaders listen",
-    "url": "https://www.positive.news/lifestyle/why-good-leaders-listen/",
-    "source": "Positive News",
-    "category": "technology",
-    "summary": "Listening is often overlooked as a leadership skill, but it can challenge assumptions and lead to better decisions, writes social innovator Ken Banks The post Why good leaders listen appeared first on Positive News .",
-    "publishedAt": "2026-10-01T07:00:31.000Z",
-    "addedAt": "2026-10-01T13:56:43.751Z"
-  },
-  {
-    "id": "new-gobi-desert-fossil-rewrites-a-chapter-of-mammal-evolutio",
-    "title": "New Gobi Desert Fossil Rewrites a Chapter of Mammal Evolution",
-    "url": "https://www.goodnewsnetwork.org/new-gobi-desert-fossil-rewrites-a-chapter-of-mammal-evolution/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "A well-preserved fossil from Mongolia's Gobi Desert is reshaping scientific understanding of mammal evolution during the dinosaur age.",
-    "publishedAt": "2026-09-30T18:00:54.000Z",
-    "addedAt": "2026-10-01T13:56:43.751Z"
-  },
-  {
-    "id": "chris-evans-puts-his-limelight-on-a-bonded-dog-pair-with-cut",
-    "title": "Chris Evans Puts His Limelight on a Bonded Dog Pair with Cute Video, Immediately Sees Them Adopted",
-    "url": "https://www.goodnewsnetwork.org/chris-evans-puts-his-limelight-on-a-bonded-dog-pair-with-cute-video-immediately-sees-them-adopted/",
-    "source": "Good News Network",
-    "category": "animals",
-    "summary": "Chris Evans used his platform to help two bonded dogs find a home together, resulting in their adoption.",
-    "publishedAt": "2026-09-30T13:00:30.000Z",
-    "addedAt": "2026-09-30T16:43:29.773Z"
   }
 ]
