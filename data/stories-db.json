@@ -1,5 +1,85 @@
 [
   {
+    "id": "whale-festival-to-kick-off-amelia-island-in-florida-to-celeb",
+    "title": "Whale Festival to Kick Off Amelia Island in Florida to Celebrate the Return of the Right Whale",
+    "url": "https://www.goodnewsnetwork.org/whale-festival-to-kick-off-amelia-island-in-florida-to-celebrate-the-return-of-the-right-whale/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "Florida is hosting a whale festival to celebrate the return of right whales to Amelia Island waters.",
+    "publishedAt": "2026-11-02T19:30:58.000Z",
+    "addedAt": "2026-11-02T20:39:19.901Z"
+  },
+  {
+    "id": "the-student-movement-addressing-campus-polarization-head-on",
+    "title": "The Student Movement Addressing Campus Polarization Head On",
+    "url": "https://reasonstobecheerful.world/students-addressing-campus-polarization-healthy-debate/",
+    "source": "Reasons to be Cheerful",
+    "category": "technology",
+    "summary": "Just weeks after conservative activist Charlie Kirk was assassinated while speaking at a college last September, students gathered in a University of Michigan classroom to discuss freedom of speech.",
+    "publishedAt": "2026-11-02T18:20:08.000Z",
+    "addedAt": "2026-11-02T20:39:19.901Z"
+  },
+  {
+    "id": "over-750-ukraine-civilians-evacuated-from-famine-conditions",
+    "title": "Over 750 Ukraine Civilians Evacuated from Famine Conditions in Most Substantial Truce of the War",
+    "url": "https://www.goodnewsnetwork.org/over-750-ukraine-civilians-evacuated-from-famine-conditions-in-most-substantial-truce-of-the-war/",
+    "source": "Good News Network",
+    "category": "society",
+    "summary": "Over 750 Ukrainian civilians were evacuated from a Russian-occupied city through a humanitarian corridor during a truce.",
+    "publishedAt": "2026-11-02T16:30:13.000Z",
+    "addedAt": "2026-11-02T20:39:19.901Z"
+  },
+  {
+    "id": "weather-pet-app-generates-forecasts-for-dogs-head-and-paws-b",
+    "title": "Weather.pet App Generates Forecasts for Dogs’ Head and Paws Based on Ground Temps and More",
+    "url": "https://www.goodnewsnetwork.org/weather-pet-app-generates-forecasts-for-dogs-head-and-paws-based-on-ground-temps-and-more/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "A new app provides weather forecasts tailored to dogs, accounting for ground temperature and other canine-specific factors.",
+    "publishedAt": "2026-11-02T14:00:25.000Z",
+    "addedAt": "2026-11-02T20:39:19.901Z"
+  },
+  {
+    "id": "strangers-ran-towards-the-fire-to-save-teen-her-mom-now-fund",
+    "title": "Strangers Ran Towards the Fire to Save Teen–Her Mom Now Funds Scholarships for Heroes Like Them",
+    "url": "https://www.goodnewsnetwork.org/strangers-ran-toward-burning-car-to-save-teen-her-mom-now-funds-scholarships-for-heroes-like-them/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "After strangers rescued her from a car crash, a Texas woman now funds scholarships for community heroes.",
+    "publishedAt": "2026-11-02T12:00:52.000Z",
+    "addedAt": "2026-11-02T20:39:19.901Z"
+  },
+  {
+    "id": "the-women-s-boxing-nights-helping-abuse-survivors",
+    "title": "The women’s boxing nights helping abuse survivors",
+    "url": "https://www.positive.news/society/the-womens-boxing-nights-helping-abuse-survivors/",
+    "source": "Positive News",
+    "category": "community",
+    "summary": "All-female boxing events fund free classes that help abuse survivors rebuild confidence and healing.",
+    "publishedAt": "2026-11-02T09:26:16.000Z",
+    "addedAt": "2026-11-02T20:39:19.901Z"
+  },
+  {
+    "id": "islands-near-portugal-turn-off-lights-to-protect-seabird-fle",
+    "title": "Islands Near Portugal Turn Off Lights to Protect Seabird Fledglings Every October – 30k Already Saved",
+    "url": "https://www.goodnewsnetwork.org/islands-near-portugal-turn-off-lights-to-protect-seabird-fledglings-every-oct/",
+    "source": "Good News Network",
+    "category": "environment",
+    "summary": "Portuguese islands turn off lights each October to protect seabird fledglings during migration, saving 30,000 birds so far.",
+    "publishedAt": "2026-11-02T03:04:49.000Z",
+    "addedAt": "2026-11-02T20:39:19.901Z"
+  },
+  {
+    "id": "housing-nonprofit-funds-16-5-million-in-eviction-relief-to-a",
+    "title": "Housing Nonprofit Funds $16.5 Million in Eviction Relief to Assist Renters",
+    "url": "https://www.goodnewsnetwork.org/housing-nonprofit-funds-16-5-million-in-eviction-relief-for-renters/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "An Atlanta nonprofit has distributed $16.5 million in eviction relief to help over 5,500 families stay housed.",
+    "publishedAt": "2026-11-01T22:53:28.000Z",
+    "addedAt": "2026-11-02T20:39:19.901Z"
+  },
+  {
     "id": "high-school-fills-entire-football-field-with-groceries-to-re",
     "title": "High School Fills Entire Football Field With Groceries to Replenish New Jersey Food Banks",
     "url": "https://www.goodnewsnetwork.org/high-school-fills-football-field-with-groceries-for-nj-food-banks/",
@@ -1418,85 +1498,5 @@
     "summary": "Virginia enacted a Clean Slate law that automatically seals thousands of misdemeanor records to help residents access employment and loans.",
     "publishedAt": "2026-10-06T11:00:30.000Z",
     "addedAt": "2026-10-06T17:04:12.790Z"
-  },
-  {
-    "id": "the-women-putting-community-at-the-heart-of-elephant-conserv",
-    "title": "The women putting community at the heart of elephant conservation",
-    "url": "https://www.positive.news/environment/the-women-putting-community-at-the-heart-of-elephant-conservation/",
-    "source": "Positive News",
-    "category": "environment",
-    "summary": "Women across Africa are leading community-centered elephant conservation efforts that challenge traditional assumptions about conservation leadership.",
-    "publishedAt": "2026-10-06T07:00:43.000Z",
-    "addedAt": "2026-10-06T17:04:12.790Z"
-  },
-  {
-    "id": "fighting-wildfires-from-prison-a-new-law-gives-ex-cons-route",
-    "title": "Fighting Wildfires from Prison, A New Law Gives Ex-Cons Route to California Fire Dept. Jobs on Release",
-    "url": "https://www.goodnewsnetwork.org/fighting-wildfires-from-prison-a-new-law-gives-ex-cons-route-to-california-fire-dept-jobs-on-release/",
-    "source": "Good News Network",
-    "category": "society",
-    "summary": "California is training incarcerated people to fight wildfires, providing a path to employment in the fire department after release.",
-    "publishedAt": "2026-10-05T18:30:19.000Z",
-    "addedAt": "2026-10-05T19:32:19.686Z"
-  },
-  {
-    "id": "star-quarterback-wants-to-help-gen-z-handle-money-with-new-v",
-    "title": "Star Quarterback Wants to Help Gen Z Handle Money with New Video Series ‘Finance with Fernando’",
-    "url": "https://www.goodnewsnetwork.org/star-quarterback-wants-to-help-gen-z-handle-money-with-new-video-series-finance-with-fernando/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "As starting quarterback, Heisman Trophy winner, #1 NFL Draft pick, and aspiring philanthropist, Fernando Mendoza seems all lined up for a dynamite career in football.",
-    "publishedAt": "2026-10-05T15:30:35.000Z",
-    "addedAt": "2026-10-05T19:32:19.686Z"
-  },
-  {
-    "id": "nonprofit-brings-free-music-education-to-more-than-20-000-mi",
-    "title": "Nonprofit Brings Free Music Education to More Than 20,000 Miami Students in 131 Schools",
-    "url": "https://www.goodnewsnetwork.org/nonprofit-brings-free-music-education-to-more-than-20000-miami-students-in-131-schools/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A nonprofit has provided free music education to over 20,000 students across 131 schools in Miami-Dade County.",
-    "publishedAt": "2026-10-05T13:00:20.000Z",
-    "addedAt": "2026-10-05T19:32:19.686Z"
-  },
-  {
-    "id": "orphaned-rescued-and-rewilded-female-gorilla-becomes-a-mothe",
-    "title": "Orphaned, Rescued, and Rewilded, Female Gorilla Becomes a Mother in Historic Conservation Success",
-    "url": "https://www.goodnewsnetwork.org/orphaned-rescued-and-rewilded-female-gorilla-becomes-a-mother-in-historic-conservation-success/",
-    "source": "Good News Network",
-    "category": "animals",
-    "summary": "An orphaned eastern lowland gorilla successfully returned to the wild in Congo gave birth, marking a conservation milestone.",
-    "publishedAt": "2026-10-05T11:00:53.000Z",
-    "addedAt": "2026-10-05T19:32:19.686Z"
-  },
-  {
-    "id": "the-hospital-that-silenced-the-machines",
-    "title": "The Hospital That Silenced the Machines",
-    "url": "https://reasonstobecheerful.world/the-hospital-that-silenced-the-machines/",
-    "source": "Reasons to be Cheerful",
-    "category": "technology",
-    "summary": "Beep.",
-    "publishedAt": "2026-10-05T08:00:28.000Z",
-    "addedAt": "2026-10-05T19:32:19.686Z"
-  },
-  {
-    "id": "meet-the-14-year-old-uncovering-london-s-lost-history",
-    "title": "Meet the 14-year-old uncovering London’s lost history",
-    "url": "https://www.positive.news/environment/meet-the-14-year-old-uncovering-londons-lost-history/",
-    "source": "Positive News",
-    "category": "technology",
-    "summary": "Seasoned mudlark Emmylou Vaxby has spent nearly a decade searching the Thames foreshore for fragments of the city’s past The post Meet the 14-year-old uncovering London’s lost history appeared first on Positive News .",
-    "publishedAt": "2026-10-05T07:00:44.000Z",
-    "addedAt": "2026-10-05T19:32:19.686Z"
-  },
-  {
-    "id": "pomegranates-walnuts-and-berries-could-unlock-heart-failure",
-    "title": "Pomegranates, Walnuts and Berries Could Unlock Heart Failure Treatment By Producing Urolithin A",
-    "url": "https://www.goodnewsnetwork.org/pomegranates-walnuts-and-berries-could-unlock-heart-failure-treatment-with-urolithin-a/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "A compound produced after eating pomegranates improves heart function by up to 80% in a type of heart failure with few treatment options.",
-    "publishedAt": "2026-10-04T23:21:48.000Z",
-    "addedAt": "2026-10-05T19:32:19.686Z"
   }
 ]
