@@ -1,5 +1,65 @@
 [
   {
+    "id": "asphalt-artworks-are-making-people-drive-more-safely-new-stu",
+    "title": "Asphalt Artworks Are Making People Drive More Safely, New Studies Find",
+    "url": "https://www.goodnewsnetwork.org/asphalt-artworks-seems-to-make-people-drive-more-safely-new-studies-find/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "Studies show colorful pavement art combined with other safety measures reduces unsafe driving at US road intersections.",
+    "publishedAt": "2026-11-27T19:40:42.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
+    "id": "vending-machine-lets-anyone-in-the-country-volunteer-to-dist",
+    "title": "Vending Machine Lets Anyone in the Country Volunteer to Distribute Aid to Homeless",
+    "url": "https://www.goodnewsnetwork.org/vending-machine-lets-anyone-in-the-country-volunteer-to-distribute-aid-to-homeless/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "A vending machine dispenses blankets, meals, and supplies to homeless people, allowing anyone in the country to contribute aid.",
+    "publishedAt": "2026-11-27T19:30:37.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
+    "id": "meet-the-teen-whose-invention-will-prevent-kids-with-autism",
+    "title": "Meet the Teen Whose Invention Will Prevent Kids with Autism from Getting Lost–Like He Did",
+    "url": "https://www.goodnewsnetwork.org/teen-who-got-lost-as-a-child-now-launchers-gps-tracker-for-autistic-children-who-wander/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "A teen who got lost as a child has invented a GPS tracking device to prevent children with autism from wandering.",
+    "publishedAt": "2026-11-27T16:30:13.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
+    "id": "making-peace-with-a-himalayan-ghost",
+    "title": "Making Peace With a Himalayan ‘Ghost’",
+    "url": "https://reasonstobecheerful.world/snow-leopard-conservation-himalayas/",
+    "source": "Reasons to be Cheerful",
+    "category": "technology",
+    "summary": "Last winter, Deachen Chuskit took her cows to graze in the upper Himalayan desert of Ladakh.",
+    "publishedAt": "2026-11-27T08:00:59.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
+    "id": "town-rewards-a-woman-whose-thanksgiving-meal-feeds-thousands",
+    "title": "Town Rewards a Woman Whose Thanksgiving Meal Feeds Thousands with a New Car",
+    "url": "https://www.goodnewsnetwork.org/town-rewards-a-woman-whose-thanksgiving-meal-feeds-thousands-with-a-new-car/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "A Texas community gave a woman a new car after she provided Thanksgiving meals for thousands of people over 37 years.",
+    "publishedAt": "2026-11-26T16:30:18.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
+    "id": "for-this-nyc-restaurant-owner-thanksgiving-comes-every-wedne",
+    "title": "For This NYC Restaurant Owner, Thanksgiving Comes Every Wednesday",
+    "url": "https://www.goodnewsnetwork.org/for-this-nyc-restaurant-owner-thanksgiving-comes-every-wednesday/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "This story came to us from PassItOn.com, which is part of The Foundation for a Better Life.",
+    "publishedAt": "2026-11-26T16:15:31.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
     "id": "family-is-thankful-their-baby-given-weeks-to-live-on-christm",
     "title": "Family Is Thankful Their Baby, Given Weeks to Live on Christmas Eve, Now Brain Cancer-Free",
     "url": "https://www.goodnewsnetwork.org/girl-given-weeks-to-live-on-christmas-eve-makes-miracle-recovery-after-serendipitous-call-to-st-jude/",
@@ -250,16 +310,6 @@
     "addedAt": "2026-11-21T17:54:08.603Z"
   },
   {
-    "id": "33-kids-wrote-letters-to-a-wounded-veteran-60-years-lat-2",
-    "title": "33 Kids Wrote Letters to a Wounded Veteran. 60 Years Later, His Son Is Searching to Thank Each One",
-    "url": "https://www.goodnewsnetwork.org/dave-jacobson-letters-from-gloucester-project/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A veteran's son is tracking down 33 schoolchildren who wrote letters to his wounded father in 1967 to thank them six decades later.",
-    "publishedAt": "2026-11-20T22:00:41.000Z",
-    "addedAt": "2026-11-22T18:18:59.932Z"
-  },
-  {
     "id": "33-kids-wrote-letters-to-a-wounded-veteran-60-years-later-hi",
     "title": "33 Kids Wrote Letters to a Wounded Veteran. 60 Years Later, His Son Is Searching to Thank Each One",
     "url": "https://www.goodnewsnetwork.org/__trashed-70/",
@@ -268,6 +318,16 @@
     "summary": "In 1967, 33 Massachusetts schoolchildren were given a project: write a letter to a Navy corpsman they had never met who was wounded in Vietnam.",
     "publishedAt": "2026-11-20T22:00:41.000Z",
     "addedAt": "2026-11-21T17:54:08.603Z"
+  },
+  {
+    "id": "33-kids-wrote-letters-to-a-wounded-veteran-60-years-lat-2",
+    "title": "33 Kids Wrote Letters to a Wounded Veteran. 60 Years Later, His Son Is Searching to Thank Each One",
+    "url": "https://www.goodnewsnetwork.org/dave-jacobson-letters-from-gloucester-project/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "A veteran's son is tracking down 33 schoolchildren who wrote letters to his wounded father in 1967 to thank them six decades later.",
+    "publishedAt": "2026-11-20T22:00:41.000Z",
+    "addedAt": "2026-11-22T18:18:59.932Z"
   },
   {
     "id": "community-steps-up-to-replace-teen-business-owner-s-stolen-l",
@@ -1438,65 +1498,5 @@
     "summary": "Namibian rangers use smartphones and traditional tracking skills to protect farmers and support a recovering lion population.",
     "publishedAt": "2026-10-29T07:00:10.000Z",
     "addedAt": "2026-10-29T17:20:18.684Z"
-  },
-  {
-    "id": "nature-inspired-tech-prevents-microplastics-entering-atlanti",
-    "title": "Nature-Inspired Tech Prevents Microplastics Entering Atlantic Ocean Through Wastewater",
-    "url": "https://www.goodnewsnetwork.org/nature-inspired-tech-prevents-microplastics-entering-atlantic-ocean-through-wastewater/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "Princeton researchers developed a device to filter microplastics from wastewater at scale, now deployed in Atlantic City.",
-    "publishedAt": "2026-10-28T18:30:55.000Z",
-    "addedAt": "2026-10-29T17:20:18.684Z"
-  },
-  {
-    "id": "bizarre-rescue-sees-divers-save-kangaroo-that-found-itself-o",
-    "title": "Bizarre Rescue Sees Divers Save Kangaroo That Found Itself Over a Mile from Dry Land",
-    "url": "https://www.goodnewsnetwork.org/bizarre-rescue-sees-divers-save-kangaroo-that-found-itself-over-a-mile-from-dry-land/",
-    "source": "Good News Network",
-    "category": "animals",
-    "summary": "Scuba divers rescued a kangaroo found swimming over a mile out to sea off the Australian coast.",
-    "publishedAt": "2026-10-28T15:30:15.000Z",
-    "addedAt": "2026-10-28T17:02:05.717Z"
-  },
-  {
-    "id": "etsy-cracks-down-on-ai-generated-content-to-protect-buyers-f",
-    "title": "Etsy Cracks Down on AI-Generated Content to Protect Buyers from Barrage of Slop",
-    "url": "https://www.goodnewsnetwork.org/etsy-cracks-down-on-ai-generated-content-to-protect-buyers-from-barrage-of-slop/",
-    "source": "Good News Network",
-    "category": "technology",
-    "summary": "Etsy implemented policies to restrict AI-generated content from its marketplace to protect buyers and craftspeople.",
-    "publishedAt": "2026-10-28T13:00:04.000Z",
-    "addedAt": "2026-10-28T17:02:05.717Z"
-  },
-  {
-    "id": "stranger-anonymously-pays-420-lunch-tab-for-27-disabled-resi",
-    "title": "Stranger Anonymously Pays $420 Lunch Tab for 27 Disabled Residents and Caregivers",
-    "url": "https://www.goodnewsnetwork.org/anonymously-pays-dinner-tab-for-27-disability-staff-in-south-korea/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "An anonymous donor paid a $420 lunch bill for 27 disabled residents and their caregivers at a South Korean community gathering.",
-    "publishedAt": "2026-10-28T11:30:33.000Z",
-    "addedAt": "2026-10-28T17:02:05.717Z"
-  },
-  {
-    "id": "positive-news-launches-new-video-podcast-exploring-what-s-go",
-    "title": "Positive News launches new video podcast exploring what’s going right in the world",
-    "url": "https://www.positive.news/society/positive-news-launches-new-video-podcast-exploring-whats-going-right-in-the-world/",
-    "source": "Positive News",
-    "category": "technology",
-    "summary": "The What Went Right series is expanding to YouTube and other podcast platforms, bringing its weekly roundup of progress to new audiences The post Positive News launches new video podcast exploring what’s going right in…",
-    "publishedAt": "2026-10-28T09:43:33.000Z",
-    "addedAt": "2026-10-28T17:02:05.717Z"
-  },
-  {
-    "id": "what-we-re-reading-a-quiz-that-reveals-americans-surprising",
-    "title": "What We’re Reading: A Quiz That Reveals Americans’ Surprising Common Ground",
-    "url": "https://reasonstobecheerful.world/what-were-reading-americans-want-the-same-things/",
-    "source": "Reasons to be Cheerful",
-    "category": "technology",
-    "summary": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking.",
-    "publishedAt": "2026-10-28T08:00:42.000Z",
-    "addedAt": "2026-10-28T17:02:05.717Z"
   }
 ]

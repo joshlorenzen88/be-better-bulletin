@@ -1,5 +1,65 @@
 [
   {
+    "id": "asphalt-artworks-are-making-people-drive-more-safely-new-stu",
+    "title": "Asphalt Artworks Are Making People Drive More Safely, New Studies Find",
+    "url": "https://www.goodnewsnetwork.org/asphalt-artworks-seems-to-make-people-drive-more-safely-new-studies-find/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "Studies show colorful pavement art combined with other safety measures reduces unsafe driving at US road intersections.",
+    "publishedAt": "2026-11-27T19:40:42.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
+    "id": "vending-machine-lets-anyone-in-the-country-volunteer-to-dist",
+    "title": "Vending Machine Lets Anyone in the Country Volunteer to Distribute Aid to Homeless",
+    "url": "https://www.goodnewsnetwork.org/vending-machine-lets-anyone-in-the-country-volunteer-to-distribute-aid-to-homeless/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "A vending machine dispenses blankets, meals, and supplies to homeless people, allowing anyone in the country to contribute aid.",
+    "publishedAt": "2026-11-27T19:30:37.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
+    "id": "meet-the-teen-whose-invention-will-prevent-kids-with-autism",
+    "title": "Meet the Teen Whose Invention Will Prevent Kids with Autism from Getting Lost–Like He Did",
+    "url": "https://www.goodnewsnetwork.org/teen-who-got-lost-as-a-child-now-launchers-gps-tracker-for-autistic-children-who-wander/",
+    "source": "Good News Network",
+    "category": "technology",
+    "summary": "A teen who got lost as a child has invented a GPS tracking device to prevent children with autism from wandering.",
+    "publishedAt": "2026-11-27T16:30:13.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
+    "id": "making-peace-with-a-himalayan-ghost",
+    "title": "Making Peace With a Himalayan ‘Ghost’",
+    "url": "https://reasonstobecheerful.world/snow-leopard-conservation-himalayas/",
+    "source": "Reasons to be Cheerful",
+    "category": "technology",
+    "summary": "Last winter, Deachen Chuskit took her cows to graze in the upper Himalayan desert of Ladakh.",
+    "publishedAt": "2026-11-27T08:00:59.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
+    "id": "town-rewards-a-woman-whose-thanksgiving-meal-feeds-thousands",
+    "title": "Town Rewards a Woman Whose Thanksgiving Meal Feeds Thousands with a New Car",
+    "url": "https://www.goodnewsnetwork.org/town-rewards-a-woman-whose-thanksgiving-meal-feeds-thousands-with-a-new-car/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "A Texas community gave a woman a new car after she provided Thanksgiving meals for thousands of people over 37 years.",
+    "publishedAt": "2026-11-26T16:30:18.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
+    "id": "for-this-nyc-restaurant-owner-thanksgiving-comes-every-wedne",
+    "title": "For This NYC Restaurant Owner, Thanksgiving Comes Every Wednesday",
+    "url": "https://www.goodnewsnetwork.org/for-this-nyc-restaurant-owner-thanksgiving-comes-every-wednesday/",
+    "source": "Good News Network",
+    "category": "animals",
+    "summary": "This story came to us from PassItOn.com, which is part of The Foundation for a Better Life.",
+    "publishedAt": "2026-11-26T16:15:31.000Z",
+    "addedAt": "2026-11-27T19:49:47.023Z"
+  },
+  {
     "id": "family-is-thankful-their-baby-given-weeks-to-live-on-christm",
     "title": "Family Is Thankful Their Baby, Given Weeks to Live on Christmas Eve, Now Brain Cancer-Free",
     "url": "https://www.goodnewsnetwork.org/girl-given-weeks-to-live-on-christmas-eve-makes-miracle-recovery-after-serendipitous-call-to-st-jude/",
@@ -250,16 +310,6 @@
     "addedAt": "2026-11-21T17:54:08.603Z"
   },
   {
-    "id": "33-kids-wrote-letters-to-a-wounded-veteran-60-years-lat-2",
-    "title": "33 Kids Wrote Letters to a Wounded Veteran. 60 Years Later, His Son Is Searching to Thank Each One",
-    "url": "https://www.goodnewsnetwork.org/dave-jacobson-letters-from-gloucester-project/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A veteran's son is tracking down 33 schoolchildren who wrote letters to his wounded father in 1967 to thank them six decades later.",
-    "publishedAt": "2026-11-20T22:00:41.000Z",
-    "addedAt": "2026-11-22T18:18:59.932Z"
-  },
-  {
     "id": "33-kids-wrote-letters-to-a-wounded-veteran-60-years-later-hi",
     "title": "33 Kids Wrote Letters to a Wounded Veteran. 60 Years Later, His Son Is Searching to Thank Each One",
     "url": "https://www.goodnewsnetwork.org/__trashed-70/",
@@ -268,6 +318,16 @@
     "summary": "In 1967, 33 Massachusetts schoolchildren were given a project: write a letter to a Navy corpsman they had never met who was wounded in Vietnam.",
     "publishedAt": "2026-11-20T22:00:41.000Z",
     "addedAt": "2026-11-21T17:54:08.603Z"
+  },
+  {
+    "id": "33-kids-wrote-letters-to-a-wounded-veteran-60-years-lat-2",
+    "title": "33 Kids Wrote Letters to a Wounded Veteran. 60 Years Later, His Son Is Searching to Thank Each One",
+    "url": "https://www.goodnewsnetwork.org/dave-jacobson-letters-from-gloucester-project/",
+    "source": "Good News Network",
+    "category": "community",
+    "summary": "A veteran's son is tracking down 33 schoolchildren who wrote letters to his wounded father in 1967 to thank them six decades later.",
+    "publishedAt": "2026-11-20T22:00:41.000Z",
+    "addedAt": "2026-11-22T18:18:59.932Z"
   },
   {
     "id": "community-steps-up-to-replace-teen-business-owner-s-stolen-l",
@@ -738,65 +798,5 @@
     "summary": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking.",
     "publishedAt": "2026-11-11T08:00:22.000Z",
     "addedAt": "2026-11-11T18:27:14.355Z"
-  },
-  {
-    "id": "nothing-short-of-a-miracle-rescuers-find-boy-with-autism-mis",
-    "title": "‘Nothing short of a miracle’ – Rescuers Find Boy with Autism Missing for 3 Days",
-    "url": "https://www.goodnewsnetwork.org/nothing-short-of-a-miracle-rescuers-find-boy-with-autism-missing-for-3-days/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A 6-year-old boy with autism missing for 3 days in Kentucky was found safe on a horse trail after a search effort by rescuers.",
-    "publishedAt": "2026-11-10T16:30:45.000Z",
-    "addedAt": "2026-11-10T18:30:18.928Z"
-  },
-  {
-    "id": "martian-volcanic-discovery-could-be-smoking-gun-in-search-fo",
-    "title": "Martian Volcanic Discovery Could Be ‘Smoking Gun’ in Search for Life",
-    "url": "https://www.goodnewsnetwork.org/martian-volcanic-discovery-could-be-smoking-gun-in-search-for-life/",
-    "source": "Good News Network",
-    "category": "science",
-    "summary": "Scientists detected trace volcanic gases on Mars that could help in the search for life on the Red Planet.",
-    "publishedAt": "2026-11-10T14:30:25.000Z",
-    "addedAt": "2026-11-10T18:30:18.928Z"
-  },
-  {
-    "id": "a-viral-video-led-strangers-to-raise-76-000-for-a-full-time",
-    "title": "A Viral Video Led Strangers to Raise $76,000 for a Full-Time Caregiver",
-    "url": "https://www.goodnewsnetwork.org/viral-video-raises-76000-for-caregiver/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A viral doorbell camera video prompted strangers to raise over $76,000 to support a full-time caregiver.",
-    "publishedAt": "2026-11-10T13:44:04.000Z",
-    "addedAt": "2026-11-10T18:30:18.928Z"
-  },
-  {
-    "id": "world-s-driest-desert-erupts-into-record-breaking-bloom-boom",
-    "title": "World’s Driest Desert Erupts into Record-Breaking Bloom Boom (LOOK)",
-    "url": "https://www.goodnewsnetwork.org/worlds-driest-desert-erupts-into-record-breaking-bloom-boom-look/",
-    "source": "Good News Network",
-    "category": "environment",
-    "summary": "The world's driest desert experienced a record-breaking bloom following recent rainfall.",
-    "publishedAt": "2026-11-10T12:30:35.000Z",
-    "addedAt": "2026-11-10T18:30:18.928Z"
-  },
-  {
-    "id": "actor-85-takes-to-the-stage-despite-alzheimer-s-diagnosis",
-    "title": "Actor, 85, takes to the stage despite Alzheimer’s diagnosis",
-    "url": "https://www.positive.news/society/actor-85-takes-to-the-stage-despite-alzheimers-diagnosis/",
-    "source": "Positive News",
-    "category": "technology",
-    "summary": "Peter Marinker is continuing his stage career after being diagnosed with Alzheimer’s, taking on a role in Samuel Beckett’s Krapp’s Last Tape The post Actor, 85, takes to the stage despite Alzheimer’s diagnosis appeared…",
-    "publishedAt": "2026-11-10T11:34:34.000Z",
-    "addedAt": "2026-11-10T18:30:18.928Z"
-  },
-  {
-    "id": "man-s-halloween-skeletons-prove-perfect-treat-to-woman-battl",
-    "title": "Man’s Halloween Skeletons Prove Perfect Treat to Woman Battling Breast Cancer",
-    "url": "https://www.goodnewsnetwork.org/mans-halloween-skeletons-prove-perfect-treat-to-woman-battling-breast-cancer/",
-    "source": "Good News Network",
-    "category": "community",
-    "summary": "A man's Halloween skeleton decorations brought joy to a woman undergoing cancer treatment after she encountered them during her weekly appointments.",
-    "publishedAt": "2026-11-09T19:30:36.000Z",
-    "addedAt": "2026-11-09T21:20:16.420Z"
   }
 ]
